@@ -1,3 +1,22 @@
+@include web-fonts(("Fira Sans":"500"));
+
+
 h1, h2, h3, h4, h5, h6 {
+	font-family: "Fira Sans";
 	clear: both;
+}
+h1.site-title {
+	@include font-size(2.2);
+}
+h2.site-description {
+	@include font-size(2.5);
+	text-align: center;
+	text-transform: capitalize;
+}
+header#masthead {
+	.site-title, .site-description {
+		a {@extend .site-description; text-decoration: none;}
+		color: $color__text_alt;
+		
+	}
 }

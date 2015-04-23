@@ -44,172 +44,329 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+@import url("//fonts.googleapis.com/css?family=Fira%20Sans%3A500");
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\000031}}
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\000037}}
 body {
-  margin: 0; }
+  margin: 0;
+}
 
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
-  display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000311}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
 
-audio, canvas, progress, video {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000326}}
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000334}}
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
-[hidden], template {
-  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000339}}
+[hidden],
+template {
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000344}}
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
-a:active, a:hover {
-  outline: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000348}}
+a:active,
+a:hover {
+  outline: 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000353}}
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
-b, strong {
-  font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000357}}
+b,
+strong {
+  font-weight: bold;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000362}}
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000366}}
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000371}}
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000376}}
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
-sub, sup {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000380}}
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000388}}
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000392}}
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\0000396}}
 img {
-  border: 0; }
+  border: 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003100}}
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003104}}
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003108}}
 hr {
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003113}}
 pre {
-  overflow: auto; }
+  overflow: auto;
+}
 
-code, kbd, pre, samp {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003117}}
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
-button, input, optgroup, select, textarea {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003125}}
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   font: inherit;
-  margin: 0; }
+  margin: 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003135}}
 button {
-  overflow: visible; }
+  overflow: visible;
+}
 
-button, select {
-  text-transform: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003139}}
+button,
+select {
+  text-transform: none;
+}
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003144}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-button[disabled], html input[disabled] {
-  cursor: default; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003152}}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003157}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003163}}
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
-input[type="checkbox"], input[type="radio"] {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003167}}
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
-  padding: 0; }
+  padding: 0;
+}
 
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003173}}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003178}}
 input[type="search"] {
   -webkit-appearance: textfield;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003183}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003188}}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003194}}
 legend {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003199}}
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003203}}
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003207}}
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-td, th {
-  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/_normalize\.scss}line{font-family:\00003212}}
+td,
+th {
+  padding: 0;
+}
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body, button, input, select, textarea {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_typography\.scss}line{font-family:\000034}}
+body,
+button,
+input,
+select,
+textarea {
   color: #404040;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\000034}}
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  font-family: "Fira Sans";
+  clear: both;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\000038}}
+h1.site-title {
+  font-size: 35.2px;
+  font-size: 2.2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000311}}
+h2.site-description {
+  font-size: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000317}}
+header#masthead .site-title, header#masthead .site-description, header#masthead .site-title a, header#masthead .site-description a {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000318}}
+header#masthead .site-title a, header#masthead .site-description a, header#masthead .site-title a a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\000031}}
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\000035}}
 dfn, cite, em, i {
-  font-style: italic; }
+  font-style: italic;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\000039}}
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\0000313}}
 address {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\0000317}}
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -219,82 +376,126 @@ pre {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em; }
+  padding: 1.6em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\0000328}}
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
-  font-size: 0.9375rem; }
+  font-size: 0.9375rem;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\0000333}}
 abbr, acronym {
   border-bottom: 1px dotted #666;
-  cursor: help; }
+  cursor: help;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\0000338}}
 mark, ins {
   background: #fff9c0;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_copy\.scss}line{font-family:\0000343}}
 big {
-  font-size: 125%; }
+  font-size: 125%;
+}
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_elements\.scss}line{font-family:\000031}}
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-*, *:before, *:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_elements\.scss}line{font-family:\000035}}
+*,
+*:before,
+*:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_elements\.scss}line{font-family:\0000311}}
 body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  background: #0095DD;
+  /* Fallback for when there is no custom background color defined. */
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_elements\.scss}line{font-family:\0000315}}
 blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
+  quotes: "" "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_elements\.scss}line{font-family:\0000318}}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_elements\.scss}line{font-family:\0000324}}
 hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_lists\.scss}line{font-family:\000031}}
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1.5em 3em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_lists\.scss}line{font-family:\000035}}
 ul {
-  list-style: disc; }
+  list-style: disc;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_lists\.scss}line{font-family:\000039}}
 ol {
-  list-style: decimal; }
+  list-style: decimal;
+}
 
-li > ul, li > ol {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_lists\.scss}line{font-family:\0000313}}
+li > ul,
+li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_lists\.scss}line{font-family:\0000319}}
 dt {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_lists\.scss}line{font-family:\0000323}}
 dd {
-  margin: 0 1.5em 1.5em; }
+  margin: 0 1.5em 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_elements\.scss}line{font-family:\0000333}}
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Adhere to container width. */
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/elements\/_tables\.scss}line{font-family:\000031}}
 table {
   margin: 0 0 1.5em;
-  width: 100%; }
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/forms\/_buttons\.scss}line{font-family:\000031}}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -305,27 +506,63 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   font-size: 0.75rem;
   line-height: 1;
   padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/forms\/_buttons\.scss}line{font-family:\0000316}}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/forms\/_buttons\.scss}line{font-family:\0000321}}
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
 
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/forms\/_fields\.scss}line{font-family:\000031}}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
-  input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus {
-    color: #111; }
+  border-radius: 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/forms\/_fields\.scss}line{font-family:\0000311}}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #111;
+}
 
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
-  padding: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/forms\/_fields\.scss}line{font-family:\0000316}}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/forms\/_fields\.scss}line{font-family:\0000324}}
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Navigation
@@ -333,326 +570,542 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_links\.scss}line{font-family:\000031}}
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+  color: royalblue;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_links\.scss}line{font-family:\000034}}
+a:visited {
+  color: purple;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_links\.scss}line{font-family:\000037}}
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_links\.scss}line{font-family:\0000312}}
+a:focus {
+  outline: thin dotted;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_links\.scss}line{font-family:\0000315}}
+a:hover, a:active {
+  outline: 0;
+}
 
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\000031}}
 .main-navigation {
   clear: both;
   display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000311}}
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background-color: clear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000317}}
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+  position: absolute;
+  top: 1.5em;
+  left: -999em;
+  z-index: 99999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000325}}
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000331}}
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000337}}
+.main-navigation ul ul a {
+  width: 200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000350}}
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000355}}
+.main-navigation li {
+  float: right;
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: red;
+  -moz-border-radius-bottomleft: 1rem;
+  -webkit-border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  -moz-border-radius-bottomright: 1rem;
+  -webkit-border-bottom-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom: solid 2px #990000;
+  border-right: solid 2px #990000;
+  border-left: solid 2px #990000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000366}}
+.main-navigation li:hover > a, .main-navigation li.focus > a {
+  background-color: clear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000371}}
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
 
 /* Small menu. */
-.menu-toggle, .main-navigation.toggled ul {
-  display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000384}}
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
 
-@media screen and (min-width: 37.5em) {
+@media (min-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000390}}
   .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+    display: none;
+  }
 
-.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000393}}
+  .main-navigation ul {
+    display: block;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003102}}
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
   margin: 0 0 1.5em;
-  overflow: hidden; }
-.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003107}}
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
   float: left;
-  width: 50%; }
-.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+  width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003112}}
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
   float: right;
   text-align: right;
-  width: 50%; }
+  width: 50%;
+}
 
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_accessibility\.scss}line{font-family:\000032}}
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
   height: 1px;
   width: 1px;
-  overflow: hidden; }
-  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar. */ }
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_accessibility\.scss}line{font-family:\000039}}
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
 
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_alignments\.scss}line{font-family:\000031}}
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em; }
+  margin-right: 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_alignments\.scss}line{font-family:\000037}}
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em; }
+  margin-left: 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_alignments\.scss}line{font-family:\0000313}}
 .aligncenter {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_clearings\.scss}line{font-family:\000031}}
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
   content: "";
-  display: table; }
+  display: table;
+}
 
-.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
-  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_clearings\.scss}line{font-family:\0000316}}
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
 
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/secondary\/_widgets\.scss}line{font-family:\000031}}
 .widget {
   margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
+  /* Make sure select elements fit in widgets. */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/secondary\/_widgets\.scss}line{font-family:\000035}}
+.widget select {
+  max-width: 100%;
+}
 
 /* Search widget. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/secondary\/_widgets\.scss}line{font-family:\0000311}}
 .widget_search .search-submit {
-  display: none; }
+  display: none;
+}
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media (min-width: 0) {
-  body::before {
-    content: '{ "current" : "small", "all" : [small], "position" : 0 }';
-    display: none; } }
-
-/*! Grid based on https://github.com/necolas/griddle by Nicolas Gallagher (@necolas) */
-body {
-  font-size: 1em; }
-
-.wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\000033}}
+#page {
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.25em;
-  padding-right: 1.25em; }
-
-img {
-  max-width: 100%; }
-
-.no-js .responsive-image {
-  display: none; }
-
-.grid {
+  background: #f1f1f1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
+#page:after {
+  content: " ";
   display: block;
-  padding: 0;
-  margin: 0 -0.625em;
-  text-align: left;
-  letter-spacing: -0.31em;
-  text-rendering: optimizespeed; }
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000365}}
+head {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 999;
+  color: #333;
+  background: rgba(255, 255, 255, 0.25);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000366}}
+head:before {
+  content: "|||";
+  display: block;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000367}}
+head:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: red;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
+head:hover ~ #page, head:hover ~ body #page {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
+head:hover ~ #page:before, head:hover ~ body #page:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%);
+  background-size: 6.26866%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
 
-.opera:-o-prefocus, .grid {
-  word-spacing: -0.43em; }
-
-.grid > .grid {
-  overflow: hidden;
-  margin-right: 0;
-  margin-left: 0; }
-
-.grid__cell {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\000037}}
+.menu {
   width: 100%;
-  display: -moz-inline-stack;
-  display: inline-block;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0 0.625em;
-  /* controls vertical positioning of units */
-  vertical-align: top;
-  /* keeps unit content correctly aligned */
-  text-align: left;
-  /* reset text defaults */
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-rendering: auto; }
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5.97015%;
+  padding-right: 5.97015%;
+  background: #0095DD;
+}
 
-.grid--center {
-  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000311}}
+header#masthead, footer#colophon {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5.97015%;
+  padding-right: 5.97015%;
+  background: #0095DD;
+}
 
-.grid__cell--center {
-  display: block;
-  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000315}}
+article {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5.97015%;
+  padding-right: 5.97015%;
+}
 
-#content {
-  padding-left: auto;
-  padding-right: auto;
-  background-color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000321}}
+.site-logo-wrapper {
+  height: 200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000323}}
+.site-logo-wrapper .site-logo {
+  width: 16.33466%;
+  float: left;
+  margin-right: 0.39841%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000324}}
+.site-logo-wrapper #sitetitle2 {
+  height: 200px;
+  width: 66.53386%;
+  float: left;
+  margin-right: 0.39841%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000326}}
+.site-logo-wrapper #sitetitle2 a {
+  line-height: 150px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000330}}
+.site-branding {
+  width: 74.92537%;
+  float: left;
+  margin-right: 0.29851%;
+}
 
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000031}}
 .sticky {
-  display: block; }
+  display: block;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000035}}
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5em;
+}
 
-.byline, .updated:not(.published) {
-  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000039}}
+.byline,
+.updated:not(.published) {
+  display: none;
+}
 
-.single .byline, .group-blog .byline {
-  display: inline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000314}}
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
 
-.page-content, .entry-content, .entry-summary {
-  margin: 1.5em 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000319}}
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000325}}
 .page-links {
   clear: both;
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5em;
+}
 
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
-.blog .format-aside .entry-title, .archive .format-aside .entry-title {
-  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_asides\.scss}line{font-family:\000031}}
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
 
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_comments\.scss}line{font-family:\000031}}
 .comment-content a {
-  word-wrap: break-word; }
+  word-wrap: break-word;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_comments\.scss}line{font-family:\000034}}
 .bypostauthor {
-  display: block; }
+  display: block;
+}
 
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_infinite-scroll\.scss}line{font-family:\000032}}
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
-  display: none; }
+  display: none;
+}
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/modules\/_infinite-scroll\.scss}line{font-family:\000038}}
 .infinity-end.neverending .site-footer {
-  display: block; }
+  display: block;
+}
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-.page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_media\.scss}line{font-family:\000031}}
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* Make sure embeds and iframes fit their containers. */
-embed, iframe, object {
-  max-width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_media\.scss}line{font-family:\0000311}}
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
 
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_captions\.scss}line{font-family:\000031}}
 .wp-caption {
   margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
+  max-width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_captions\.scss}line{font-family:\000035}}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_captions\.scss}line{font-family:\000039}}
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_captions\.scss}line{font-family:\0000314}}
 .wp-caption-text {
-  text-align: center; }
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\000031}}
 .gallery {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\000035}}
 .gallery-item {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000311}}
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000315}}
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000319}}
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000323}}
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000327}}
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000331}}
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000335}}
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000339}}
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/media\/_galleries\.scss}line{font-family:\0000344}}
 .gallery-caption {
-  display: block; }
-
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9ub3JtYWxpemUuc2NzcyIsInR5cG9ncmFwaHkvX3R5cG9ncmFwaHkuc2NzcyIsInZhcmlhYmxlcy1zaXRlL19jb2xvcnMuc2NzcyIsInZhcmlhYmxlcy1zaXRlL190eXBvZ3JhcGh5LnNjc3MiLCJtaXhpbnMvX21peGlucy1tYXN0ZXIuc2NzcyIsInR5cG9ncmFwaHkvX2hlYWRpbmdzLnNjc3MiLCJ0eXBvZ3JhcGh5L19jb3B5LnNjc3MiLCJlbGVtZW50cy9fZWxlbWVudHMuc2NzcyIsImVsZW1lbnRzL19saXN0cy5zY3NzIiwiZWxlbWVudHMvX3RhYmxlcy5zY3NzIiwiZm9ybXMvX2J1dHRvbnMuc2NzcyIsImZvcm1zL19maWVsZHMuc2NzcyIsIm5hdmlnYXRpb24vX2xpbmtzLnNjc3MiLCJuYXZpZ2F0aW9uL19tZW51cy5zY3NzIiwibW9kdWxlcy9fYWNjZXNzaWJpbGl0eS5zY3NzIiwibW9kdWxlcy9fYWxpZ25tZW50cy5zY3NzIiwibW9kdWxlcy9fY2xlYXJpbmdzLnNjc3MiLCJzaXRlL3NlY29uZGFyeS9fd2lkZ2V0cy5zY3NzIiwiLi4vLi4vLi4vYm93ZXJfY29tcG9uZW50cy9icmVha3BvaW50L2JyZWFrcG9pbnQvX2NvcmUuc2NzcyIsIi4uLy4uLy4uL2Jvd2VyX2NvbXBvbmVudHMvYnJlYWtwb2ludC9icmVha3BvaW50L19ncmlkLnNjc3MiLCIuLi8uLi8uLi9ib3dlcl9jb21wb25lbnRzL2JyZWFrcG9pbnQvYnJlYWtwb2ludC9fYnJlYWtwb2ludC5zY3NzIiwibGF5b3V0L19ncmlkcy5zY3NzIiwic2l0ZS9wcmltYXJ5L19wb3N0cy1hbmQtcGFnZXMuc2NzcyIsInNpdGUvcHJpbWFyeS9fYXNpZGVzLnNjc3MiLCJzaXRlL3ByaW1hcnkvX2NvbW1lbnRzLnNjc3MiLCJtb2R1bGVzL19pbmZpbml0ZS1zY3JvbGwuc2NzcyIsIm1lZGlhL19tZWRpYS5zY3NzIiwibWVkaWEvX2NhcHRpb25zLnNjc3MiLCJtZWRpYS9fZ2FsbGVyaWVzLnNjc3Mi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aEIsQUFBTztFQUVSLEFBQW1CO0lBQ2pCLEFBQVc7RUFHYixBQUFtQjtJQUNqQixBQUFXO0VBR2IsQUFBbUI7SUFDakIsQUFBVztFQUdiLEFBQW1CO0lBQ2pCLEFBQVc7RUFHYixBQUFtQjtJQUNqQixBQUFXO0VBR2IsQUFBbUI7SUFDakIsQUFBVztFQUdiLEFBQW1CO0lBQ2pCLEFBQVc7RUFHYixBQUFtQjtJQUNqQixBQUFXOztBQUliO0VBQ0MsQUFBUyIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sIHtcblx0Zm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG5cdC13ZWJraXQtdGV4dC1zaXplLWFkanVzdDogMTAwJTtcblx0LW1zLXRleHQtc2l6ZS1hZGp1c3Q6ICAgICAxMDAlO1xufVxuXG5ib2R5IHtcblx0bWFyZ2luOiAwO1xufVxuXG5hcnRpY2xlLFxuYXNpZGUsXG5kZXRhaWxzLFxuZmlnY2FwdGlvbixcbmZpZ3VyZSxcbmZvb3RlcixcbmhlYWRlcixcbm1haW4sXG5tZW51LFxubmF2LFxuc2VjdGlvbixcbnN1bW1hcnkge1xuXHRkaXNwbGF5OiBibG9jaztcbn1cblxuYXVkaW8sXG5jYW52YXMsXG5wcm9ncmVzcyxcbnZpZGVvIHtcblx0ZGlzcGxheTogaW5saW5lLWJsb2NrO1xuXHR2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7XG59XG5cbmF1ZGlvOm5vdChbY29udHJvbHNdKSB7XG5cdGRpc3BsYXk6IG5vbmU7XG5cdGhlaWdodDogMDtcbn1cblxuW2hpZGRlbl0sXG50ZW1wbGF0ZSB7XG5cdGRpc3BsYXk6IG5vbmU7XG59XG5cbmEge1xuXHRiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbn1cblxuYTphY3RpdmUsXG5hOmhvdmVyIHtcblx0b3V0bGluZTogMDtcbn1cblxuYWJiclt0aXRsZV0ge1xuXHRib3JkZXItYm90dG9tOiAxcHggZG90dGVkO1xufVxuXG5iLFxuc3Ryb25nIHtcblx0Zm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbmRmbiB7XG5cdGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cblxuaDEge1xuXHRmb250LXNpemU6IDJlbTtcblx0bWFyZ2luOiAwLjY3ZW0gMDtcbn1cblxubWFyayB7XG5cdGJhY2tncm91bmQ6ICNmZjA7XG5cdGNvbG9yOiAjMDAwO1xufVxuXG5zbWFsbCB7XG5cdGZvbnQtc2l6ZTogODAlO1xufVxuXG5zdWIsXG5zdXAge1xuXHRmb250LXNpemU6IDc1JTtcblx0bGluZS1oZWlnaHQ6IDA7XG5cdHBvc2l0aW9uOiByZWxhdGl2ZTtcblx0dmVydGljYWwtYWxpZ246IGJhc2VsaW5lO1xufVxuXG5zdXAge1xuXHR0b3A6IC0wLjVlbTtcbn1cblxuc3ViIHtcblx0Ym90dG9tOiAtMC4yNWVtO1xufVxuXG5pbWcge1xuXHRib3JkZXI6IDA7XG59XG5cbnN2Zzpub3QoOnJvb3QpIHtcblx0b3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuZmlndXJlIHtcblx0bWFyZ2luOiAxZW0gNDBweDtcbn1cblxuaHIge1xuXHRib3gtc2l6aW5nOiBjb250ZW50LWJveDtcblx0aGVpZ2h0OiAwO1xufVxuXG5wcmUge1xuXHRvdmVyZmxvdzogYXV0bztcbn1cblxuY29kZSxcbmtiZCxcbnByZSxcbnNhbXAge1xuXHRmb250LWZhbWlseTogbW9ub3NwYWNlLCBtb25vc3BhY2U7XG5cdGZvbnQtc2l6ZTogMWVtO1xufVxuXG5idXR0b24sXG5pbnB1dCxcbm9wdGdyb3VwLFxuc2VsZWN0LFxudGV4dGFyZWEge1xuXHRjb2xvcjogaW5oZXJpdDtcblx0Zm9udDogaW5oZXJpdDtcblx0bWFyZ2luOiAwO1xufVxuXG5idXR0b24ge1xuXHRvdmVyZmxvdzogdmlzaWJsZTtcbn1cblxuYnV0dG9uLFxuc2VsZWN0IHtcblx0dGV4dC10cmFuc2Zvcm06IG5vbmU7XG59XG5cbmJ1dHRvbixcbmh0bWwgaW5wdXRbdHlwZT1cImJ1dHRvblwiXSxcbmlucHV0W3R5cGU9XCJyZXNldFwiXSxcbmlucHV0W3R5cGU9XCJzdWJtaXRcIl0ge1xuXHQtd2Via2l0LWFwcGVhcmFuY2U6IGJ1dHRvbjtcblx0Y3Vyc29yOiBwb2ludGVyO1xufVxuXG5idXR0b25bZGlzYWJsZWRdLFxuaHRtbCBpbnB1dFtkaXNhYmxlZF0ge1xuXHRjdXJzb3I6IGRlZmF1bHQ7XG59XG5cbmJ1dHRvbjo6LW1vei1mb2N1cy1pbm5lcixcbmlucHV0OjotbW96LWZvY3VzLWlubmVyIHtcblx0Ym9yZGVyOiAwO1xuXHRwYWRkaW5nOiAwO1xufVxuXG5pbnB1dCB7XG5cdGxpbmUtaGVpZ2h0OiBub3JtYWw7XG59XG5cbmlucHV0W3R5cGU9XCJjaGVja2JveFwiXSxcbmlucHV0W3R5cGU9XCJyYWRpb1wiXSB7XG5cdGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG5cdHBhZGRpbmc6IDA7XG59XG5cbmlucHV0W3R5cGU9XCJudW1iZXJcIl06Oi13ZWJraXQtaW5uZXItc3Bpbi1idXR0b24sXG5pbnB1dFt0eXBlPVwibnVtYmVyXCJdOjotd2Via2l0LW91dGVyLXNwaW4tYnV0dG9uIHtcblx0aGVpZ2h0OiBhdXRvO1xufVxuXG5pbnB1dFt0eXBlPVwic2VhcmNoXCJdIHtcblx0LXdlYmtpdC1hcHBlYXJhbmNlOiB0ZXh0ZmllbGQ7XG5cdGJveC1zaXppbmc6IGNvbnRlbnQtYm94O1xufVxuXG5pbnB1dFt0eXBlPVwic2VhcmNoXCJdOjotd2Via2l0LXNlYXJjaC1jYW5jZWwtYnV0dG9uLFxuaW5wdXRbdHlwZT1cInNlYXJjaFwiXTo6LXdlYmtpdC1zZWFyY2gtZGVjb3JhdGlvbiB7XG5cdC13ZWJraXQtYXBwZWFyYW5jZTogbm9uZTtcbn1cblxuZmllbGRzZXQge1xuXHRib3JkZXI6IDFweCBzb2xpZCAjYzBjMGMwO1xuXHRtYXJnaW46IDAgMnB4O1xuXHRwYWRkaW5nOiAwLjM1ZW0gMC42MjVlbSAwLjc1ZW07XG59XG5cbmxlZ2VuZCB7XG5cdGJvcmRlcjogMDtcblx0cGFkZGluZzogMDtcbn1cblxudGV4dGFyZWEge1xuXHRvdmVyZmxvdzogYXV0bztcbn1cblxub3B0Z3JvdXAge1xuXHRmb250LXdlaWdodDogYm9sZDtcbn1cblxudGFibGUge1xuXHRib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xuXHRib3JkZXItc3BhY2luZzogMDtcbn1cblxudGQsXG50aCB7XG5cdHBhZGRpbmc6IDA7XG59XG4iLCJib2R5LFxuYnV0dG9uLFxuaW5wdXQsXG5zZWxlY3QsXG50ZXh0YXJlYSB7XG5cdGNvbG9yOiAkY29sb3JfX3RleHQtbWFpbjtcblx0Zm9udC1mYW1pbHk6ICRmb250X19tYWluO1xuXHRAaW5jbHVkZSBmb250LXNpemUoMSk7XG5cdGxpbmUtaGVpZ2h0OiAkZm9udF9fbGluZS1oZWlnaHQtYm9keTtcbn1cblxuQGltcG9ydCBcImhlYWRpbmdzXCI7XG5cbkBpbXBvcnQgXCJjb3B5XCI7IiwiJGNvbG9yX19iYWNrZ3JvdW5kLWJvZHk6ICNmZmY7XG4kY29sb3JfX2JhY2tncm91bmQtc2NyZWVuOiAjZjFmMWYxO1xuJGNvbG9yX19iYWNrZ3JvdW5kLWhyOiAjY2NjO1xuJGNvbG9yX19iYWNrZ3JvdW5kLWJ1dHRvbjogI2U2ZTZlNjtcbiRjb2xvcl9fYmFja2dyb3VuZC1wcmU6ICNlZWU7XG4kY29sb3JfX2JhY2tncm91bmQtaW5zOiAjZmZmOWMwO1xuXG4kY29sb3JfX3RleHQtc2NyZWVuOiAjMjE3NTliO1xuJGNvbG9yX190ZXh0LWlucHV0OiAjNjY2O1xuJGNvbG9yX190ZXh0LWlucHV0LWZvY3VzOiAjMTExO1xuJGNvbG9yX19saW5rOiByb3lhbGJsdWU7XG4kY29sb3JfX2xpbmstdmlzaXRlZDogcHVycGxlO1xuJGNvbG9yX19saW5rLWhvdmVyOiBtaWRuaWdodGJsdWU7XG4kY29sb3JfX3RleHQtbWFpbjogIzQwNDA0MDtcblxuJGNvbG9yX19ib3JkZXItYnV0dG9uOiAjY2NjICNjY2MgI2JiYjtcbiRjb2xvcl9fYm9yZGVyLWJ1dHRvbi1ob3ZlcjogI2NjYyAjYmJiICNhYWE7XG4kY29sb3JfX2JvcmRlci1idXR0b24tZm9jdXM6ICNhYWEgI2JiYiAjYmJiO1xuJGNvbG9yX19ib3JkZXItaW5wdXQ6ICNjY2M7XG4kY29sb3JfX2JvcmRlci1hYmJyOiAjNjY2O1xuXG4kY29sb3JfX2Vjb2JsdWU6ICM0RUFCRjA7IiwiJGZvbnRfX21haW46IHNhbnMtc2VyaWY7XG4kZm9udF9fY29kZTogTW9uYWNvLCBDb25zb2xhcywgXCJBbmRhbGUgTW9ub1wiLCBcIkRlamFWdSBTYW5zIE1vbm9cIiwgbW9ub3NwYWNlO1xuJGZvbnRfX3ByZTogXCJDb3VyaWVyIDEwIFBpdGNoXCIsIENvdXJpZXIsIG1vbm9zcGFjZTtcbiRmb250X19saW5lLWhlaWdodC1ib2R5OiAxLjU7XG4kZm9udF9fbGluZS1oZWlnaHQtcHJlOiAxLjY7IiwiLy8gUmVtIG91dHB1dCB3aXRoIHB4IGZhbGxiYWNrXG5AbWl4aW4gZm9udC1zaXplKCRzaXplVmFsdWU6IDEpIHtcblx0Zm9udC1zaXplOiAoJHNpemVWYWx1ZSAqIDE2KSAqIDFweDtcblx0Zm9udC1zaXplOiAkc2l6ZVZhbHVlICogMXJlbTtcbn1cblxuLy8gQ2VudGVyIGJsb2NrXG5AbWl4aW4gY2VudGVyLWJsb2NrIHtcblx0ZGlzcGxheTogYmxvY2s7XG5cdG1hcmdpbi1sZWZ0OiBhdXRvO1xuXHRtYXJnaW4tcmlnaHQ6IGF1dG87XG59XG5cbi8vIENsZWFyZml4XG5AbWl4aW4gY2xlYXJmaXgoKSB7XG5cdGNvbnRlbnQ6IFwiXCI7XG5cdGRpc3BsYXk6IHRhYmxlO1xufVxuXG4vLyBDbGVhciBhZnRlciAobm90IGFsbCBjbGVhcmZpeCBuZWVkIHRoaXMgYWxzbylcbkBtaXhpbiBjbGVhcmZpeC1hZnRlcigpIHtcblx0Y2xlYXI6IGJvdGg7XG59XG4iLCJoMSwgaDIsIGgzLCBoNCwgaDUsIGg2IHtcblx0Y2xlYXI6IGJvdGg7XG59IiwicCB7XG5cdG1hcmdpbi1ib3R0b206IDEuNWVtO1xufVxuXG5kZm4sIGNpdGUsIGVtLCBpIHtcblx0Zm9udC1zdHlsZTogaXRhbGljO1xufVxuXG5ibG9ja3F1b3RlIHtcblx0bWFyZ2luOiAwIDEuNWVtO1xufVxuXG5hZGRyZXNzIHtcblx0bWFyZ2luOiAwIDAgMS41ZW07XG59XG5cbnByZSB7XG5cdGJhY2tncm91bmQ6ICRjb2xvcl9fYmFja2dyb3VuZC1wcmU7XG5cdGZvbnQtZmFtaWx5OiAkZm9udF9fcHJlO1xuXHRAaW5jbHVkZSBmb250LXNpemUoMC45Mzc1KTtcblx0bGluZS1oZWlnaHQ6ICRmb250X19saW5lLWhlaWdodC1wcmU7XG5cdG1hcmdpbi1ib3R0b206IDEuNmVtO1xuXHRtYXgtd2lkdGg6IDEwMCU7XG5cdG92ZXJmbG93OiBhdXRvO1xuXHRwYWRkaW5nOiAxLjZlbTtcbn1cblxuY29kZSwga2JkLCB0dCwgdmFyIHtcblx0Zm9udC1mYW1pbHk6ICRmb250X19jb2RlO1xuXHRAaW5jbHVkZSBmb250LXNpemUoMC45Mzc1KTtcbn1cblxuYWJiciwgYWNyb255bSB7XG5cdGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgJGNvbG9yX19ib3JkZXItYWJicjtcblx0Y3Vyc29yOiBoZWxwO1xufVxuXG5tYXJrLCBpbnMge1xuXHRiYWNrZ3JvdW5kOiAkY29sb3JfX2JhY2tncm91bmQtaW5zO1xuXHR0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59XG5cbmJpZyB7XG5cdGZvbnQtc2l6ZTogMTI1JTtcbn0iLCJodG1sIHtcblx0Ym94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuKixcbio6YmVmb3JlLFxuKjphZnRlciB7IC8qIEluaGVyaXQgYm94LXNpemluZyB0byBtYWtlIGl0IGVhc2llciB0byBjaGFuZ2UgdGhlIHByb3BlcnR5IGZvciBjb21wb25lbnRzIHRoYXQgbGV2ZXJhZ2Ugb3RoZXIgYmVoYXZpb3I7IHNlZSBodHRwOi8vY3NzLXRyaWNrcy5jb20vaW5oZXJpdGluZy1ib3gtc2l6aW5nLXByb2JhYmx5LXNsaWdodGx5LWJldHRlci1iZXN0LXByYWN0aWNlLyAqL1xuXHRib3gtc2l6aW5nOiBpbmhlcml0O1xufVxuXG5ib2R5IHtcblx0YmFja2dyb3VuZDogJGNvbG9yX19iYWNrZ3JvdW5kLWJvZHk7IC8qIEZhbGxiYWNrIGZvciB3aGVuIHRoZXJlIGlzIG5vIGN1c3RvbSBiYWNrZ3JvdW5kIGNvbG9yIGRlZmluZWQuICovXG59XG5cbmJsb2NrcXVvdGUsIHEge1xuXHRxdW90ZXM6IFwiXCIgXCJcIjtcblxuXHQmOmJlZm9yZSxcblx0JjphZnRlciB7XG5cdFx0Y29udGVudDogXCJcIjtcblx0fVxufVxuXG5ociB7XG5cdGJhY2tncm91bmQtY29sb3I6ICRjb2xvcl9fYmFja2dyb3VuZC1ocjtcblx0Ym9yZGVyOiAwO1xuXHRoZWlnaHQ6IDFweDtcblx0bWFyZ2luLWJvdHRvbTogMS41ZW07XG59XG5cbkBpbXBvcnQgXCJsaXN0c1wiO1xuXG5pbWcge1xuXHRoZWlnaHQ6IGF1dG87IC8qIE1ha2Ugc3VyZSBpbWFnZXMgYXJlIHNjYWxlZCBjb3JyZWN0bHkuICovXG5cdG1heC13aWR0aDogMTAwJTsgLyogQWRoZXJlIHRvIGNvbnRhaW5lciB3aWR0aC4gKi9cbn1cblxuQGltcG9ydCBcInRhYmxlc1wiOyIsInVsLCBvbCB7XG5cdG1hcmdpbjogMCAwIDEuNWVtIDNlbTtcbn1cblxudWwge1xuXHRsaXN0LXN0eWxlOiBkaXNjO1xufVxuXG5vbCB7XG5cdGxpc3Qtc3R5bGU6IGRlY2ltYWw7XG59XG5cbmxpID4gdWwsXG5saSA+IG9sIHtcblx0bWFyZ2luLWJvdHRvbTogMDtcblx0bWFyZ2luLWxlZnQ6IDEuNWVtO1xufVxuXG5kdCB7XG5cdGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG5kZCB7XG5cdG1hcmdpbjogMCAxLjVlbSAxLjVlbTtcbn0iLCJ0YWJsZSB7XG5cdG1hcmdpbjogMCAwIDEuNWVtO1xuXHR3aWR0aDogMTAwJTtcbn0iLCJidXR0b24sXG5pbnB1dFt0eXBlPVwiYnV0dG9uXCJdLFxuaW5wdXRbdHlwZT1cInJlc2V0XCJdLFxuaW5wdXRbdHlwZT1cInN1Ym1pdFwiXSB7XG5cdGJvcmRlcjogMXB4IHNvbGlkO1xuXHRib3JkZXItY29sb3I6ICRjb2xvcl9fYm9yZGVyLWJ1dHRvbjtcblx0Ym9yZGVyLXJhZGl1czogM3B4O1xuXHRiYWNrZ3JvdW5kOiAkY29sb3JfX2JhY2tncm91bmQtYnV0dG9uO1xuXHRib3gtc2hhZG93OiBpbnNldCAwIDFweCAwIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC41KSwgaW5zZXQgMCAxNXB4IDE3cHggcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjUpLCBpbnNldCAwIC01cHggMTJweCByZ2JhKDAsIDAsIDAsIDAuMDUpO1xuXHRjb2xvcjogcmdiYSgwLCAwLCAwLCAuOCk7XG5cdEBpbmNsdWRlIGZvbnQtc2l6ZSgwLjc1KTtcblx0bGluZS1oZWlnaHQ6IDE7XG5cdHBhZGRpbmc6IC42ZW0gMWVtIC40ZW07XG5cdHRleHQtc2hhZG93OiAwIDFweCAwIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC44KTtcblxuXHQmOmhvdmVyIHtcblx0XHRib3JkZXItY29sb3I6ICRjb2xvcl9fYm9yZGVyLWJ1dHRvbi1ob3Zlcjtcblx0XHRib3gtc2hhZG93OiBpbnNldCAwIDFweCAwIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC44KSwgaW5zZXQgMCAxNXB4IDE3cHggcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjgpLCBpbnNldCAwIC01cHggMTJweCByZ2JhKDAsIDAsIDAsIDAuMDIpO1xuXHR9XG5cblx0JjphY3RpdmUsXG5cdCY6Zm9jdXMge1xuXHRcdGJvcmRlci1jb2xvcjogJGNvbG9yX19ib3JkZXItYnV0dG9uLWZvY3VzO1xuXHRcdGJveC1zaGFkb3c6IGluc2V0IDAgLTFweCAwIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC41KSwgaW5zZXQgMCAycHggNXB4IHJnYmEoMCwgMCwgMCwgMC4xNSk7XG5cdH1cbn0iLCJpbnB1dFt0eXBlPVwidGV4dFwiXSxcbmlucHV0W3R5cGU9XCJlbWFpbFwiXSxcbmlucHV0W3R5cGU9XCJ1cmxcIl0sXG5pbnB1dFt0eXBlPVwicGFzc3dvcmRcIl0sXG5pbnB1dFt0eXBlPVwic2VhcmNoXCJdLFxudGV4dGFyZWEge1xuXHRjb2xvcjogJGNvbG9yX190ZXh0LWlucHV0O1xuXHRib3JkZXI6IDFweCBzb2xpZCAkY29sb3JfX2JvcmRlci1pbnB1dDtcblx0Ym9yZGVyLXJhZGl1czogM3B4O1xuXG5cdCY6Zm9jdXMge1xuXHRcdGNvbG9yOiAkY29sb3JfX3RleHQtaW5wdXQtZm9jdXM7XG5cdH1cbn1cblxuaW5wdXRbdHlwZT1cInRleHRcIl0sXG5pbnB1dFt0eXBlPVwiZW1haWxcIl0sXG5pbnB1dFt0eXBlPVwidXJsXCJdLFxuaW5wdXRbdHlwZT1cInBhc3N3b3JkXCJdLFxuaW5wdXRbdHlwZT1cInNlYXJjaFwiXSB7XG5cdHBhZGRpbmc6IDNweDtcbn1cblxudGV4dGFyZWEge1xuXHRwYWRkaW5nLWxlZnQ6IDNweDtcblx0d2lkdGg6IDEwMCU7XG59IiwiYSB7XG5cdGNvbG9yOiAkY29sb3JfX2xpbms7XG5cblx0Jjp2aXNpdGVkIHtcblx0XHRjb2xvcjogJGNvbG9yX19saW5rLXZpc2l0ZWQ7XG5cdH1cblx0Jjpob3Zlcixcblx0Jjpmb2N1cyxcblx0JjphY3RpdmUge1xuXHRcdGNvbG9yOiAkY29sb3JfX2xpbmstaG92ZXI7XG5cdH1cblx0Jjpmb2N1cyB7XG5cdFx0b3V0bGluZTogdGhpbiBkb3R0ZWQ7XG5cdH1cblx0Jjpob3Zlcixcblx0JjphY3RpdmUge1xuXHRcdG91dGxpbmU6IDA7XG5cdH1cbn0iLCIubWFpbi1uYXZpZ2F0aW9uIHtcblx0Y2xlYXI6IGJvdGg7XG5cdGRpc3BsYXk6IGJsb2NrO1xuXHRmbG9hdDogbGVmdDtcblx0d2lkdGg6IDEwMCU7XG5cblx0dWwge1xuXHRcdGRpc3BsYXk6IG5vbmU7XG5cdFx0bGlzdC1zdHlsZTogbm9uZTtcblx0XHRtYXJnaW46IDA7XG5cdFx0cGFkZGluZy1sZWZ0OiAwO1xuXG5cdFx0dWwge1xuXHRcdFx0Ym94LXNoYWRvdzogMCAzcHggM3B4IHJnYmEoMCwgMCwgMCwgMC4yKTtcblx0XHRcdGZsb2F0OiBsZWZ0O1xuXHRcdFx0cG9zaXRpb246IGFic29sdXRlO1xuXHRcdFx0dG9wOiAxLjVlbTtcblx0XHRcdGxlZnQ6IC05OTllbTtcblx0XHRcdHotaW5kZXg6IDk5OTk5O1xuXG5cdFx0XHR1bCB7XG5cdFx0XHRcdGxlZnQ6IC05OTllbTtcblx0XHRcdFx0dG9wOiAwO1xuXHRcdFx0fVxuXG5cdFx0XHRsaSB7XG5cdFx0XHRcdCY6aG92ZXIgPiB1bCxcblx0XHRcdFx0Ji5mb2N1cyA+IHVsIHtcblx0XHRcdFx0XHRsZWZ0OiAxMDAlO1xuXHRcdFx0XHR9XG5cdFx0XHR9XG5cblx0XHRcdGEge1xuXHRcdFx0XHR3aWR0aDogMjAwcHg7XG5cdFx0XHR9XG5cblx0XHRcdDpob3ZlciA+IGEsXG5cdFx0XHQuZm9jdXMgPiBhIHtcblx0XHRcdH1cblxuXHRcdFx0YTpob3Zlcixcblx0XHRcdGEuZm9jdXMge1xuXHRcdFx0fVxuXHRcdH1cblxuXHRcdGxpOmhvdmVyID4gdWwsXG5cdFx0bGkuZm9jdXMgPiB1bCB7XG5cdFx0XHRsZWZ0OiBhdXRvO1xuXHRcdH1cblx0fVxuXHRsaSB7XG5cdFx0ZmxvYXQ6IGxlZnQ7XG5cdFx0cG9zaXRpb246IHJlbGF0aXZlO1xuXG5cdFx0Jjpob3ZlciA+IGEsXG5cdFx0Ji5mb2N1cyA+IGEge1xuXHRcdH1cblx0fVxuXHRhIHtcblx0XHRkaXNwbGF5OiBibG9jaztcblx0XHR0ZXh0LWRlY29yYXRpb246IG5vbmU7XG5cdH1cblxuXHQuY3VycmVudF9wYWdlX2l0ZW0gPiBhLFxuXHQuY3VycmVudC1tZW51LWl0ZW0gPiBhLFxuXHQuY3VycmVudF9wYWdlX2FuY2VzdG9yID4gYSB7XG5cdH1cbn1cblxuLyogU21hbGwgbWVudS4gKi9cbi5tZW51LXRvZ2dsZSxcbi5tYWluLW5hdmlnYXRpb24udG9nZ2xlZCB1bCB7XG5cdGRpc3BsYXk6IGJsb2NrO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAzNy41ZW0pIHtcblx0Lm1lbnUtdG9nZ2xlIHtcblx0XHRkaXNwbGF5OiBub25lO1xuXHR9XG5cdC5tYWluLW5hdmlnYXRpb24gdWwge1xuXHRcdGRpc3BsYXk6IGJsb2NrO1xuXHR9XG59XG5cbi5jb21tZW50LW5hdmlnYXRpb24sXG4ucG9zdHMtbmF2aWdhdGlvbixcbi5wb3N0LW5hdmlnYXRpb24ge1xuXG5cdC5zaXRlLW1haW4gJiB7XG5cdFx0bWFyZ2luOiAwIDAgMS41ZW07XG5cdFx0b3ZlcmZsb3c6IGhpZGRlbjtcblx0fVxuXG5cdCYgLm5hdi1wcmV2aW91cyB7XG5cdFx0ZmxvYXQ6IGxlZnQ7XG5cdFx0d2lkdGg6IDUwJTtcblx0fVxuXG5cdCYgLm5hdi1uZXh0IHtcblx0XHRmbG9hdDogcmlnaHQ7XG5cdFx0dGV4dC1hbGlnbjogcmlnaHQ7XG5cdFx0d2lkdGg6IDUwJTtcblx0fVxufVxuIiwiLyogVGV4dCBtZWFudCBvbmx5IGZvciBzY3JlZW4gcmVhZGVycy4gKi9cbi5zY3JlZW4tcmVhZGVyLXRleHQge1xuXHRjbGlwOiByZWN0KDFweCwgMXB4LCAxcHgsIDFweCk7XG5cdHBvc2l0aW9uOiBhYnNvbHV0ZSAhaW1wb3J0YW50O1xuXHRoZWlnaHQ6IDFweDtcblx0d2lkdGg6IDFweDtcblx0b3ZlcmZsb3c6IGhpZGRlbjtcblxuXHQmOmhvdmVyLFxuXHQmOmFjdGl2ZSxcblx0Jjpmb2N1cyB7XG5cdFx0YmFja2dyb3VuZC1jb2xvcjogJGNvbG9yX19iYWNrZ3JvdW5kLXNjcmVlbjtcblx0XHRib3JkZXItcmFkaXVzOiAzcHg7XG5cdFx0Ym94LXNoYWRvdzogMCAwIDJweCAycHggcmdiYSgwLCAwLCAwLCAwLjYpO1xuXHRcdGNsaXA6IGF1dG8gIWltcG9ydGFudDtcblx0XHRjb2xvcjogJGNvbG9yX190ZXh0LXNjcmVlbjtcblx0XHRkaXNwbGF5OiBibG9jaztcblx0XHRAaW5jbHVkZSBmb250LXNpemUoMC44NzUpO1xuXHRcdGZvbnQtd2VpZ2h0OiBib2xkO1xuXHRcdGhlaWdodDogYXV0bztcblx0XHRsZWZ0OiA1cHg7XG5cdFx0bGluZS1oZWlnaHQ6IG5vcm1hbDtcblx0XHRwYWRkaW5nOiAxNXB4IDIzcHggMTRweDtcblx0XHR0ZXh0LWRlY29yYXRpb246IG5vbmU7XG5cdFx0dG9wOiA1cHg7XG5cdFx0d2lkdGg6IGF1dG87XG5cdFx0ei1pbmRleDogMTAwMDAwOyAvKiBBYm92ZSBXUCB0b29sYmFyLiAqL1xuXHR9XG59IiwiLmFsaWdubGVmdCB7XG5cdGRpc3BsYXk6IGlubGluZTtcblx0ZmxvYXQ6IGxlZnQ7XG5cdG1hcmdpbi1yaWdodDogMS41ZW07XG59XG5cbi5hbGlnbnJpZ2h0IHtcblx0ZGlzcGxheTogaW5saW5lO1xuXHRmbG9hdDogcmlnaHQ7XG5cdG1hcmdpbi1sZWZ0OiAxLjVlbTtcbn1cblxuLmFsaWduY2VudGVyIHtcblx0QGluY2x1ZGUgY2VudGVyLWJsb2NrO1xufSIsIi5jbGVhcjpiZWZvcmUsXG4uY2xlYXI6YWZ0ZXIsXG4uZW50cnktY29udGVudDpiZWZvcmUsXG4uZW50cnktY29udGVudDphZnRlcixcbi5jb21tZW50LWNvbnRlbnQ6YmVmb3JlLFxuLmNvbW1lbnQtY29udGVudDphZnRlcixcbi5zaXRlLWhlYWRlcjpiZWZvcmUsXG4uc2l0ZS1oZWFkZXI6YWZ0ZXIsXG4uc2l0ZS1jb250ZW50OmJlZm9yZSxcbi5zaXRlLWNvbnRlbnQ6YWZ0ZXIsXG4uc2l0ZS1mb290ZXI6YmVmb3JlLFxuLnNpdGUtZm9vdGVyOmFmdGVyIHtcblx0QGluY2x1ZGUgY2xlYXJmaXg7XG59XG5cbi5jbGVhcjphZnRlcixcbi5lbnRyeS1jb250ZW50OmFmdGVyLFxuLmNvbW1lbnQtY29udGVudDphZnRlcixcbi5zaXRlLWhlYWRlcjphZnRlcixcbi5zaXRlLWNvbnRlbnQ6YWZ0ZXIsXG4uc2l0ZS1mb290ZXI6YWZ0ZXIge1xuXHRAaW5jbHVkZSBjbGVhcmZpeC1hZnRlcjtcbn0iLCIud2lkZ2V0IHtcblx0bWFyZ2luOiAwIDAgMS41ZW07XG5cblx0LyogTWFrZSBzdXJlIHNlbGVjdCBlbGVtZW50cyBmaXQgaW4gd2lkZ2V0cy4gKi9cblx0c2VsZWN0IHtcblx0XHRtYXgtd2lkdGg6IDEwMCU7XG5cdH1cbn1cblxuLyogU2VhcmNoIHdpZGdldC4gKi9cbi53aWRnZXRfc2VhcmNoIC5zZWFyY2gtc3VibWl0IHtcblx0ZGlzcGxheTogbm9uZTtcbn0iLCIkY3VycmVudC1icDogMDtcbiRjb3VudGVyOiAwO1xuXG4vLyBwdXNoIHNtYWxsIGJyZWFrcG9pbnQgbGFiZWwgaW50byBsaXN0XG4kZmlyc3QtYnJlYWtwb2ludDogYXBwZW5kKCRmaXJzdC1icmVha3BvaW50LCAoKSk7XG5cbi8vIEphdmFzY3JpcHQgaG9vayBmb3IgY3VycmVudCBicmVha3BvaW50IGxhYmVsXG5AbWVkaWEgKG1pbi13aWR0aDogMCkge1xuICAgIGJvZHk6OmJlZm9yZSB7IGNvbnRlbnQ6IGJyZWFrcG9pbnQtbGlzdChudGgoJGZpcnN0LWJyZWFrcG9pbnQsIDEpLCAkZmlyc3QtYnJlYWtwb2ludCwgJGNvdW50ZXIpOyBkaXNwbGF5OiBub25lOyB9XG59XG5AaWYgKCRpZS1zdXBwb3J0KSB7IC5sdC1pZTkgaGVhZCB7IGZvbnQtZmFtaWx5OiBicmVha3BvaW50LWxpc3QobnRoKCRmaXJzdC1icmVha3BvaW50LCAxKSwgJGZpcnN0LWJyZWFrcG9pbnQsICRjb3VudGVyKTsgfSB9XG5cblxuLy8gQnJlYWtwb2ludCBtaXhpblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuQG1peGluIGJyZWFrcG9pbnQoJG1pbjogZmFsc2UsICRtYXg6IGZhbHNlLCAkbGFiZWw6IGZhbHNlLCAkb3JpZW50YXRpb246IGZhbHNlLCAkd3JhcHBlcjogdHJ1ZSwgJHJlc29sdXRpb246IGZhbHNlKSB7XG5cbiAgICAvLyBzZXQgd2FybmluZ3MgaWYgYXJndW1lbnRzIGFyZSBpbnZhbGlkXG4gICAgQGlmICgkbWluID09IGZhbHNlIGFuZCAkbWF4ID09IGZhbHNlIGFuZCAkbGFiZWwgPT0gZmFsc2UgYW5kICRvcmllbnRhdGlvbiA9PSBmYWxzZSBhbmQgJHdyYXBwZXIgPT0gdHJ1ZSBhbmQgJHJlc29sdXRpb24gPT0gZmFsc2UpIHtcbiAgICAgICAgQHdhcm4gXCJicmVha3BvaW50IHJlcXVpcmVzIHlvdSB0byBwYXNzIHNvbWUga2luZCBvZiBhcmd1bWVudC4gSXQgY2FuJ3QgcmVhZCB5b3VyIG1pbmQuIDopXCI7XG4gICAgfVxuICAgIEBpZiAoJG1pbiA9PSAwIGFuZCAkbWF4ID09IGZhbHNlIGFuZCAkbGFiZWwgPT0gZmFsc2UgYW5kICRvcmllbnRhdGlvbiA9PSBmYWxzZSBhbmQgJHdyYXBwZXIgPT0gdHJ1ZSBhbmQgJHJlc29sdXRpb24gPT0gZmFsc2UpIHtcbiAgICAgICAgQHdhcm4gXCJJZiB5b3UgcGFzcyB6ZXJvIGFzIGEgbWluaW11bSB5b3UgbmVlZCB0byBzcGVjaWZ5IGEgbWF4IGNvbHVtbiB2YWx1ZS5cIjtcbiAgICB9XG5cbiAgICAvLyBjcmVhdGUgTVEgbGFiZWxzXG4gICAgQGlmICgkbGFiZWwpIHtcblxuICAgICAgICAvLyBub3JtYWxpemUgcXVvdGVzXG4gICAgICAgICRsYWJlbDogcXVvdGUodW5xdW90ZSgkbGFiZWwpKTtcblxuICAgICAgICAkY291bnRlcjogJGNvdW50ZXIgKyAxO1xuXG4gICAgICAgIC8vIHB1c2ggbGFiZWwgdG8gbGFiZWwgbGlzdCBuYW1lcyA9IHB1c2gobmFtZXMsIG15bmFtZSlcbiAgICAgICAgJGZpcnN0LWJyZWFrcG9pbnQ6IGFwcGVuZCgkZmlyc3QtYnJlYWtwb2ludCwgJGxhYmVsLCBjb21tYSk7XG5cbiAgICB9XG5cbiAgICAvLyBzZXQgY3VycmVudCBicmVha3BvaW50IGZvciBmbHVpZCBmdW5jdGlvblxuICAgICRjdXJyZW50LWJwOiAkbWluO1xuXG4gICAgLy8gbWluIHdpZHRoIG1xXG4gICAgQGlmICgkbWluIGFuZCAkbWF4ID09IGZhbHNlKSB7XG4gICAgICAgIEBpZiAoJG1pbiA+IDApIHtcbiAgICAgICAgICAgIC8vIGNyZWF0ZSBtaW4gd2lkdGggbXFcbiAgICAgICAgICAgIC8vIGNhbiB3ZSByZW1vdmUgZHVwbGljYXRpb24gb2YgY29kZSBoZXJlP1xuICAgICAgICAgICAgQGlmICgkb3JpZW50YXRpb24pIHtcbiAgICAgICAgICAgICAgICBAbWVkaWEgKCBtaW4td2lkdGg6IChmaXhlZCgkbWluKSArIGVtKCRncmlkLWd1dHRlcikpICogKCRiYXNlLWZvbnQtc2l6ZSAvIDE2cHgpICkgYW5kICggb3JpZW50YXRpb246ICRvcmllbnRhdGlvbiApIHtcbiAgICAgICAgICAgICAgICAgICAgQGluY2x1ZGUgYnJlYWtwb2ludC1leHRyYXMoJG1pbiwgJHdyYXBwZXIsICRncmlkLW92ZXJsYXkpIHsgQGNvbnRlbnQgfTtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9IEBlbHNlIHtcbiAgICAgICAgICAgICAgICBAbWVkaWEgKCBtaW4td2lkdGg6IChmaXhlZCgkbWluKSArIGVtKCRncmlkLWd1dHRlcikpICogKCRiYXNlLWZvbnQtc2l6ZSAvIDE2cHgpICkge1xuXG4gICAgICAgICAgICAgICAgICAgIC8vIGxhYmVsIGN1cnJlbnQgYnJlYWtwb2ludFxuICAgICAgICAgICAgICAgICAgICBAaWYoJGxhYmVsKSB7IGJvZHk6OmJlZm9yZSB7IGNvbnRlbnQ6IGJyZWFrcG9pbnQtbGlzdCgkbGFiZWwsICRmaXJzdC1icmVha3BvaW50LCAkY291bnRlcik7IH0gfVxuXG4gICAgICAgICAgICAgICAgICAgIEBpbmNsdWRlIGJyZWFrcG9pbnQtZXh0cmFzKCRtaW4sICR3cmFwcGVyLCAkZ3JpZC1vdmVybGF5KSB7IEBjb250ZW50IH07XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICAgICAgLy8gaWUgZmFsbGJhY2tcbiAgICAgICAgICAgIEBpZiAoJGllLXN1cHBvcnQgYW5kICRtaW4gPD0gJGllLXN1cHBvcnQgYW5kICRvcmllbnRhdGlvbiA9PSBmYWxzZSkge1xuICAgICAgICAgICAgICAgIC5sdC1pZTkge1xuICAgICAgICAgICAgICAgICAgICBAaW5jbHVkZSBicmVha3BvaW50LWV4dHJhcygkbWluLCAkd3JhcHBlciwgJGdyaWQtb3ZlcmxheTogZmFsc2UpIHsgQGNvbnRlbnQgfTtcblxuICAgICAgICAgICAgICAgICAgICAvLyBsYWJlbCBjdXJyZW50IGJyZWFrcG9pbnRcbiAgICAgICAgICAgICAgICAgICAgQGlmKCRsYWJlbCkgeyAmIGhlYWQgeyBmb250LWZhbWlseTogYnJlYWtwb2ludC1saXN0KCRsYWJlbCwgJGZpcnN0LWJyZWFrcG9pbnQsICRjb3VudGVyKTsgfSB9XG5cblxuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgIH1cblxuICAgIC8vIG1heCB3aWR0aCBtcVxuICAgIEBpZiAoJG1heCkge1xuICAgICAgICAvLyBjcmVhdGUgbWF4IG9ubHkgbXFcbiAgICAgICAgQGlmICgkbWluID09IDAgb3IgJG1pbiA9PSBmYWxzZSkge1xuICAgICAgICAgICAgQGlmICgkb3JpZW50YXRpb24pIHtcbiAgICAgICAgICAgICAgICBAbWVkaWEgKCBtYXgtd2lkdGg6IGZpeGVkKCRtYXgpICsgZW0oJGdyaWQtZ3V0dGVyKSAqICgkYmFzZS1mb250LXNpemUgLyAxNnB4KSApIGFuZCAoIG9yaWVudGF0aW9uOiAkb3JpZW50YXRpb24gKSB7IEBjb250ZW50IH1cbiAgICAgICAgICAgIH0gQGVsc2Uge1xuICAgICAgICAgICAgICAgIEBtZWRpYSAoIG1heC13aWR0aDogZml4ZWQoJG1heCkgKyBlbSgkZ3JpZC1ndXR0ZXIpICogKCRiYXNlLWZvbnQtc2l6ZSAvIDE2cHgpICkgeyBAY29udGVudCB9XG4gICAgICAgICAgICB9XG4gICAgICAgIC8vIGNyZWF0ZSBtaW4gYW5kIG1heCBtcVxuICAgICAgICB9IEBlbHNlIHtcbiAgICAgICAgICAgIEBpZiAoJG9yaWVudGF0aW9uKSB7XG4gICAgICAgICAgICAgICAgQG1lZGlhICggbWluLXdpZHRoOiBmaXhlZCgkbWluKSArIGVtKCRncmlkLWd1dHRlcikgKiAoJGJhc2UtZm9udC1zaXplIC8gMTZweCkgKSBhbmQgKCBtYXgtd2lkdGg6IGZpeGVkKCRtYXgpICsgZW0oJGdyaWQtZ3V0dGVyKSApIGFuZCAoIG9yaWVudGF0aW9uOiAkb3JpZW50YXRpb24gKSB7IEBjb250ZW50IH1cbiAgICAgICAgICAgIH0gQGVsc2Uge1xuICAgICAgICAgICAgICAgIEBtZWRpYSAoIG1pbi13aWR0aDogZml4ZWQoJG1pbikgKyBlbSgkZ3JpZC1ndXR0ZXIpICogKCRiYXNlLWZvbnQtc2l6ZSAvIDE2cHgpICkgYW5kICggbWF4LXdpZHRoOiBmaXhlZCgkbWF4KSArIGVtKCRncmlkLWd1dHRlcikgKSB7IEBjb250ZW50IH1cbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgIH1cblxuICAgIC8vIG9yaWVudGF0aW9uIG9ubHkgbXFcbiAgICBAaWYgKCRtaW4gPT0gZmFsc2UgYW5kICRtYXggPT0gZmFsc2UpIHtcbiAgICAgICAgQGlmICgkb3JpZW50YXRpb24pIHtcbiAgICAgICAgICAgIEBtZWRpYSAoIG9yaWVudGF0aW9uOiAkb3JpZW50YXRpb24gKSB7IEBjb250ZW50IH1cbiAgICAgICAgfVxuICAgIH1cblxuICAgIC8vIHBpeGVsIHJhdGlvIG1xXG4gICAgQGlmICgkcmVzb2x1dGlvbikge1xuICAgICAgICAvLyB3YXJuIGlmIGludmFsaWQgdmFsdWVcbiAgICAgICAgQGlmICgkcmVzb2x1dGlvbiAhPSAnaGlnaCcgYW5kICRyZXNvbHV0aW9uICE9ICdsb3cnKSB7XG4gICAgICAgICAgICBAd2FybiBcIiRyZXNvbHV0aW9uIG9ubHkgc3VwcG9ydHMgdmFsdWVzIG9mICdoaWdoJyBvciAnbG93J1wiO1xuICAgICAgICB9XG4gICAgICAgIEBpZiAoJHJlc29sdXRpb24gPT0gJ2hpZ2gnKSB7XG4gICAgICAgICAgICBAbWVkaWEgKC13ZWJraXQtbWluLWRldmljZS1waXhlbC1yYXRpbzogMS41KSwgKG1pbi1yZXNvbHV0aW9uOiAxNDRkcGkpIHsgQGNvbnRlbnQgfVxuICAgICAgICB9XG4gICAgICAgIEBpZiAoJHJlc29sdXRpb24gPT0gJ2xvdycpIHtcbiAgICAgICAgICAgIEBtZWRpYSAoLXdlYmtpdC1tYXgtZGV2aWNlLXBpeGVsLXJhdGlvOiAxLjUpLCAobWF4LXJlc29sdXRpb246IDE0NGRwaSkgeyBAY29udGVudCB9XG4gICAgICAgIH1cbiAgICAgICAgLy8gaWUgZmFsbGJhY2tcbiAgICAgICAgQGlmICgkaWUtc3VwcG9ydCBhbmQgJHJlc29sdXRpb24gPT0gJ2xvdycpIHtcbiAgICAgICAgICAgIC5sdC1pZTkgeyBAY29udGVudCB9XG4gICAgICAgIH1cbiAgICB9XG59XG5cbi8vIHByaXZhdGUgbWl4aW4gZm9yIGdlbmVyYXRpbmcgZXh0cmFzIGluIGEgbWluIHdpZHRoIG1xXG5AbWl4aW4gYnJlYWtwb2ludC1leHRyYXMoJG1pbiwgJHdyYXBwZXIsICRncmlkLW92ZXJsYXkpIHtcblxuICAgIEBpZigkZ3JpZC1vdmVybGF5KSB7IEBpbmNsdWRlIGdyaWQtb3ZlcmxheSgkbWluKTsgfVxuXG4gICAgLy8gcHJvcGVyIHNpemluZyBvZiB3cmFwcGVyXG4gICAgQGlmKCR3cmFwcGVyKSB7IC53cmFwcGVyIHsgd2lkdGg6IGZpeGVkKCRtaW4pIC0gZW0oJGdyaWQtZ3V0dGVyKTsgfSB9XG5cbiAgICBAY29udGVudFxuXG59XG5cbi8vIEdyaWQgb3ZlcmxheVxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuQG1peGluIGdyaWQtb3ZlcmxheSgkY29sOiBmYWxzZSkge1xuICAgIC5ncmlkLW92ZXJsYXkge1xuICAgICAgICBwb3NpdGlvbjogZml4ZWQ7IHRvcDogMDsgYm90dG9tOiAwOyBwb2ludGVyLWV2ZW50czogbm9uZTsgei1pbmRleDogMTAwMDA7XG5cbiAgICAgICAgJG92ZXJsYXktY29sb3I6IHRyYW5zcGFyZW50aXplKHJlZCwgLjkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiAtd2Via2l0LWxpbmVhci1ncmFkaWVudChsZWZ0LCB0cmFuc3BhcmVudCAkZ3JpZC1ndXR0ZXIsICRvdmVybGF5LWNvbG9yICRncmlkLWd1dHRlciwgJG92ZXJsYXktY29sb3IgJGdyaWQtZ3V0dGVyICsgJGdyaWQtY29sdW1uKTtcbiAgICAgICAgYmFja2dyb3VuZDogLW1vei1saW5lYXItZ3JhZGllbnQobGVmdCwgdHJhbnNwYXJlbnQgJGdyaWQtZ3V0dGVyLCAkb3ZlcmxheS1jb2xvciAkZ3JpZC1ndXR0ZXIsICRvdmVybGF5LWNvbG9yICRncmlkLWd1dHRlciArICRncmlkLWNvbHVtbik7XG4gICAgICAgIGJhY2tncm91bmQ6IC1vLWxpbmVhci1ncmFkaWVudChsZWZ0LCB0cmFuc3BhcmVudCAkZ3JpZC1ndXR0ZXIsICRvdmVybGF5LWNvbG9yICRncmlkLWd1dHRlciwgJG92ZXJsYXktY29sb3IgJGdyaWQtZ3V0dGVyICsgJGdyaWQtY29sdW1uKTtcbiAgICAgICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KGxlZnQsIHRyYW5zcGFyZW50ICRncmlkLWd1dHRlciwgJG92ZXJsYXktY29sb3IgJGdyaWQtZ3V0dGVyLCAkb3ZlcmxheS1jb2xvciAkZ3JpZC1ndXR0ZXIgKyAkZ3JpZC1jb2x1bW4pO1xuXG4gICAgICAgIEBpZiAoJGNvbCkge1xuICAgICAgICAgICAgbGVmdDogNTAlO1xuICAgICAgICAgICAgd2lkdGg6IGZpeGVkKCRjb2wpICsgZW0oJGdyaWQtZ3V0dGVyKTtcbiAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiBmaXhlZCgkY29sKSAvIC0yIC0gKGVtKCRncmlkLWd1dHRlcikvMik7XG4gICAgICAgICAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogJGdyaWQtZ3V0dGVyICsgJGdyaWQtY29sdW1uO1xuICAgICAgICAgICAgLW1vei1iYWNrZ3JvdW5kLXNpemU6ICRncmlkLWd1dHRlciArICRncmlkLWNvbHVtbjtcbiAgICAgICAgICAgIC1vLWJhY2tncm91bmQtc2l6ZTogJGdyaWQtZ3V0dGVyICsgJGdyaWQtY29sdW1uO1xuICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAkZ3JpZC1ndXR0ZXIgKyAkZ3JpZC1jb2x1bW47XG4gICAgICAgIH0gQGVsc2Uge1xuICAgICAgICAgICAgbGVmdDogMDtcbiAgICAgICAgICAgIHJpZ2h0OiAkZ3JpZC1ndXR0ZXI7XG4gICAgICAgICAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogMjUlO1xuICAgICAgICAgICAgLW1vei1iYWNrZ3JvdW5kLXNpemU6IDI1JTtcbiAgICAgICAgICAgIC1vLWJhY2tncm91bmQtc2l6ZTogMjUlO1xuICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAyNSU7XG4gICAgICAgIH1cbiAgICB9XG59XG5AaWYoJGdyaWQtb3ZlcmxheSkgeyBAaW5jbHVkZSBncmlkLW92ZXJsYXk7IH0iLCIvKiEgR3JpZCBiYXNlZCBvbiBodHRwczovL2dpdGh1Yi5jb20vbmVjb2xhcy9ncmlkZGxlIGJ5IE5pY29sYXMgR2FsbGFnaGVyIChAbmVjb2xhcykgKi9cblxuLy8gZXN0YWJsaXNoIGJhc2UgZm9udCBzaXplIGluIGNvbmZpZyBzbyB0aGF0IG1lZGlhIHF1ZXJpZXMgY2FuIGJlIHJlc2l6ZWQgaWYgdGhlIGJhc2UgY29udGV4dCBjaGFnbmVzXG5ib2R5IHsgZm9udC1zaXplOiBlbSgkYmFzZS1mb250LXNpemUsIDE2cHgpOyB9XG5cbi8vIHdyYXBwZXIgZGVmYXVsdHMgdG8gMTAwJSBmbHVpZCB3aXRoIHNpZGUgZ3V0dGVyc1xuLy8gd2hlbiB0cmlnZ2VyaW5nIGEgYnJlYWtwb2ludCB3cmFwcGVyIGJlY29tZXMgZml4ZWQgd2lkdGggYW5kIGNlbnRlcmVkXG4ud3JhcHBlciB7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICAgIHBhZGRpbmctbGVmdDogZW0oJGdyaWQtZ3V0dGVyKTtcbiAgICBwYWRkaW5nLXJpZ2h0OiBlbSgkZ3JpZC1ndXR0ZXIpO1xufVxuXG4vLyBmb3IgcmVzcG9uc2l2ZSBpbWFnZXNcbmltZyB7IG1heC13aWR0aDogMTAwJTsgfVxuLm5vLWpzIC5yZXNwb25zaXZlLWltYWdlIHsgZGlzcGxheTogbm9uZTsgfVxuXG4vLyBHcmlkIGNvbnRhaW5lclxuLy8gTXVzdCBvbmx5IGNvbnRhaW4gYC5ncmlkYCBvciBgLmdyaWQtY2VsbGAgY29tcG9uZW50cyBhcyBjaGlsZHJlbi5cbi5ncmlkIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBwYWRkaW5nOiAwO1xuICAgIG1hcmdpbjogMCAtMC41ICogZW0oJGdyaWQtZ3V0dGVyKTtcbiAgICAvLyBFbnN1cmUgY29uc2lzdGVudCBkZWZhdWx0IGFsaWdubWVudFxuICAgIHRleHQtYWxpZ246ICRncmlkLWRpcmVjdGlvbjtcbiAgICAvLyBSZW1vdmUgaW50ZXItdW5pdCB3aGl0ZXNwYWNlIGZvciBhbGwgbm9uLW1vbm9zcGFjZSBmb250LWZhbWlsaWVzXG4gICAgLy8gSWYgeW91J3JlIHVzaW5nIGEgbW9ub3NwYWNlIGJhc2UgZm9udCwgeW91IHdpbGwgbmVlZCB0byBzZXQgdGhlIGBncmlkYFxuICAgIC8vIGZvbnQtZmFtaWx5IHRvIGBzYW5zLXNlcmlmYCBhbmQgdGhlbiByZWRlY2xhcmUgdGhlIG1vbm9zcGFjZSBmb250IG9uXG4gICAgLy8gdGhlIGBncmlkLWNlbGxgIG9iamVjdHMuXG4gICAgbGV0dGVyLXNwYWNpbmc6IC0wLjMxZW07XG4gICAgLy8gUHJvdGVjdCBhZ2FpbnN0IFdlYktpdCBidWcgd2l0aCBvcHRpbWl6ZWxlZ2liaWxpdHlcbiAgICB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVzcGVlZDtcbn1cblxuLm9wZXJhOi1vLXByZWZvY3VzLFxuLmdyaWQge1xuICAgIHdvcmQtc3BhY2luZzogLTAuNDNlbTtcbn1cblxuLy8gQ2hpbGQgYGdyaWRgIG9iamVjdCBhZGp1c3RtZW50c1xuLy8gVXNlZCBmb3IgbW9yZSBjb21wbGV4IGZpeGVkLWZsdWlkIGh5YnJpZCBncmlkc1xuLmdyaWQgPiAuZ3JpZCB7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDA7XG4gICAgbWFyZ2luLWxlZnQ6IDA7XG59XG5cblxuLy8gR3JpZCB1bml0c1xuLy8gTm8gZXhwbGljaXQgd2lkdGggYnkgZGVmYXVsdFxuLmdyaWRfX2NlbGwge1xuICAgIHdpZHRoOiAxMDAlO1xuXG4gICAgZGlzcGxheTogLW1vei1pbmxpbmUtc3RhY2s7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgICp2ZXJ0aWNhbC1hbGlnbjogYXV0bztcbiAgICB6b29tOiAxO1xuICAgICpkaXNwbGF5OiBpbmxpbmU7XG5cbiAgICAtd2Via2l0LWJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgLW1vei1ib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG5cbiAgICBtYXJnaW46IDA7XG4gICAgcGFkZGluZzogMCAwLjUgKiBlbSgkZ3JpZC1ndXR0ZXIpO1xuXG4gICAgLyogY29udHJvbHMgdmVydGljYWwgcG9zaXRpb25pbmcgb2YgdW5pdHMgKi9cbiAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuXG4gICAgLyoga2VlcHMgdW5pdCBjb250ZW50IGNvcnJlY3RseSBhbGlnbmVkICovXG4gICAgdGV4dC1hbGlnbjogJGdyaWQtZGlyZWN0aW9uO1xuXG4gICAgLyogcmVzZXQgdGV4dCBkZWZhdWx0cyAqL1xuICAgIGxldHRlci1zcGFjaW5nOiBub3JtYWw7XG4gICAgd29yZC1zcGFjaW5nOiBub3JtYWw7XG4gICAgdGV4dC1yZW5kZXJpbmc6IGF1dG87XG59XG5cbi8vIE1vZGlmaWVyOiBob3Jpem9udGFsbHkgY2VudGVyIGFsbCBncmlkIHVuaXRzXG4uZ3JpZC0tY2VudGVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi8vIE1vZGlmaWVyOiBob3Jpem9udGFsbHkgY2VudGVyIG9uZSB1bml0XG4uZ3JpZF9fY2VsbC0tY2VudGVyIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBtYXJnaW46IDAgYXV0bztcbn0iLCIvLyBHcmlkIFZhcmlhYmxlc1xuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuJGdyaWQtY29sdW1uOiA2MHB4ICFkZWZhdWx0O1xuJGdyaWQtZ3V0dGVyOiAyMHB4ICFkZWZhdWx0O1xuJGJhc2UtZm9udC1zaXplOiAxNnB4ICFkZWZhdWx0O1xuJGdyaWQtZGlyZWN0aW9uOiBsZWZ0ICFkZWZhdWx0O1xuXG4vLyBnZW5lcmF0ZSB2aXN1YWwgZ3JpZCBvdmVybGF5IG9uIGNsYXNzIC5ncmlkLW92ZXJsYXlcbiRncmlkLW92ZXJsYXk6IGZhbHNlICFkZWZhdWx0O1xuXG4vLyBmYWxsYmFjayBicmVha3BvaW50IChjb2x1bW4gY291bnQgZm9yIDwgSUU5KVxuJGllLXN1cHBvcnQ6IGZhbHNlICFkZWZhdWx0O1xuXG4vLyBsYWJlbCBmb3IgeW91ciBtb2JpbGUgZmlyc3QgYnJlYWtwb2ludFxuJGZpcnN0LWJyZWFrcG9pbnQ6IFwic21hbGxcIiAhZGVmYXVsdDtcblxuQGltcG9ydCAndXRpbHMnO1xuQGltcG9ydCAnY29yZSc7XG5AaW1wb3J0ICdncmlkJzsiLCJAaW1wb3J0IFwiLi4vLi4vLi4vLi4vYm93ZXJfY29tcG9uZW50cy9icmVha3BvaW50L2JyZWFrcG9pbnQvYnJlYWtwb2ludFwiO1xuQGltcG9ydCBcIi4uLy4uLy4uLy4uL2Jvd2VyX2NvbXBvbmVudHMvc3VzeS9zYXNzL3N1c3lcIjtcblxuLy9AaW1wb3J0IFwic3VzeVwiO1xuLy9AaW1wb3J0IFwiYnJlYWtwb2ludFwiO1xuXG4jcGFnZSB7XG59O1xuI2NvbnRlbnQge1xuXHRwYWRkaW5nLWxlZnQ6IGF1dG87XG5cdHBhZGRpbmctcmlnaHQ6IGF1dG87XG5cdGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuIiwiLnN0aWNreSB7XG5cdGRpc3BsYXk6IGJsb2NrO1xufVxuXG4uaGVudHJ5IHtcblx0bWFyZ2luOiAwIDAgMS41ZW07XG59XG5cbi5ieWxpbmUsXG4udXBkYXRlZDpub3QoLnB1Ymxpc2hlZCl7XG5cdGRpc3BsYXk6IG5vbmU7XG59XG5cbi5zaW5nbGUgLmJ5bGluZSxcbi5ncm91cC1ibG9nIC5ieWxpbmUge1xuXHRkaXNwbGF5OiBpbmxpbmU7XG59XG5cbi5wYWdlLWNvbnRlbnQsXG4uZW50cnktY29udGVudCxcbi5lbnRyeS1zdW1tYXJ5IHtcblx0bWFyZ2luOiAxLjVlbSAwIDA7XG59XG5cbi5wYWdlLWxpbmtzIHtcblx0Y2xlYXI6IGJvdGg7XG5cdG1hcmdpbjogMCAwIDEuNWVtO1xufSIsIi5ibG9nIC5mb3JtYXQtYXNpZGUgLmVudHJ5LXRpdGxlLFxuLmFyY2hpdmUgLmZvcm1hdC1hc2lkZSAuZW50cnktdGl0bGUge1xuXHRkaXNwbGF5OiBub25lO1xufSIsIi5jb21tZW50LWNvbnRlbnQgYSB7XG5cdHdvcmQtd3JhcDogYnJlYWstd29yZDtcbn1cbi5ieXBvc3RhdXRob3Ige1xuXHRkaXNwbGF5OiBibG9jaztcbn1cbiIsIi8qIEdsb2JhbGx5IGhpZGRlbiBlbGVtZW50cyB3aGVuIEluZmluaXRlIFNjcm9sbCBpcyBzdXBwb3J0ZWQgYW5kIGluIHVzZS4gKi9cbi5pbmZpbml0ZS1zY3JvbGwgLnBvc3RzLW5hdmlnYXRpb24sIC8qIE9sZGVyIC8gTmV3ZXIgUG9zdHMgTmF2aWdhdGlvbiAoYWx3YXlzIGhpZGRlbikgKi9cbi5pbmZpbml0ZS1zY3JvbGwubmV2ZXJlbmRpbmcgLnNpdGUtZm9vdGVyIHsgLyogVGhlbWUgRm9vdGVyICh3aGVuIHNldCB0byBzY3JvbGxpbmcpICovXG5cdGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIFdoZW4gSW5maW5pdGUgU2Nyb2xsIGhhcyByZWFjaGVkIGl0cyBlbmQgd2UgbmVlZCB0byByZS1kaXNwbGF5IGVsZW1lbnRzIHRoYXQgd2VyZSBoaWRkZW4gKHZpYSAubmV2ZXJlbmRpbmcpIGJlZm9yZS4gKi9cbi5pbmZpbml0eS1lbmQubmV2ZXJlbmRpbmcgLnNpdGUtZm9vdGVyIHtcblx0ZGlzcGxheTogYmxvY2s7XG59IiwiLnBhZ2UtY29udGVudCAud3Atc21pbGV5LFxuLmVudHJ5LWNvbnRlbnQgLndwLXNtaWxleSxcbi5jb21tZW50LWNvbnRlbnQgLndwLXNtaWxleSB7XG5cdGJvcmRlcjogbm9uZTtcblx0bWFyZ2luLWJvdHRvbTogMDtcblx0bWFyZ2luLXRvcDogMDtcblx0cGFkZGluZzogMDtcbn1cblxuLyogTWFrZSBzdXJlIGVtYmVkcyBhbmQgaWZyYW1lcyBmaXQgdGhlaXIgY29udGFpbmVycy4gKi9cbmVtYmVkLFxuaWZyYW1lLFxub2JqZWN0IHtcblx0bWF4LXdpZHRoOiAxMDAlO1xufVxuXG4vKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4jIyBDYXB0aW9uc1xuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuQGltcG9ydCBcImNhcHRpb25zXCI7XG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiMjIEdhbGxlcmllc1xuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuQGltcG9ydCBcImdhbGxlcmllc1wiOyIsIi53cC1jYXB0aW9uIHtcblx0bWFyZ2luLWJvdHRvbTogMS41ZW07XG5cdG1heC13aWR0aDogMTAwJTtcblxuXHRpbWdbY2xhc3MqPVwid3AtaW1hZ2UtXCJdIHtcblx0XHRAaW5jbHVkZSBjZW50ZXItYmxvY2s7XG5cdH1cblxuXHQud3AtY2FwdGlvbi10ZXh0IHtcblx0XHRtYXJnaW46IDAuODA3NWVtIDA7XG5cdH1cbn1cblxuLndwLWNhcHRpb24tdGV4dCB7XG5cdHRleHQtYWxpZ246IGNlbnRlcjtcbn0iLCIuZ2FsbGVyeSB7XG5cdG1hcmdpbi1ib3R0b206IDEuNWVtO1xufVxuXG4uZ2FsbGVyeS1pdGVtIHtcblx0ZGlzcGxheTogaW5saW5lLWJsb2NrO1xuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XG5cdHZlcnRpY2FsLWFsaWduOiB0b3A7XG5cdHdpZHRoOiAxMDAlO1xuXG5cdC5nYWxsZXJ5LWNvbHVtbnMtMiAmIHtcblx0XHRtYXgtd2lkdGg6IDUwJTtcblx0fVxuXG5cdC5nYWxsZXJ5LWNvbHVtbnMtMyAmIHtcblx0XHRtYXgtd2lkdGg6IDMzLjMzJTtcblx0fVxuXG5cdC5nYWxsZXJ5LWNvbHVtbnMtNCAmIHtcblx0XHRtYXgtd2lkdGg6IDI1JTtcblx0fVxuXG5cdC5nYWxsZXJ5LWNvbHVtbnMtNSAmIHtcblx0XHRtYXgtd2lkdGg6IDIwJTtcblx0fVxuXG5cdC5nYWxsZXJ5LWNvbHVtbnMtNiAmIHtcblx0XHRtYXgtd2lkdGg6IDE2LjY2JTtcblx0fVxuXG5cdC5nYWxsZXJ5LWNvbHVtbnMtNyAmIHtcblx0XHRtYXgtd2lkdGg6IDE0LjI4JTtcblx0fVxuXG5cdC5nYWxsZXJ5LWNvbHVtbnMtOCAmIHtcblx0XHRtYXgtd2lkdGg6IDEyLjUlO1xuXHR9XG5cblx0LmdhbGxlcnktY29sdW1ucy05ICYge1xuXHRcdG1heC13aWR0aDogMTEuMTElO1xuXHR9XG59XG5cbi5nYWxsZXJ5LWNhcHRpb24ge1xuXHRkaXNwbGF5OiBibG9jaztcbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */
+  display: block;
+}

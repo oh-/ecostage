@@ -50,17 +50,17 @@ gulp.task('compass', function() {
 
 
 
-// Gulp Sass Task 
-gulp.task('sass', function() {
-  gulp.src('./app/theme/sass/{,*/}*.{scss,sass}')
-   	.pipe(sourcemaps.init())
-   	.pipe(sass({
-      errLogToConsole: true
-    }))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./app/theme'))
-    .pipe(reload({ stream:true }));
-});
+// // Gulp Sass Task
+// gulp.task('sass', function() {
+//   gulp.src('./app/theme/sass/{,*/}*.{scss,sass}')
+//    	.pipe(sourcemaps.init())
+//    	.pipe(sass({
+//       errLogToConsole: true
+//     }))
+//     .pipe(sourcemaps.write())
+//     .pipe(gulp.dest('./app/theme'))
+//     .pipe(reload({ stream:true }));
+// });
 
 
 
@@ -77,6 +77,6 @@ gulp.task('serve', function() {
 });
 
 gulp.task('default', ['compass', 'serve'], function() {
-	gulp.watch('./app/theme/sass/**.scss', ['compass']);
-	gulp.watch('./app/theme/sass/{,*/}*.{scss,sass}', ['sass']);
+	gulp.watch('./app/theme/sass/{,*/}*.{scss,sass}' , ['compass']);
+	// gulp.watch('./app/theme/sass/{,*/}*.{scss,sass}', ['sass']);
 });

@@ -28,4 +28,8 @@ build/Release
 node_modules
 
 # app - to not follow symlink
-# app
+app/temp
+# Vim swap data
+*.swp
+*.swo
+*~

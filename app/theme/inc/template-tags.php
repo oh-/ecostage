@@ -264,3 +264,30 @@ function _s_category_transient_flusher() {
 }
 add_action( 'edit_category', '_s_category_transient_flusher' );
 add_action( 'save_post',     '_s_category_transient_flusher' );
+
+
+
+
+ 
+function admin_init(){
+	add_meta_box("post_view", "Set the way the post is displayed", "post_view", "normal", "low");
+}
+
+function eco_attach_meta(){
+	global $post; // What post are we talking about?
+	$custom = get_post_custom($post->ID); //sets the value of $custom to an array containint all custom fields of a particular post or page ($post->ID)
+	$sectbgc = $custom["sctbgc"][0]; // set the variable $sectbgc to sctbgc array 1
+    ?>
+    <p><label>Enter the background colour:</label> <textarea cols="15" rows="1" name="sctbgc"><?php echo $sctbgc; ?></textarea></p>
+    <?php
+}
+
+add_action("admin_init", "admin_init");
+
+
+
+function save_details(){
+  global $post;
+  update_post_meta($post->ID, "sctbgc", $_POST["sctbgc"]);
+}
+add_action('save_post', 'save_details');

@@ -4,10 +4,9 @@
 //	float: left;
 	width: 100%;
 	position: absolute;
-
 	top: 0;
 	right: 0;
-
+	@include navtabs(0.3rem);
 	ul {
 		display: none;
 		list-style: none;
@@ -58,11 +57,11 @@
 		padding-right: 1rem;
 		padding-left: 1rem;
 		background-color: $color__background-menu-item;
-		@include border-bottom-radius(1rem);
-		$tab-border: solid 2px darken($color__background-menu-item, 20);
-		border-bottom: $tab-border;
-		border-right: $tab-border;
-		border-left: $tab-border;
+		//@include border-bottom-radius(1rem);
+		//$tab-border: solid 2px darken($color__background-menu-item, 20);
+		//border-bottom: $tab-border;
+		//border-right: $tab-border;
+		//border-left: $tab-border;
 		&:hover > a,
 		&.focus > a {
 			background-color: $color__background-menu-select;

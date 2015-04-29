@@ -22,8 +22,27 @@
 	clear: both;
 }
 
+// Adds page margins. In the future, I hope to be able to add breakpoints here, so that all will be the same throughout the site
 @mixin page {
-	@include span(16);
-	padding-left: span(1 of 16);
-	padding-right: span(1 of 16);
+	@include breakpoint($mobile){
+		@include container(5);
+		padding-left: span(0.5 of 5 no-gutter);
+		padding-right: span(0.5 of 5 no-gutter);
+	}
+	@include breakpoint($screen){
+		@include container(16);
+		padding-left: span(1 of 16 no-gutter);
+		padding-right: span(1 of 16 no-gutter);
+	}
+}
+@mixin navtabs($tabsize) {
+	$tabsize : 1rem !default;
+	li.menu-item {
+		background-color: $color__background-menu-item;
+		@include border-bottom-radius($tabsize);
+		$tab-border: solid 1px darken($color__background-menu-item, 20);
+		border-bottom: $tab-border;
+		border-right: $tab-border;
+		border-left: $tab-border;
+	}
 }

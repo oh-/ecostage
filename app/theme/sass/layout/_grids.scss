@@ -6,7 +6,6 @@
 };
 .menu {
 	@include page;
-	background: $color__ecoblue;
 }
 header#masthead, footer#colophon {
 	@include page;
@@ -28,5 +27,5 @@ article {
 }
 
 .site-branding {
-	@include span(12 of 16);
+	// @include span(12 of 14 no-gutters);
 }

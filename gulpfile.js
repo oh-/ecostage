@@ -77,6 +77,5 @@ gulp.task('serve', function() {
 });
 
 gulp.task('default', ['compass', 'serve'], function() {
-	gulp.watch('./app/theme/sass/{,*/}*.{scss,sass}' , ['compass']);
-	// gulp.watch('./app/theme/sass/{,*/}*.{scss,sass}', ['sass']);
+	gulp.watch(paths.styles.src , ['compass']);
 });

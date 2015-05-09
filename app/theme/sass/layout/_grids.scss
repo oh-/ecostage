@@ -1,17 +1,23 @@
 @import "site-vars";
 
-//.logged-in #page {
-//	position: relative;
-//	.menu {
-//		position: absolute;
-//	}
-//}
+.home {
+	header#masthead {
+		height: 100vh;
+	}
+	.site-branding {
+		@include margin-leader(9);
+	}
+}
 
 #page {
 		@include container($susy);
 		background: $color__background-screen;
 };
+article.page {
+	background-color: $color__background-body;
+}
 header#masthead, footer#colophon {
+	background-color: $color__background-header;
 	@include page;
 }
 article {
@@ -21,15 +27,11 @@ article {
 
 // image
 .site-logo-wrapper {
-	height: 200px;
-//	.site-logo {@include span(2 of 12)}
-	#sitetitle2 {
-		height: 200px;
-		a {line-height: 150px;}
-//		@include span(8 of 12)
+	display: inline;
+	.site-logo {
+		@include span(1);
 	}
-}
-
-.site-branding {
-//	@include span(12);
+	#sitetitle2 {
+		@include span(4);	
+	}
 }

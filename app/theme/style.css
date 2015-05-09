@@ -331,8 +331,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\000038}}
 h1.site-title {
-  font-size: 2.2em;
-  line-height: 1.36364em;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000311}}
@@ -818,7 +818,16 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\000034}}
+.home header#masthead {
+  height: 100vh;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\000037}}
+.home .site-branding {
+  margin-top: 13.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000312}}
 #page {
   max-width: 100%;
   margin-left: auto;
@@ -880,37 +889,49 @@ head:hover ~ #page:before, head:hover ~ body #page:before {
   background-position: left top;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000314}}
-header#masthead, footer#colophon {
-  width: 87.46269%;
-  float: left;
-  margin-right: 0.29851%;
-  position: relative;
-  padding-left: 5.97015%;
-  padding-right: 5.97015%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000316}}
+article.page {
+  background-color: #0095DD;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000317}}
-article {
-  width: 87.46269%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000319}}
+header#masthead, footer#colophon {
+  background-color: #0095DD;
+  width: 100%;
   float: left;
-  margin-right: 0.29851%;
+  margin-left: 0;
+  margin-right: 0;
   position: relative;
   padding-left: 5.97015%;
   padding-right: 5.97015%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000323}}
+article {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  padding-left: 5.97015%;
+  padding-right: 5.97015%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000329}}
 .site-logo-wrapper {
-  height: 200px;
+  display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000331}}
+.site-logo-wrapper .site-logo {
+  width: 5.97015%;
+  float: left;
+  margin-right: 0.29851%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000334}}
 .site-logo-wrapper #sitetitle2 {
-  height: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000328}}
-.site-logo-wrapper #sitetitle2 a {
-  line-height: 150px;
+  width: 24.77612%;
+  float: left;
+  margin-right: 0.29851%;
 }
 
 /*--------------------------------------------------------------

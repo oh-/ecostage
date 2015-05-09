@@ -97,6 +97,7 @@ function _s_widgets_init() {
 add_action( 'widgets_init', '_s_widgets_init' );
 
 /**
+ * TODO:
  * Adds a tickbox to decide if the content is full width,
  * and what colour / background image
  */

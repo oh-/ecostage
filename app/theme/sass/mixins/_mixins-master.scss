@@ -23,7 +23,13 @@
 }
 
 @mixin page {
-	@include span(16);
+	@include span(14);
+	position: relative;
 	padding-left: span(1 of 16);
 	padding-right: span(1 of 16);
+}
+@mixin navtabs($corner) {
+	ul li {
+		@include border-radius($corner);
+	}
 }

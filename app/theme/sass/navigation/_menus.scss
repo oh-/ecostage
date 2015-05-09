@@ -1,12 +1,12 @@
 .main-navigation {
 	clear: both;
-	display: block;
+	display: inline-block;
 //	float: left;
-	width: 100%;
+//	width: 50%;
 	position: absolute;
 	top: 0;
 	right: 0;
-	@include navtabs(0.3rem);
+	@include navtabs(0 0 6px 6px);
 	ul {
 		display: none;
 		list-style: none;
@@ -52,8 +52,7 @@
 		}
 	}
 	li {
-		float: right;
-		position: relative;
+		float: left;
 		padding-right: 1rem;
 		padding-left: 1rem;
 		background-color: $color__background-menu-item;

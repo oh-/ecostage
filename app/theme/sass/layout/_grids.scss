@@ -1,16 +1,18 @@
 @import "site-vars";
 
+//.logged-in #page {
+//	position: relative;
+//	.menu {
+//		position: absolute;
+//	}
+//}
+
 #page {
 		@include container($susy);
 		background: $color__background-screen;
 };
-.menu {
-	@include page;
-	background: $color__ecoblue;
-}
 header#masthead, footer#colophon {
 	@include page;
-	background: $color__ecoblue;
 }
 article {
 	@include page;
@@ -20,13 +22,14 @@ article {
 // image
 .site-logo-wrapper {
 	height: 200px;
-	.site-logo {@include span(2 of 12)}
+//	.site-logo {@include span(2 of 12)}
 	#sitetitle2 {
 		height: 200px;
 		a {line-height: 150px;}
-		@include span(8 of 12)}
+//		@include span(8 of 12)
+	}
 }
 
 .site-branding {
-	@include span(12 of 16);
+//	@include span(12);
 }

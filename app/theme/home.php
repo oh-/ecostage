@@ -13,6 +13,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<section id="site-intro">
+			<h1>Hello, world!</h1>
+		</section> <!-- #site-intro -->
 		<main id="main" class="site-main" role="main">
 			
 			<?php while ( have_posts() ) : the_post(); ?>

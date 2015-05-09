@@ -304,6 +304,12 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\00003106}}
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_typography\.scss}line{font-family:\000034}}
 body,
 button,
@@ -312,8 +318,8 @@ select,
 textarea {
   color: #404040;
   font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 1em;
+  line-height: 1.5em;
   line-height: 1.5;
 }
 
@@ -325,14 +331,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\000038}}
 h1.site-title {
-  font-size: 35.2px;
-  font-size: 2.2rem;
+  font-size: 2.2em;
+  line-height: 1.36364em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000311}}
 h2.site-description {
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 2.5em;
+  line-height: 1.2em;
   text-align: center;
   text-transform: capitalize;
 }
@@ -597,24 +603,16 @@ a:hover, a:active {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\000031}}
 .main-navigation {
   clear: both;
-  display: block;
-  width: 100%;
+  display: inline-block;
   position: absolute;
   top: 0;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000340}}
-.main-navigation li.menu-item {
-  background-color: red;
-  -moz-border-radius-bottomleft: 0.3rem;
-  -webkit-border-bottom-left-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem;
-  -moz-border-radius-bottomright: 0.3rem;
-  -webkit-border-bottom-right-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
-  border-bottom: solid 1px #990000;
-  border-right: solid 1px #990000;
-  border-left: solid 1px #990000;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000332}}
+.main-navigation ul li {
+  -moz-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 6px 6px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000310}}
 .main-navigation ul {
@@ -653,17 +651,16 @@ a:hover, a:active {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000354}}
 .main-navigation li {
-  float: right;
-  position: relative;
+  float: left;
   padding-right: 1rem;
   padding-left: 1rem;
   background-color: red;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000364}}
 .main-navigation li:hover > a, .main-navigation li.focus > a {
   background-color: clear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000369}}
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -671,38 +668,38 @@ a:hover, a:active {
 }
 
 /* Small menu. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000382}}
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000388}}
   .menu-toggle {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000391}}
   .main-navigation ul {
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003100}}
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003105}}
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003110}}
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -821,7 +818,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000310}}
 #page {
   max-width: 100%;
   margin-left: auto;
@@ -871,248 +868,47 @@ head:hover ~ #page:before, head:hover ~ body #page:before {
   right: 0;
   content: " ";
   z-index: 998;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%);
-  background-size: 6.26866%;
-  background-origin: content-box;
-  background-clip: content-box;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI5NS4yMzgxJSIgc3RvcC1jb2xvcj0iI2ZmNGQ0ZCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI5NS4yMzgxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 0, 0, 0.25)), color-stop(95.2381%, rgba(255, 77, 77, 0.25)), color-stop(95.2381%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, rgba(0, 0, 0, 0) 95.2381%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: -webkit-linear-gradient(left, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, rgba(0, 0, 0, 0) 95.2381%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, rgba(0, 0, 0, 0) 95.2381%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 6.26866%, 100% 24px;
+  background-origin: content-box, border-box;
+  background-clip: content-box, border-box;
   background-position: left top;
 }
 
-@media (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\000037}}
-  .menu {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 9.13462%;
-    padding-right: 9.13462%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  .menu:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-  head:hover ~ .menu, head:hover ~ body .menu {
-    position: relative;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-  head:hover ~ .menu:before, head:hover ~ body .menu:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    z-index: 998;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%);
-    background-size: 20.19231%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
-}
-@media (min-width: 680px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\000037}}
-  .menu {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5.97015%;
-    padding-right: 5.97015%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  .menu:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-  head:hover ~ .menu, head:hover ~ body .menu {
-    position: relative;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-  head:hover ~ .menu:before, head:hover ~ body .menu:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    z-index: 998;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%);
-    background-size: 6.26866%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000314}}
 header#masthead, footer#colophon {
-  background: #0095DD;
-}
-@media (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000310}}
-  header#masthead, footer#colophon {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 9.13462%;
-    padding-right: 9.13462%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  header#masthead:after, footer#colophon:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-  head:hover ~ header#masthead, head:hover ~ body header#masthead, head:hover ~ footer#colophon, head:hover ~ body footer#colophon {
-    position: relative;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-  head:hover ~ header#masthead:before, head:hover ~ body header#masthead:before, head:hover ~ footer#colophon:before, head:hover ~ body footer#colophon:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    z-index: 998;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%);
-    background-size: 20.19231%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
-}
-@media (min-width: 680px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000310}}
-  header#masthead, footer#colophon {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5.97015%;
-    padding-right: 5.97015%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  header#masthead:after, footer#colophon:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-  head:hover ~ header#masthead, head:hover ~ body header#masthead, head:hover ~ footer#colophon, head:hover ~ body footer#colophon {
-    position: relative;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-  head:hover ~ header#masthead:before, head:hover ~ body header#masthead:before, head:hover ~ footer#colophon:before, head:hover ~ body footer#colophon:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    z-index: 998;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%);
-    background-size: 6.26866%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
+  width: 87.46269%;
+  float: left;
+  margin-right: 0.29851%;
+  position: relative;
+  padding-left: 5.97015%;
+  padding-right: 5.97015%;
 }
 
-@media (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000314}}
-  article {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 9.13462%;
-    padding-right: 9.13462%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  article:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-  head:hover ~ article, head:hover ~ body article {
-    position: relative;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-  head:hover ~ article:before, head:hover ~ body article:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    z-index: 998;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%);
-    background-size: 20.19231%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
-}
-@media (min-width: 680px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000314}}
-  article {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5.97015%;
-    padding-right: 5.97015%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
-  article:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000371}}
-  head:hover ~ article, head:hover ~ body article {
-    position: relative;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/language\/susy\/_background\.scss}line{font-family:\0000374}}
-  head:hover ~ article:before, head:hover ~ body article:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    z-index: 998;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%);
-    background-size: 6.26866%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000317}}
+article {
+  width: 87.46269%;
+  float: left;
+  margin-right: 0.29851%;
+  position: relative;
+  padding-left: 5.97015%;
+  padding-right: 5.97015%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000323}}
 .site-logo-wrapper {
   height: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000322}}
-.site-logo-wrapper .site-logo {
-  width: 16.33466%;
-  float: left;
-  margin-right: 0.39841%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000326}}
 .site-logo-wrapper #sitetitle2 {
   height: 200px;
-  width: 66.53386%;
-  float: left;
-  margin-right: 0.39841%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000328}}
 .site-logo-wrapper #sitetitle2 a {
   line-height: 150px;
 }

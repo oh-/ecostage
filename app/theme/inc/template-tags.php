@@ -285,7 +285,6 @@ function eco_attach_meta(){
 add_action("admin_init", "admin_init");
 
 
-
 function save_details(){
   global $post;
   update_post_meta($post->ID, "sctbgc", $_POST["sctbgc"]);

@@ -32,6 +32,8 @@
 <?php if (is_home()) { ?>
 		<div class="site-branding">
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<a href="#">Find Out More</a>
+
 		</div><!-- .site-branding -->
 <?php } ?>
 		<nav id="site-navigation" class="main-navigation" role="navigation">

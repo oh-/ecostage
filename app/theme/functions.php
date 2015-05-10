@@ -69,6 +69,8 @@ function _s_setup() {
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
 
+	add_post_type_support( 'page', 'excerpt' );
+	
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( '_s_custom_background_args', array(
 		'default-color' => 'ffffff',
@@ -101,7 +103,6 @@ add_action( 'widgets_init', '_s_widgets_init' );
  * Adds a tickbox to decide if the content is full width,
  * and what colour / background image
  */
-
 
 
 

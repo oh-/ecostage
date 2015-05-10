@@ -12,7 +12,11 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<h2 class="site-description">
+		<?php the_content("", true); ?> 
+		</h2><!-- .site-description -->
+		<?php  	 $more = $_s_more; 
+			the_content("", true); ?> 
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_s' ),

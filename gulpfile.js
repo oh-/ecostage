@@ -19,7 +19,7 @@ var paths = {
 	styles: {
 		src: './app/theme/sass/{,*/}*.{scss,sass}',
 		sass: './app/theme/sass/',
-		dest: './app/theme/',
+		dest: './app/theme/css/',
 		bower: './bower_components/',
 		build: './app/temp/'
 		}
@@ -37,9 +37,9 @@ gulp.task('compass', function() {
     .pipe(compass({
 		import_path: paths.styles.bower,
 		config_file: './config.rb',
-		require: 'susy',
-		css: paths.styles.dest ,
-		sass: paths.styles.sass
+//		require: 'susy',
+//		css: paths.styles.dest ,
+//		sass: paths.styles.sass
     }))
 	.on('error', function(err) {
 		//would like to catch the error here

@@ -2,13 +2,24 @@
 
 .home {
 	header#masthead {
-		height: 100vh;
+		min-height: 100vh;
 	}
 	.site-branding {
-		@include margin-leader(9);
+		padding-top: rhythm(6);
+		text-align: center;
+		a {
+			@include button();
+			padding: 0 auto;
+		}
 	}
 }
+#content {
+}
+article.page {
+	background-color: red; //$color__ecoblue;
+	min-height: 100vh;
 
+}
 #page {
 		@include container($susy);
 		background: $color__background-screen;

@@ -33,3 +33,16 @@
 		@include border-radius($corner);
 	}
 }
+@mixin nolink() {
+	text-decoration: none;
+	padding: 20px;
+	background-color: clear !important; 
+}
+@mixin button($butcol: $color__background-menu-item) {
+	@include contrasted($butcol);
+	&:hover {@include contrasted(adjust-lightness($butcol, 20));}
+	@include adjust-font-size-to(1.5em);
+	@include nolink;
+	@include border-radius(2em);
+}
+

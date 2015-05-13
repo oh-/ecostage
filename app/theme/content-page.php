@@ -8,15 +8,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php if ( !empty( $post->post_excerpt ) ) : ?>
+		<span class="excerpt">
+		<?php the_excerpt(); ?>
+		</span> <!-- .post-excerpt -->
+		<?php else :
+		the_title( '<h1 class="entry-title">', '</h1>' );
+			false;
+		endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<h2 class="site-description">
-		<?php the_content("", true); ?> 
-		</h2><!-- .site-description -->
-		<?php  	 $more = $_s_more; 
-			the_content("", true); ?> 
+		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_s' ),

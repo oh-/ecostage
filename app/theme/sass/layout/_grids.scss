@@ -13,16 +13,14 @@
 		}
 	}
 }
-#content {
-}
 article.page {
 	background-color: red; //$color__ecoblue;
 	min-height: 100vh;
-
 }
 #page {
-		@include container($susy);
-		background: $color__background-screen;
+	@include container($susy);
+//	background: $color__background-screen;
+	background-color: green;
 };
 article.page {
 	background-color: $color__background-body;

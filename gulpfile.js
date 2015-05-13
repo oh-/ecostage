@@ -36,10 +36,10 @@ gulp.task('compass', function() {
 	}))
     .pipe(compass({
 		import_path: paths.styles.bower,
-		config_file: './config.rb',
+		config_file: './config.rb', 
 //		require: 'susy',
-//		css: paths.styles.dest ,
-//		sass: paths.styles.sass
+		css: paths.styles.dest ,
+		sass: paths.styles.sass
     }))
 	.on('error', function(err) {
 		//would like to catch the error here

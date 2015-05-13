@@ -336,7 +336,7 @@ h1.site-title {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000311}}
-h2.site-description {
+.excerpt p, h2.site-description {
   font-size: 2.5em;
   line-height: 1.2em;
   text-align: center;
@@ -847,18 +847,18 @@ a:hover, a:active {
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000316}}
 article.page {
   background-color: red;
   min-height: 100vh;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000320}}
 #page {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: #f1f1f1;
+  background-color: green;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/bower_components\/susy\/sass\/susy\/output\/support\/_clearfix\.scss}line{font-family:\0000312}}
 #page:after {
@@ -915,12 +915,12 @@ head:hover ~ #page:before, head:hover ~ body #page:before {
   background-position: left top;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000325}}
 article.page {
   background-color: #0095DD;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000328}}
 header#masthead, footer#colophon {
   background-color: #0095DD;
   width: 100%;
@@ -932,7 +932,7 @@ header#masthead, footer#colophon {
   padding-right: 5.97015%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000332}}
 article {
   width: 100%;
   float: left;
@@ -943,17 +943,17 @@ article {
   padding-right: 5.97015%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000338}}
 .site-logo-wrapper {
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000340}}
 .site-logo-wrapper .site-logo {
   width: 5.97015%;
   float: left;
   margin-right: 0.29851%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000343}}
 .site-logo-wrapper #sitetitle2 {
   width: 24.77612%;
   float: left;

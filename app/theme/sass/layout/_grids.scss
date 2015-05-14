@@ -1,5 +1,10 @@
 @import "site-vars";
 
+body.page #page {
+	position: relative;
+	header#masthead { position: absolute; z-index:1; background: none; height: rhythm(4)}
+	.entry-header {@include page; height: 100vh; @include padding-leader(4); background-color: $color__background-body; }
+}
 .home {
 	header#masthead {
 		min-height: 100vh;
@@ -13,34 +18,22 @@
 		}
 	}
 }
-article.page {
-	background-color: red; //$color__ecoblue;
-	min-height: 100vh;
-}
 #page {
 	@include container($susy);
-//	background: $color__background-screen;
-	background-color: green;
+	background: $color__background-screen;
 };
-article.page {
-	background-color: $color__background-body;
-}
 header#masthead, footer#colophon {
 	background-color: $color__background-header;
 	@include page;
 }
-article {
-	@include page;
-}
-
-
 // image
 .site-logo-wrapper {
-	display: inline;
+//	display: inline;
+	@include span(5 of 16 nest);
 	.site-logo {
-		@include span(1);
+		@include span(1 of 5);
 	}
 	#sitetitle2 {
-		@include span(4);	
+		@include span(4 of 5 last);	
 	}
 }

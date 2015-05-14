@@ -1,11 +1,13 @@
 .main-navigation {
 	clear: both;
 	display: inline-block;
+	@include span(9 last);
+	background-color: red;
 //	float: left;
 //	width: 50%;
-	position: absolute;
-	top: 0;
-	right: 0;
+//	position: absolute;
+//	top: 0;
+//	right: 0;
 	@include navtabs(0 0 6px 6px);
 	ul {
 		display: none;

@@ -1,38 +1,47 @@
 @import "site-vars";
 
-body.page #page {
-	position: relative;
-	header#masthead { position: absolute; z-index:1; background: none; height: rhythm(4)}
-	.entry-header {@include page; height: 100vh; @include padding-leader(4); background-color: $color__background-body; }
-}
-.home {
-	header#masthead {
-		min-height: 100vh;
-	}
-	.site-branding {
-		padding-top: rhythm(6);
-		text-align: center;
-		a {
-			@include button();
-			padding: 0 auto;
-		}
-	}
-}
 #page {
+	//NB this is the whole page, not the page (body) class
 	@include container($susy);
 	background: $color__background-screen;
 };
-header#masthead, footer#colophon {
+footer#colophon {
 	background-color: $color__background-header;
 	@include page;
 }
 // image
 .site-logo-wrapper {
-	@include span(4 of 14 nest);
+	@include span(4 of 14);
 	.site-logo {
 		@include span(1 of 4);
 	}
 	#sitetitle2 {
 		@include span(3 of 4 last);	
+	}
+}
+body.home {
+	//Enter details for things only to be found on the home page 
+	#masthead { min-height: 100vh; background-color:$color__background-header; }
+	.site-description { 
+		@include rhythm-padding(1.5);
+	}
+	.site-branding {
+		text-align: center;
+		a {
+			@include button();
+		}
+	}
+}
+body.page {
+	//Enter details for things only to be found on the home page 
+	#page {position: relative;}
+	#masthead {
+		position: absolute;
+		top:0;
+	}
+	.entry-header {
+//		@include page;
+		height: 100vh; 
+		background-color: $color__background-body;
 	}
 }

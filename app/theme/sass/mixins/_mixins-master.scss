@@ -24,11 +24,11 @@
 
 @mixin page {
 	@include span(16);
-	position: relative;
-	padding-left: span(1 of 16);
-	padding-right: span(1 of 16);
+	@include pad(1);
+//	padding-left: span(1 of 16);
+//	padding-right: span(1 of 16);
 }
-@mixin navtabs($corner) {
+@mixin navtabs($corner: 1em) {
 	ul li {
 		@include border-radius($corner);
 	}

@@ -28,12 +28,11 @@ header#masthead, footer#colophon {
 }
 // image
 .site-logo-wrapper {
-//	display: inline;
-	@include span(5 of 16 nest);
+	@include span(4 of 14 nest);
 	.site-logo {
-		@include span(1 of 5);
+		@include span(1 of 4);
 	}
 	#sitetitle2 {
-		@include span(4 of 5 last);	
+		@include span(3 of 4 last);	
 	}
 }

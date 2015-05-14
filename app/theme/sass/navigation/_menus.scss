@@ -1,8 +1,7 @@
 .main-navigation {
-	clear: both;
-	display: inline-block;
-	@include span(9 last);
-	background-color: red;
+//	clear: both;
+//	display: inline-block;
+	@include span(10 of 14 last);
 //	float: left;
 //	width: 50%;
 //	position: absolute;

@@ -1,6 +1,5 @@
 .main-navigation {
 	> div {float: right;}
-	@include span(10 of 14 last);
 	@include navtabs(0 0 6px 6px);
 	ul {
 		display: none;

@@ -22,9 +22,6 @@ footer#colophon {
 body.home {
 	//Enter details for things only to be found on the home page 
 	#masthead { min-height: 100vh; background-color:$color__background-header; }
-	.site-description { 
-		@include rhythm-padding(1.5);
-	}
 	.site-branding {
 		text-align: center;
 		a {
@@ -34,14 +31,30 @@ body.home {
 }
 body.page {
 	//Enter details for things only to be found on the home page 
-	#page {position: relative;}
+	#page {position: relative; }
 	#masthead {
+		left: 0;
 		position: absolute;
-		top:0;
+		top: 0;
+		width: 100%;
+		z-index: 3;
+		background: clear;
 	}
+	#content {position: relative; top: 0;}
+	#primary {position: static; top: 0; }
+	#main {@include test(purlple);}
 	.entry-header {
-//		@include page;
-		height: 100vh; 
 		background-color: $color__background-body;
+		min-height: 100vh;
 	}
+	.excerpt >p {@include page;}
+	.entry-header {
+		width: span(full);
+	}
+}
+// Page header defaults
+
+.site-description, .excerpt { 
+	@include padding-leader(1.5);
+	@include padding-trailer(1.5);
 }

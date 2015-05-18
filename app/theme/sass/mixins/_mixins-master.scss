@@ -21,12 +21,16 @@
 @mixin clearfix-after() {
 	clear: both;
 }
-
+// testing mixin - sets background-color: $col !important; 
+@mixin test($col: red) {
+	background-color: $col !important; 
+}
+@mixin page-squeeze {
+	@include pad(2);
+}
 @mixin page {
-	@include span(16);
-	@include pad(1);
-//	padding-left: span(1 of 16);
-//	padding-right: span(1 of 16);
+	width: span(full);
+	@include page-squeeze;
 }
 @mixin navtabs($corner: 1em) {
 	ul li {

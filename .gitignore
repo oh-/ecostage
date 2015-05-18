@@ -33,3 +33,6 @@ app/temp
 *.swp
 *.swo
 *~
+
+# Sass Map files from built theme
+app/theme/*.css.map

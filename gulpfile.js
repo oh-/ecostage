@@ -20,6 +20,7 @@ var paths = {
 		src: './app/theme/sass/{,*/}*.{scss,sass}',
 		sass: './app/theme/sass/',
 		dest: './app/theme/css/',
+		theme: './app/theme/',
 		bower: './bower_components/',
 		build: './app/temp/'
 		}
@@ -37,8 +38,10 @@ gulp.task('compass', function() {
     .pipe(compass({
 		import_path: paths.styles.bower,
 		config_file: './config.rb', 
+		sourcemap: true,
+		debug : true,
 //		require: 'susy',
-		css: paths.styles.dest ,
+		css: paths.styles.theme ,
 		sass: paths.styles.sass
     }))
 	.on('error', function(err) {
@@ -73,7 +76,7 @@ var config = {
 
 gulp.task('serve', function() {
 	browserSync(config);
-	gulp.watch('app/theme/**.scss', ['sass']);
+	gulp.watch('app/theme/**.scss', ['compass']);
 });
 
 gulp.task('default', ['compass', 'serve'], function() {

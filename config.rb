@@ -5,10 +5,11 @@ require 'breakpoint'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "app/theme/css"
+css_dir = "app/theme"
 sass_dir = "app/theme/sass"
 images_dir = "app/theme/img"
 javascripts_dir = "app/theme/js"
+sourcemap = true
 
 
 # You can select your preferred output style here (can be overridden via the command line):
@@ -37,10 +38,12 @@ sass_options = {:debug_info => true}
 
 
 # Move styles.css up one directory as required by Wordpress
-require 'fileutils'
-on_stylesheet_saved do |file|
-  if File.exists?(file) && File.basename(file) == "style.css"
-    puts "Moving: #{file}"
-    FileUtils.mv(file, File.dirname(file) + "/../" + File.basename(file))
-  end
-end
+#require 'fileutils'
+#on_stylesheet_saved do |file|
+#  if File.exists?(file) && File.basename(file) == "style.css"
+#    puts "Moving: #{file}"
+#    FileUtils.mv(file, File.dirname(file) + "/../" + File.basename(file))
+#    puts "Moving: #{file}.map"
+#    FileUtils.mv(file, File.dirname(file) + "/../" + File.basename(file))
+#  end
+#end

@@ -42,19 +42,16 @@ body.page {
 	}
 	#content {position: relative; top: 0;}
 	#primary {position: static; top: 0; }
-	#main {@include test(purlple);}
 	.entry-header {
 		background-color: $color__background-body;
 		min-height: 100vh;
 	}
-	.excerpt >p {@include page;}
+	.excerpt >p {@include page-squeeze;}
 	.entry-header {
 		width: span(full);
 	}
 }
 // Page header defaults
-
-.site-description, .excerpt { 
-	@include padding-leader(1.5);
-	@include padding-trailer(1.5);
+.site-branding,	.entry-header {
+	@include padding-leader(9);
 }

@@ -926,13 +926,13 @@ body.home .site-branding a {
   font-size: 1.5em;
   line-height: 2em;
   text-decoration: none;
-  padding: 20px;
   background-color: clear !important;
+  padding: 1.2rem;
   -moz-border-radius: 2em;
   -webkit-border-radius: 2em;
   border-radius: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000346}}
 body.home .site-branding a:hover {
   background-color: #ff6666;
   color: #000;
@@ -962,29 +962,23 @@ body.page #primary {
   top: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000345}}
-body.page #main {
-  background-color: purlple !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000346}}
 body.page .entry-header {
   background-color: #0095DD;
   min-height: 100vh;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000349}}
 body.page .excerpt > p {
-  width: 100%;
   padding-left: 12.53731%;
   padding-right: 12.53731%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000350}}
 body.page .entry-header {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000357}}
-.site-description, header#masthead .site-title a, header#masthead .site-description a, .excerpt {
-  padding-top: 2.25em;
-  padding-bottom: 2.25em;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000355}}
+.site-branding, .entry-header {
+  padding-top: 13.5em;
 }
 
 /*--------------------------------------------------------------

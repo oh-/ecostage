@@ -47,8 +47,8 @@
 	}
 	li {
 		float: left;
-		padding-right: 1rem;
-		padding-left: 1rem;
+		margin-left: 1rem; // space between
+		@include pad(1rem);
 		background-color: $color__background-menu-item;
 		&:hover > a,
 		&.focus > a {

@@ -19,6 +19,9 @@ footer#colophon {
 		@include span(3 of 4 last);	
 	}
 }
+.excerpt:after {
+	@include colgen($color__ecoblue);
+}	
 body.home {
 	//Enter details for things only to be found on the home page 
 	#masthead { min-height: 100vh; background-color:$color__background-header; }
@@ -52,6 +55,9 @@ body.page {
 	}
 }
 // Page header defaults
-.site-branding,	.entry-header {
+.site-branding,	.page .entry-header {
 	@include padding-leader(9);
+}
+.entry-content {
+	@include page;
 }

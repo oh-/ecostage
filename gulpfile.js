@@ -8,6 +8,7 @@ var plumber = require('gulp-plumber')
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var rsync = require('gulp-rsync');
 
 
 var paths = {
@@ -16,13 +17,24 @@ var paths = {
 		dst: 'app/theme/',
 		sf: './app/theme/sass/{,*/}*.{scss,sass}'
 	},
+	ThemeFiles : {
+		root : './app/theme/',
+		all: './app/theme/**'
+	},
+	Host : {
+		live :{
+			address : 'madesoco',
+			path : '~/git/themes/ecoscore.git'
+		},
+		
+	},
 	styles: {
 		src: './app/theme/sass/{,*/}*.{scss,sass}',
 		sass: './app/theme/sass/',
 		dest: './app/theme/',
 		bower: './bower_components/',
 		build: './app/temp/'
-		}
+	}
 }
 
  
@@ -48,6 +60,13 @@ gulp.task('compass', function() {
     .pipe(reload({ stream:true }));
 });
 
+gulp.task('deply', function() {
+	gulp.src('app/theme/**')
+		.pipe(rsync({
+		root: paths.ThemeFiles.root,
+		hostname: paths.Host.live,
+
+}
 
 
 // // Gulp Sass Task

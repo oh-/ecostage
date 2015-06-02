@@ -47,7 +47,7 @@ body.page {
 	#primary {position: static; top: 0; }
 	.entry-header {
 		background-color: $color__background-body;
-		min-height: 100vh;
+		//min-height: 100vh;
 	}
 	.excerpt >p {@include page-squeeze;}
 	.entry-header {
@@ -57,6 +57,7 @@ body.page {
 // Page header defaults
 .site-branding,	.page .entry-header {
 	@include padding-leader(9);
+	@include padding-trailer(2);
 }
 .entry-content {
 	@include page;

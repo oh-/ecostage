@@ -25,8 +25,8 @@
 @mixin test($col: red) {
 	background-color: $col !important; 
 }
-@mixin page-squeeze {
-	@include pad(2);
+@mixin page-squeeze($num: 2) {
+	@include pad($num);
 }
 @mixin page {
 	width: span(full);

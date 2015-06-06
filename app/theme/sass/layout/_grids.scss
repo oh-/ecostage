@@ -19,6 +19,10 @@ footer#colophon {
 		@include span(3 of 4 last);	
 	}
 }
+.excerpt:after {
+	@include colgen($color__ecoblue);
+	//TODO DO I still need this?  Fri  5 Jun 2015 18:24:57 BST
+}	
 body.home {
 	//Enter details for things only to be found on the home page 
 	#masthead { min-height: 100vh; background-color:$color__background-header; }
@@ -28,6 +32,16 @@ body.home {
 			@include button();
 		}
 	}
+	article {
+		&:nth-child(2n) { 
+		background-color: $color__background-article-alt; 
+		@include padding-leader(1); //Every article has 1line margin (which leads to page colour being shown - this pushes every second article, and balances out
+		}
+		&:last-child {
+			margin-bottom: 0;
+			background-color: mix($color__background-article-alt, $color__background-header);
+			}
+		}
 }
 body.page {
 	//Enter details for things only to be found on the home page 
@@ -43,8 +57,8 @@ body.page {
 	#content {position: relative; top: 0;}
 	#primary {position: static; top: 0; }
 	.entry-header {
-		background-color: $color__background-body;
-		min-height: 100vh;
+		background-color: $color__background-header;
+		//min-height: 100vh;
 	}
 	.excerpt >p {@include page-squeeze;}
 	.entry-header {
@@ -52,6 +66,13 @@ body.page {
 	}
 }
 // Page header defaults
-.site-branding,	.entry-header {
+.site-branding,	.page .entry-header {
 	@include padding-leader(9);
+	@include padding-trailer(2);
+}
+.entry-header {
+	@include page-squeeze(1.5);
+}
+.entry-content {
+	@include page;
 }

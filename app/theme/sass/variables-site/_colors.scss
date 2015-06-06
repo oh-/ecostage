@@ -1,19 +1,26 @@
 // Site Colour Scheme
 $color__ecoblue: #0095DD;
 $color__ecoblue-d: #4EABF0;
-
+$color__8th-light: #DFD4B8;
+$color__8th-red: #C70B26;
+$color__8th-b1: #417393;
+$color__8th-b2: #254568;
+$color__8th-b3: #1C1936;
+$color__8th-be: $color__ecoblue;
 
 
 $color__background-body: $color__ecoblue;
+$color__background-article-alt: $color__8th-red;
 $color__background-screen: #f1f1f1;
-$color__background-header: $color__ecoblue;
+$color__background-header: $color__8th-b1;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__background-menu: clear;
-$color__background-menu-item: red;
-$color__background-menu-select: clear;
+$color__background-menu-item: $color__8th-b2;
+$color__background-menu-hover: $color__8th-red;
+$color__background-menu-select: $color__background-header;
 
 
 $color__text-screen: #21759b;

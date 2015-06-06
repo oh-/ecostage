@@ -25,8 +25,8 @@
 @mixin test($col: red) {
 	background-color: $col !important; 
 }
-@mixin page-squeeze {
-	@include pad(2);
+@mixin page-squeeze($num: 2) {
+	@include pad($num);
 }
 @mixin page {
 	width: span(full);
@@ -34,6 +34,9 @@
 }
 @mixin navtabs($corner: 1em) {
 	ul li {
+		border-top: 8px solid $color__8th-b3;
+		//background-color: $color__8th-b2;
+		//@include colgen($color__ecoblue, $color__8th-light, $color__8th-b3); 
 		@include border-radius($corner);
 	}
 }
@@ -41,7 +44,7 @@
 	text-decoration: none;
 	background-color: clear !important; 
 }
-@mixin button($butcol: $color__background-menu-item) {
+@mixin button($butcol: $color__background-button) {
 	@include contrasted($butcol);
 	&:hover {@include contrasted(adjust-lightness($butcol, 20));}
 	@include adjust-font-size-to(1.5em);
@@ -49,4 +52,9 @@
 	padding: 1.2rem;
 	@include border-radius(2em);
 }
-
+//colour generator
+@mixin colgen($base, $light: white, $dark: black){
+	&:nth-child(3n) {background-color: $base;}
+	&:nth-child(3n+1) {background-color: complement($base);}
+	&:nth-child(3n+2) {background-color: mix($base, complement($base), 30);}
+}

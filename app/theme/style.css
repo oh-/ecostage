@@ -337,6 +337,8 @@ h1.site-title {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000311}}
 .excerpt, h2.site-description {
+  padding-left: 6.26866%;
+  padding-right: 6.26866%;
   font-size: 2.5em;
   line-height: 1.2em;
   font-family: "Fira Sans";
@@ -345,11 +347,11 @@ h1.site-title {
   text-transform: capitalize;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000320}}
 header#masthead .site-title, header#masthead .site-description, header#masthead .site-title a, header#masthead .site-description a {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000321}}
 header#masthead .site-title a, header#masthead .site-description a, header#masthead .site-title a a {
   text-decoration: none;
 }
@@ -607,17 +609,23 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\000031}}
+.main-navigation {
+  position: absolute;
+  right: 0;
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\000032}}
 .main-navigation > div {
   float: right;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000336}}
 .main-navigation ul li {
+  border-top: 8px solid #1C1936;
   -moz-border-radius: 0 0 6px 6px;
   -webkit-border-radius: 0;
   border-radius: 0 0 6px 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\000036}}
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -625,7 +633,7 @@ a:hover, a:active {
   padding-left: 0;
   background-color: clear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000312}}
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -634,76 +642,80 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000320}}
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000326}}
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000332}}
 .main-navigation ul ul a {
   width: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000345}}
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000350}}
 .main-navigation li {
   float: left;
-  padding-right: 1rem;
+  margin-left: 1rem;
   padding-left: 1rem;
-  background-color: red;
+  padding-right: 1rem;
+  background-color: #254568;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000353}}
-.main-navigation li:hover > a, .main-navigation li.focus > a {
-  background-color: clear;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000355}}
+.main-navigation li:hover, .main-navigation li.focus {
+  border-top: 10px solid #C70B26;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000364}}
 .main-navigation a {
   display: block;
   text-decoration: none;
   color: white;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000374}}
+.main-navigation .current-menu-item,
+.main-navigation .current_page_item {
+  background-color: #417393;
+  border-top: 8px solid #DFD4B8;
+}
 
 /* Small menu. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000384}}
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000390}}
   .menu-toggle {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000393}}
   .main-navigation ul {
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000389}}
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003101}}
+.site-main .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000394}}
-.comment-navigation .nav-previous,
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003106}}
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\0000399}}
-.comment-navigation .nav-next,
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/navigation\/_menus\.scss}line{font-family:\00003111}}
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
@@ -885,7 +897,7 @@ head:hover ~ #page:before, head:hover ~ body #page:before {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\000038}}
 footer#colophon {
-  background-color: #0095DD;
+  background-color: #417393;
   width: 100%;
   padding-left: 12.53731%;
   padding-right: 12.53731%;
@@ -910,19 +922,32 @@ footer#colophon {
   margin-right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000324}}
-body.home #masthead {
-  min-height: 100vh;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000357}}
+.excerpt:after:nth-child(3n) {
   background-color: #0095DD;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000358}}
+.excerpt:after:nth-child(3n+1) {
+  background-color: #dd4800;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000359}}
+.excerpt:after:nth-child(3n+2) {
+  background-color: #9a5f42;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000328}}
+body.home #masthead {
+  min-height: 100vh;
+  background-color: #417393;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000329}}
 body.home .site-branding {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000331}}
 body.home .site-branding a {
-  background-color: red;
-  color: #fff;
+  background-color: #e6e6e6;
+  color: #000;
   font-size: 1.5em;
   line-height: 2em;
   text-decoration: none;
@@ -932,17 +957,27 @@ body.home .site-branding a {
   -webkit-border-radius: 2em;
   border-radius: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/mixins\/_mixins-master\.scss}line{font-family:\0000349}}
 body.home .site-branding a:hover {
-  background-color: #ff6666;
+  background-color: white;
   color: #000;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000336}}
+body.home article:nth-child(2n) {
+  background-color: #C70B26;
+  padding-top: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000340}}
+body.home article:last-child {
+  margin-bottom: 0;
+  background-color: #843f5c;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000348}}
 body.page #page {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000349}}
 body.page #masthead {
   left: 0;
   position: absolute;
@@ -951,34 +986,47 @@ body.page #masthead {
   z-index: 3;
   background: clear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000357}}
 body.page #content {
   position: relative;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000358}}
 body.page #primary {
   position: static;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000359}}
 body.page .entry-header {
-  background-color: #0095DD;
-  min-height: 100vh;
+  background-color: #417393;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000363}}
 body.page .excerpt > p {
   padding-left: 12.53731%;
   padding-right: 12.53731%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000364}}
 body.page .entry-header {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000355}}
-.site-branding, .entry-header {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000369}}
+.site-branding, .page .entry-header {
   padding-top: 13.5em;
+  padding-bottom: 3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000373}}
+.entry-header {
+  padding-left: 9.40299%;
+  padding-right: 9.40299%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/layout\/_grids\.scss}line{font-family:\0000376}}
+.entry-content {
+  width: 100%;
+  padding-left: 12.53731%;
+  padding-right: 12.53731%;
 }
 
 /*--------------------------------------------------------------
@@ -1013,12 +1061,7 @@ body.page .entry-header {
   margin: 1.5em 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000325}}
-.page .entry-content {
-  margin: 12em;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000326}}
 .page-links {
   clear: both;
   margin: 0 0 1.5em;

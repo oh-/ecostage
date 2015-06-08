@@ -14,6 +14,21 @@ function _s_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->get_section( 'header-infi' )->transport = 'postMessage';
+	$wp_customize->add_section( 'header_infi', array(
+		'title' => __('Main Header info'),
+		'description' => __('Add the Header paragraph and button text here'),
+	) );
+	$wp_customize->add_setting( '_s_options[call]', array(
+		'type' => 'theme_mod', //  or 'option'
+		'defaults' => 'We are fighting a cause!',
+		'sanitize_callback' => 'call_to_action',
+	) );
+	$wp_customize->add_control('call_to_action', array(
+		'label' => __('Call To Action Text'),
+		'type' => 'textarea', // core provides checkbox, textarea, radio( array('key' => 'value')), select, array('key' => 'value') dropdown-pages. or any HTML <input> element
+		'section' => 'header_infi',
+	) );
 }
 add_action( 'customize_register', '_s_customize_register' );
 

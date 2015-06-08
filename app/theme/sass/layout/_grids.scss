@@ -35,7 +35,8 @@ body.home {
 	article {
 		&:nth-child(2n) { 
 		background-color: $color__background-article-alt; 
-		@include padding-leader(1); //Every article has 1line margin (which leads to page colour being shown - this pushes every second article, and balances out
+		color: $color__text-alt;
+		@include rhythm(1, 1); //Every article has 1 line margin (which leads to page colour being shown - this pushes every second article, and balances out
 		}
 		&:last-child {
 			margin-bottom: 0;

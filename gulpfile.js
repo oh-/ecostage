@@ -68,14 +68,15 @@ gulp.task('compass', function() {
 
 
 //  browsersync config
-var config = {
+var BrowserSyncConfig = {
 	files: ['app/theme/style.css', 'app/theme/*.php'],
 	proxy: "localhost/ecostage/",
-	notify: "false"
+	notify: false,
+	ghostMode: false
 };
 
 gulp.task('serve', function() {
-	browserSync(config);
+	browserSync(BrowserSyncConfig);
 	gulp.watch('app/theme/**.scss', ['compass']);
 });
 

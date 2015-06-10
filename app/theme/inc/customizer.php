@@ -11,58 +11,109 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function _s_customize_register( $wp_customize ) {
+	// define your settings, then your sections, then your controls (controls need a section and a setting to function)
+	// Settings		
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	$wp_customize->add_section( 'new_section', array(
-		'title'	=> __('Testing new section','_s'),
-		'priority' => 30,
-	) );
-
 	// Add color scheme setting and control.
-	$wp_customize->add_setting( 'color_scheme', array(
-		'default'           => 'default',
-		'sanitize_callback' => '_s_color_scheme',
-		'transport'         => 'postMessage',
-	) );
-
-	$wp_customize->add_control( 'color_scheme', array(
-		'label'    => __( 'Base Color Scheme', '_s' ),
-		'section'  => 'colors',
-		'type'     => 'select',
-		'choices'  => _s_get_color_scheme_choices(),
-		'priority' => 1,
-	) );
-	
-	// new settings
-	$wp_customize->add_setting( 'new_setting', array(
-		'default'           => 'default',
-		'sanitize_callback' => '_s_new_setting',
-		'transport'         => 'postMessage',
-	) );
-
-	$wp_customize->add_control( 'new_setting', array(
-		'label'    => __( 'NEw Setting', '_s' ),
-		'section'  => 'new_section',
-		'type'     => 'textarea',
-		'priority' => 60,
-	) );
-
-/** 
-'type' properties for control settings
-    text (default)
-    checkbox
-    radio (requires choices array in $args)
-    select (requires choices array in $args)
-    dropdown-pages
-    textarea (since WordPress 4.0)
- */
-	// Add custom header and sidebar background color setting and control.
 	$wp_customize->add_setting( 'header_background_color', array(
 		'default'           => $color_scheme[1],
 		'sanitize_callback' => 'sanitize_hex_color',
 		'transport'         => 'postMessage',
 	) );
+	$wp_customize->add_setting( 'color_scheme', array(
+		'default'           => 'default',
+		'sanitize_callback' => '_s_color_scheme',
+		'transport'         => 'postMessage',
+	) );
+	// _s Call to action settings and controls
+	$wp_customize->add_setting( '_s_cta_text', array(
+		'default'           => 'Call to Action', //Possibly this could be $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
+		'sanitize_callback' => '_s_cta_text',
+		// 'transport'         => 'refresh',
+	) );
+
+	// Sections
+	// Add an additional description to the header image section.
+	$wp_customize->get_section( 'header_image' )->description = __( 'Applied to the header on small screens and the sidebar on wide screens.', '_s' );
+
+	$wp_customize->add_section( '_s_cta', array(
+		'title'	=> __('_s Call to Action','_s'),
+		'priority' => 30,
+	) );
+
+	// Controls
+        /*
+	 * Types of properties available to render
+	 * ***
+	 * 'type' properties for control settings
+	 * text (default)
+	 * checkbox
+	 * radio (requires choices array in $args)
+	 * select (requires choices array in $args)
+	 * dropdown-pages
+	 * textarea (since WordPress 4.0)
+
+	 * ***
+	 * The format (Class)  of adding a new control that is just plain text
+	 * ***
+	 * $wp_customize->add_control(
+	 * ) );
+
+	 */
+	 // Sections
+	 // Add an additional description to the header image section.
+	 /* $wp_customize->get_section( 'header_image' )->description = __( 'Applied to the header on small screens and the sidebar on wide screens.', '_s' );
+
+	 * $wp_customize->add_section( '_s_cta', array(
+	 * 	'title'	=> __('_s Call to Action','_s'),
+	 * 	'priority' => 30,
+	 * ) );
+
+	 * // Controls
+	 * Types of properties available to render
+	 * 'type' properties for control settings
+	 * text (default)
+	 * checkbox
+	 * radio (requires choices array in $args)
+	 * select (requires choices array in $args)
+	 * dropdown-pages
+	 * textarea (since WordPress 4.0)
+
+	 * ***
+	 * The format (Class)  of adding a new control that is just plain text
+	 * ***
+	 * $wp_customize->add_control(
+	 *     new WP_Customize_Control(
+	 * 	$wp_customize,
+	 * 	'your_setting_id',
+	 * 	array(
+	 * 	    'label'          => __( 'Dark or light theme version?', 'theme_name' ),
+	 * 	    'section'        => 'your_section_id',
+	 * 	    'settings'       => 'your_setting_id',
+	 * 	    'type'           => 'radio',
+	 * 	    'choices'        => array(
+	 * 		'dark'   => __( 'Dark' ),
+	 * 		'light'  => __( 'Light' )
+	 * 	    )
+	 * 	)
+	 *     )
+	 * );
+         */
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,  'color_scheme', array(
+		'label'    => __( 'Base Color Scheme', '_s' ),
+		'section'  => 'colors',
+		'type'     => 'select',
+		'choices'  => _s_get_color_scheme_choices(),
+		'priority' => 1,
+	) ) );
+	$wp_customize->add_control(  new WP_Customize_Control( $wp_customize, '_s_cta_text', array(
+		'label'		=> __( 'CTA Call Text', '_s' ),
+		'section'	=> '_s_cta',
+		'settings'	=> '_s_cta_text',
+		'type'		=> 'textarea'
+	) ) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_background_color', array(
 		'label'       => __( 'Header and Sidebar Background Color', '_s' ),
@@ -70,8 +121,6 @@ function _s_customize_register( $wp_customize ) {
 		'section'     => 'colors',
 	) ) );
 
-	// Add an additional description to the header image section.
-	$wp_customize->get_section( 'header_image' )->description = __( 'Applied to the header on small screens and the sidebar on wide screens.', '_s' );
 
 }
 add_action( 'customize_register', '_s_customize_register' );
@@ -163,6 +212,25 @@ function _s_get_color_schemes() {
 		),
 	) );
 }
+/*
+ * Custom function to extend textbox.
+ */
+if( class_exists( 'WP_Customize_Control' ) ):
+	class WP_Customize_Textarea_Control extends WP_Customize_Control {
+		public $type = 'textarea';
+ 
+		public function render_content() {
+			?>
+		<label>
+			<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+			<textarea rows="5" style="width:100%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
+		</label>
+		<?php
+		}
+	}
+endif;
+
+
 /**
  * Colorscheme choices
  */

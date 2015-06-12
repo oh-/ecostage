@@ -16,28 +16,14 @@ function _s_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	// Add color scheme setting and control.
-	$wp_customize->add_setting( 'header_background_color', array(
-		'default'           => $color_scheme[1],
-		'sanitize_callback' => 'sanitize_hex_color',
-		'transport'         => 'postMessage',
-	) );
-	$wp_customize->add_setting( 'color_scheme', array(
-		'default'           => 'default',
-		'sanitize_callback' => '_s_color_scheme',
-		'transport'         => 'postMessage',
-	) );
 	// _s Call to action settings and controls
 	$wp_customize->add_setting( '_s_cta_text', array(
 		'default'           => 'Call to Action', //Possibly this could be $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 		'sanitize_callback' => '_s_cta_text',
-		// 'transport'         => 'refresh',
+		 'transport'         => 'refresh',
 	) );
 
 	// Sections
-	// Add an additional description to the header image section.
-	$wp_customize->get_section( 'header_image' )->description = __( 'Applied to the header on small screens and the sidebar on wide screens.', '_s' );
-
 	$wp_customize->add_section( '_s_cta', array(
 		'title'	=> __('_s Call to Action','_s'),
 		'priority' => 30,
@@ -101,24 +87,11 @@ function _s_customize_register( $wp_customize ) {
 	 *     )
 	 * );
          */
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,  'color_scheme', array(
-		'label'    => __( 'Base Color Scheme', '_s' ),
-		'section'  => 'colors',
-		'type'     => 'select',
-		'choices'  => _s_get_color_scheme_choices(),
-		'priority' => 1,
-	) ) );
 	$wp_customize->add_control(  new WP_Customize_Control( $wp_customize, '_s_cta_text', array(
 		'label'		=> __( 'CTA Call Text', '_s' ),
 		'section'	=> '_s_cta',
 		'settings'	=> '_s_cta_text',
 		'type'		=> 'textarea'
-	) ) );
-
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_background_color', array(
-		'label'       => __( 'Header and Sidebar Background Color', '_s' ),
-		'description' => __( 'Applied to the header on small screens and the sidebar on wide screens.', '_s' ),
-		'section'     => 'colors',
 	) ) );
 
 

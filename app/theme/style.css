@@ -336,7 +336,7 @@ h1.site-title {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/samuel\/Work\/ecostage\/theme\/base\/app\/theme\/sass\/typography\/_headings\.scss}line{font-family:\0000311}}
-.excerpt, h2.site-description {
+.excerpt, .site-call {
   padding-left: 6.26866%;
   padding-right: 6.26866%;
   font-size: 2.5em;

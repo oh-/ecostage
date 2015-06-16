@@ -35,8 +35,9 @@
 		</nav><!-- #site-navigation -->
 <?php if (is_home()) { ?>
 		<div class="site-branding">
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			<a href="#">Find Out More</a>
+			<h1 class="site-call"><?php echo get_theme_mod('_s_cta_text'); ?></h2>
+			<a href="<?php echo get_theme_mod('_s_cta_link'); ?>"><?php echo get_theme_mod('_s_cta_link_text'); ?></a>
+
 
 		</div><!-- .site-branding -->
 <?php } ?>

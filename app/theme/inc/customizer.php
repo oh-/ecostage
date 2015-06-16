@@ -11,9 +11,66 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function _s_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
+
+	/* here are the examples
+         */
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+
+	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
+
+	$wp_customize->add_section('_s_cta', array(
+		'title' => __('Call to action', '_s'),
+		'description' => __('Text for Theme Call to Action, or main heading', '_s')
+	));
+
+	$wp_customize->add_section('_s_header', array(
+		'title' => __('Header Image', '_s'),
+		'description' => __('Header Image', '_s')
+	));
+
+	// Button Link
+	$wp_customize->add_setting('_s_cta_link', array(
+		'default' => 'http://www.madeso.uk/r/te',
+	));
+	$wp_customize->add_control( new WP_Customize_Control($wp_customize, '_s_cta_link', array(
+		'label' => __('enter the link where you would like the button to go', '_s'),
+		'section' => '_s_cta',
+		'setting' => '_s_cta_link',
+		'type' => 'text'
+	) ));
+	
+	// Link Text
+	$wp_customize->add_setting('_s_cta_link_text', array(
+		'default' => __('Call to action link', '_s'),
+	));
+	$wp_customize->add_control( new WP_Customize_Control($wp_customize, '_s_cta_link_text', array(
+		'label' => __('Call to action button text', '_s'),
+		'section' => '_s_cta',
+		'setting' => '_s_cta_link_text',
+		'type' => 'text'
+	) ));
+
+	// Call to Action text
+	$wp_customize->add_setting('_s_cta_text', array(
+		'default' => __('We are building a global movement of performing arts practitioners interested in placing sustainability at the heart of their creative practices', '_s'),
+	));
+	$wp_customize->add_control( new WP_Customize_Control($wp_customize, '_s_cta_text', array(
+		'label' => __('Call to action', '_s'),
+		'section' => '_s_cta',
+		'setting' => '_s_cta_text',
+		'type' => 'textarea'
+	) ));
+
+	// Header Image
+	$wp_customize->add_setting('_s_header_image', array(
+		'default' => 'default',
+	));
+	$wp_customize->add_control( new WP_Customize_Header_Image_Control($wp_customize, '_s_header_image', array(
+		'label' => __('Custom Header', '_s'),
+		'section' => '_s_header',
+		'setting' => '_s_header_image',
+	) ));
 }
 add_action( 'customize_register', '_s_customize_register' );
 

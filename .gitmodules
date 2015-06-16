@@ -1,3 +1,6 @@
 [submodule "_s"]
 	path = app/libs/_s
 	url = https://github.com/Automattic/_s
+[submodule "app/libs/customizer-library"]
+	path = app/libs/customizer-library
+	url = git@github.com:devinsays/customizer-library

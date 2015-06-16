@@ -27,6 +27,7 @@
 				<img src="<?php echo get_stylesheet_directory_uri()?>/img/logo.png" />
 			</div><!-- .site-logo -->
 			<div id="sitetitle2"><h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+								<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- #sitetitle2 -->
 		</div><!-- .site-logo-wrapper -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -35,9 +36,9 @@
 		</nav><!-- #site-navigation -->
 <?php if (is_home()) { ?>
 		<div class="site-branding">
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			<h2 class="cta-text"><?php echo get_option( '_s_cta_text' ); ?></h2>
-			<a class="cta-link" href="#">Find Out More</a>
+			<h1 class="site-call"><?php echo get_theme_mod('_s_cta_text'); ?></h2>
+			<a href="<?php echo get_theme_mod('_s_cta_link'); ?>"><?php echo get_theme_mod('_s_cta_link_text'); ?></a>
+
 
 		</div><!-- .site-branding -->
 <?php } ?>

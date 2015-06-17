@@ -18,7 +18,9 @@ function _s_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-
+	/*
+	 * Sections 
+	 */
 	$wp_customize->add_section('_s_cta', array(
 		'title' => __('Call to action', '_s'),
 		'description' => __('Text for Theme Call to Action, or main heading', '_s')
@@ -28,8 +30,10 @@ function _s_customize_register( $wp_customize ) {
 		'title' => __('Header Image', '_s'),
 		'description' => __('Header Image', '_s')
 	));
-
-	// Button Link
+        /*
+	 * Call to Action
+         */
+	// CTA Button Link
 	$wp_customize->add_setting('_s_cta_link', array(
 		'default' => 'http://www.madeso.uk/r/te',
 	));
@@ -40,7 +44,7 @@ function _s_customize_register( $wp_customize ) {
 		'type' => 'text'
 	) ));
 	
-	// Link Text
+	// CTA Button Text
 	$wp_customize->add_setting('_s_cta_link_text', array(
 		'default' => __('Call to action link', '_s'),
 	));
@@ -62,7 +66,9 @@ function _s_customize_register( $wp_customize ) {
 		'type' => 'textarea'
 	) ));
 
-	// Header Image
+        /*
+	 * Header Image
+         */
 	$wp_customize->add_setting('_s_header_image', array(
 		'default' => 'default',
 	));

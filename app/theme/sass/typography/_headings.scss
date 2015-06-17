@@ -6,7 +6,12 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 h1.site-title {
-	@include adjust-font-size-to(1.5em);
+	@include adjust-font-size-to(45px);
+	@include rhythm-margins(0);
+}
+h2.site-description {
+	@include adjust-font-size-to(18px);
+	@include rhythm-margins(0);
 }
 .excerpt, .site-call {
 	@include pad(1);

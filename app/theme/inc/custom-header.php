@@ -124,3 +124,15 @@ function _s_admin_header_image() {
 <?php
 }
 endif; // _s_admin_header_image
+
+/*
+ * Attach header image to the background
+ */
+function _s_header_image_attach() {
+	$_s_header_image_uri =  get_header_image();
+?>
+	<style type="text/css">.site-branding { <?php echo sprintf( "background-image: url('%s');",  $_s_header_image_uri ); ?> background-repeat: no-repeat;  background-position: 50% 50%; } </style>
+<?php
+}; 
+
+add_action( 'wp_head', '_s_header_image_attach' );

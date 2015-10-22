@@ -1,0 +1,120 @@
+.main-navigation {
+	> div {
+    float: right;
+    @include pad(20px);
+    // padding-right: 20px;
+  }
+	@include navtabs(0 0 6px 6px);
+	position: absolute;
+	right: 0;
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		background-color: $color__background-menu;
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		margin-left: 1rem; // space between
+		@include pad(1rem);
+		background-color: $color__background-menu-item;
+		&:hover, 
+		&.focus {
+			border-top:10px solid $color__background-menu-hover;
+		}
+		&:hover > a,
+		&.focus > a {
+			//only the link
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		color: $color__text-menu;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+	.current-menu-item,
+	.current_page_item {
+		//current menu item
+		background-color: $color__background-menu-select;
+		border-top: 8px solid $color__background-menu-item;
+	}
+}
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@include breakpoint(min-width $mobile) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	& .nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	& .nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

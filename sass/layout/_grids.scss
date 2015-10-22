@@ -1,0 +1,102 @@
+@import "site-vars";
+#buddypress {
+  @import "buddy";
+}
+
+#page {
+	//NB this is the whole page, not the page (body) class
+	@include container($susy);
+	background: $color__background-screen;
+};
+footer#colophon {
+	background-color: $color__background-footer;
+	@include page;
+	@include rhythm-padding(3,2);
+	min-height: 8rem;
+  color: $color__text-alt;
+}
+// image
+.site-logo-wrapper {
+	@include span(4 of 14);
+  // background-color: $color__a-r;
+	// .site-logo {
+	// 	@include span(1 of 4);
+	// }
+	#sitetitle2 {
+		@include span(3 of 4 last);	
+	}
+}
+.page .entry-header {
+  background-color: $color__green2;
+}
+
+// span.excerpt p {color: $color__text-screen;}
+body.home {
+	//Enter details for things only to be found on the home page 
+	#masthead {
+    // min-height: 350px; 
+    @include rhythm-padding(0,1.5);
+    background-color:$color__background-header; 
+  } 
+	.site-branding {
+		text-align: center;
+		a {
+			@include button();
+      @include adjust-font-size-to(1.5em);
+      padding: 1.2rem;
+		}
+	}
+	aside.widget {
+    @include page();
+    @include rhythm(0, 1, 2, 0);
+		&:nth-child(2n) { 
+      background-color: $color__background-article-alt; 
+		}
+		// &:last-child {
+		// 	margin-bottom: 0;
+		// 	background-color: mix($color__background-article-alt, $color__background-header);
+		// 	}
+		}
+}
+#primary {
+  
+}
+#masthead {
+  position: relative;
+  background: $color__background-header;
+}
+
+
+body.home {
+	//Enter details for things only to be found on the home page 
+	#page {position: relative; }
+	#masthead {
+		left: 0;
+		position: relative;
+		top: 0;
+		width: 100%;
+		z-index: 3;
+		background: clear;
+	}
+	#content {position: relative; top: 0;}
+	#primary {position: static; top: 0; }
+	.entry-header {
+		background-color: $color__background-header;
+		//min-height: 100vh;
+	}
+	.excerpt >p {@include page-squeeze;}
+	.entry-header {
+		width: span(full);
+	}
+}
+// Page header defaults
+.site-branding,	.page .entry-header {
+	// @include padding-leader(9);
+	// @include padding-trailer(2);
+}
+.entry-header {
+	@include page;
+}
+.entry-content {
+	@include page;
+}

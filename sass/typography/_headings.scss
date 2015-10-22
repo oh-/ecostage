@@ -1,0 +1,31 @@
+@include web-fonts(("Fira Sans":"500"));
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Fira Sans";
+	clear: both;
+}
+h1.site-title {
+	@include adjust-font-size-to(45px);
+	@include rhythm-margins(0);
+}
+h2.site-description {
+	@include adjust-font-size-to(18px);
+	@include rhythm-margins(0);
+}
+.entry-header .entry-title, .excerpt, .site-call {
+	@include pad(1);
+	@include adjust-font-size-to(2.5rem);
+  @include rhythm(0, 1,1,0);
+	font-family: "Fira Sans";
+	color: $color__text_alt;
+	text-align: center;
+	// text-transform: capitalize;
+}
+header#masthead {
+	.site-title, .site-description {
+		a {@extend .site-description; text-decoration: none;}
+		color: $color__text_alt;
+		
+	}
+}

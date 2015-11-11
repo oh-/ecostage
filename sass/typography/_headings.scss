@@ -5,6 +5,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 	clear: both;
 }
+.entry-content {
+  p {
+    @include rhythm-margins(0.3, 0.7)
+  }
+  h3, h2, h1 {
+    font-weight: 500;
+    color: $color__orange;
+    @include rhythm-margins(0.3, 0.1)
+  }
+}
 h1.site-title {
 	@include adjust-font-size-to(45px);
 	@include rhythm-margins(0);

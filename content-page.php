@@ -7,16 +7,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( !empty( $post->post_excerpt ) ) : ?>
-		<span class="excerpt">
-		<?php the_excerpt(); ?>
-		</span> <!-- .post-excerpt -->
-		<?php else :
-		the_title( '<h1 class="entry-title">', '</h1>' );
-			false;
-		endif; ?>
-	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>

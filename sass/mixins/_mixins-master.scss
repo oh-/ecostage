@@ -65,7 +65,6 @@
 @mixin button($butcol: $color__background-button) {
 	// @include contrasted($butcol);
   background-color: $color__a-r;
-  color: $color__green5;
 	// &:hover {@include contrasted(adjust-lightness($butcol, 20));}
 	@include nolink;
 	border-radius: 2em;

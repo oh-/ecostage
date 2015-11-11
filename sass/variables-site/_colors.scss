@@ -9,13 +9,9 @@ $color__8th-b3: #1C1936;
 $color__8th-be: $color__ecoblue;
 
 //alice colours
-$color__green1: #2E2E2C;
-$color__green2: #186263;
-$color__green3: #149C8E;
-$color__green4: #9ED2BD;
-$color__green5: #D3EADD;
 $color__a-r: #E0542E;
 $color__a-y: #FCEA22;
+$color__green: #0B5453;
 
 // Third revision of colours
 $color__orange: #F96B24;
@@ -33,10 +29,10 @@ $color-list: #2e2e2c #186263 #149c8e #9ed2bd #d3eadd #e0542e #fcea22;
 
 $color__background-body: white;
 $color__background-band: $color__black;
-$color__background-article-alt: $color__green4;
-$color__background-screen: $color__green5;
+// $color__background-article-alt: $color__green4;
+$color__background-screen: white;
 $color__background-header: light-grey;
-$color__background-footer: $color__green1;
+$color__background-footer: $color__black;
 $color__background-hr: #ccc;
 $color__background-button: $color__a-r; //#e6e6e6;
 $color__background-button-hover: $color__a-y; //#e6e6e6;
@@ -48,7 +44,7 @@ $color__background-menu-hover: $color__8th-red;
 $color__background-menu-select: $color__background-header;
 
 
-$color__text-screen: $color__green1;
+$color__text-screen: black;
 $color__text-alt: white;
 $color__text-input: #666;
 $color__text-input-focus: #111;
@@ -58,7 +54,7 @@ $color__link-hover: midnightblue;
 $color__text-main: #404040;
 $color__text-menu: white;
 
-$color__border-button: $color__green5; // #ccc #ccc #bbb;
+$color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;

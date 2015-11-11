@@ -5,15 +5,23 @@
 #masthead {
   position: relative;
   background: $color__background-header;
+  .site-description-page {
+    * {margin: 0;};
+    color: $color__green;
+    @include span(15 of 16 last);
+    @extend h3;
+    @include margin-leader(-1.7);
+  }
 }
 .site-logo-wrapper {
   @include page;
   @include padding-leader(2);
   .site-logo {
-    @include span (3 of 8);
+    @include span(400px);
+    margin-left: -100px;
   }
 }
-#page {
+#spage {
 	//NB this is the whole page, not the page (body) class
 	   @include container($susy);
 	// background: $color__background-screen;
@@ -42,13 +50,13 @@ footer#colophon {
   right: 0;
   color: $color__text-alt;
   background-color: $color__background-band;
+  @include rhythm-padding(0.6);
 }
 .page .entry-header {
-  display: none;
+  // display: none;
   background-color: $color__background-band;
 }
 
-// span.excerpt p {color: $color__text-screen;}
 body.home {
 	//Enter details for things only to be found on the home page 
 	#masthead {

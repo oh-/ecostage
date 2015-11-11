@@ -85,19 +85,11 @@ add_action( 'after_setup_theme', '_s_setup' );
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
+add_action( 'widgets_init', '_s_widgets_init' );
 function _s_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', '_s' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-	register_sidebar( array(
 		'name'          => __( 'Front Page Sidebar', '_s' ),
-		'id'            => 'sidebar-2',
+		'id'            => 'frontpage_widgets',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -105,7 +97,6 @@ function _s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', '_s_widgets_init' );
 
 /**
  * TODO:

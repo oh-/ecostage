@@ -1,10 +1,9 @@
 .main-navigation {
+    z-index: 99999;
 	> div {
     float: right;
     @include pad(20px);
-    // padding-right: 20px;
   }
-	@include navtabs(0 0 6px 6px);
 	position: absolute;
 	right: 0;
 	ul {
@@ -54,11 +53,8 @@
 	li {
 		float: left;
 		margin-left: 1rem; // space between
-		@include pad(1rem);
-		background-color: $color__background-menu-item;
 		&:hover, 
 		&.focus {
-			border-top:10px solid $color__background-menu-hover;
 		}
 		&:hover > a,
 		&.focus > a {
@@ -66,6 +62,8 @@
 		}
 	}
 	a {
+    @include navtabs;
+		background-color: $color__background-menu-item;
 		display: block;
 		text-decoration: none;
 		color: $color__text-menu;
@@ -78,8 +76,21 @@
 	.current-menu-item,
 	.current_page_item {
 		//current menu item
-		background-color: $color__background-menu-select;
-		border-top: 8px solid $color__background-menu-item;
+    position: relative;
+    a:before {
+      content: ' . ';
+      margin: auto;
+      padding: auto;
+      right: 0;
+      left: 0;
+      max-width: 1rem;
+      position: absolute;
+      background-color: $color__background-menu-item;
+      @include rhythm-margins(-1.5, 0);
+      border-radius: 1rem;
+      text-align: center;
+      display: block;
+    }
 	}
 }
 
@@ -90,7 +101,7 @@
 	display: block;
 }
 
-@include breakpoint(min-width $mobile) {
+@include susy-breakpoint(min-width $mobile) {
 	.menu-toggle {
 		display: none;
 	}

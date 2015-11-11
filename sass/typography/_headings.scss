@@ -15,7 +15,7 @@ h2.site-description {
 }
 .entry-header .entry-title, .excerpt, .site-call {
 	@include pad(1);
-	@include adjust-font-size-to(2.5rem);
+	@include adjust-font-size-to(40px);
   @include rhythm(0, 1,1,0);
 	font-family: "Fira Sans";
 	color: $color__text_alt;
@@ -28,4 +28,7 @@ header#masthead {
 		color: $color__text_alt;
 		
 	}
+}
+#secondary .widget-title {
+  @include adjust-font-size-to(30px);
 }

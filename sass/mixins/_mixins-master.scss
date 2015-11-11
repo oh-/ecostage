@@ -29,16 +29,34 @@
 	@include pad($num);
 }
 @mixin page {
-	width: span(full);
-	@include page-squeeze;
+  position: relative;
+	@include span(full);
+  @include susy-breakpoint($max-tab-p) {
+		@include span(14 of 16 nest);
+    @include pad(1 of 16);
+  }
+	//up to tablet landscap
+	@include susy-breakpoint($tablet-portrait) {
+		// Tablet-portrait and up
+		@include span(14 of 16 nest);
+		@include pad(2 of 16);
+	};
+	@include susy-breakpoint($tablet-landscape) {
+		// Tablet-portrait and up
+		@include span(12 of 16 nest);
+		@include pad(3 of 16);
+	};
+	@include susy-breakpoint($desktop) {
+		@include span(16 of 16 nest);
+		@include pad(3 of 16);
+	}
+	// width: span(full);
+	// @include page-squeeze;
 }
 @mixin navtabs($corner: 1em) {
-	ul li {
-		border-top: 8px solid $color__a-y;
-		//background-color: $color__8th-b2;
-		//@include colgen($color__ecoblue, $color__8th-light, $color__8th-b3); 
-		@include border-radius($corner);
-	}
+  @include margin-leader(1);
+  @include pad(1rem);
+  border-radius: $corner;
 }
 @mixin nolink() {
 	text-decoration: none;
@@ -48,9 +66,9 @@
 	// @include contrasted($butcol);
   background-color: $color__a-r;
   color: $color__green5;
-	&:hover {@include contrasted(adjust-lightness($butcol, 20));}
+	// &:hover {@include contrasted(adjust-lightness($butcol, 20));}
 	@include nolink;
-	@include border-radius(2em);
+	border-radius: 2em;
 
 }
 //colour generator

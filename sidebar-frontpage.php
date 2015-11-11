@@ -5,11 +5,9 @@
  * @package _s
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
-?>
-
+if ( is_active_sidebar( 'frontpage_widgets' ) ) { ?>
 <div id="secondary" class="widget-area sidebar-frontpage" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+	<?php dynamic_sidebar( 'frontpage-widgets' ); ?>
 </div><!-- #secondary -->
+<?php	} ?>
+

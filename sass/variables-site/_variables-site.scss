@@ -45,3 +45,66 @@ $base-font-size: 16px;
 $base-line-height: 24px; 
 $rhythm-unit: "em";
 $rem-with-px-fallback: true;
+
+
+$breakpoint-to-ems: true;
+
+$print-media: "print";
+$hidpi: min-resolution 143dppx;
+
+// For use with max-width only:
+// +breakpoint(max-width: $tab-l)
+$phone-p: 319px;
+$phone-l: 479px;
+$tab-p: 639px;
+$tab-l: 769px;
+$desk: 1020px;
+$desk-full: 1079px;
+
+// For use with min-width (default breakpoint mixin)
+// +breakpoint($desktop)
+$smartphone-portrait: "screen" $phone-p + 1px;
+$smartphone-landscape: "screen" $phone-l + 1px;
+$tablet-portrait: "screen" $tab-p + 1px;
+$tablet-landscape: "screen" $tab-l + 1px;
+$desktop: $desk + 1px;
+
+// use
+//  $breakpoint-no-queries: true
+//  $breakpoint-no-query-fallbacks: '.lt-ie9' !global
+// at the top of a panel layout sass file to
+// re-render everything with .lt-ie9 for desktop media queries.
+
+//////////////////////////////
+// COMBINATIONS
+
+// Phones
+$max-phone-p: "screen" (max-width $phone-p);
+$max-phone-l: "screen" (max-width $phone-l);
+$phone-p-phone-l: "screen" $phone-p + 1px $phone-l;
+
+// Tablets
+$max-tab-p: "screen" (max-width $tab-p);
+$max-tab-l: "screen" (max-width $tab-l);
+$phone-l-tab-p: "screen" $phone-l + 1px $tab-p;
+$phone-l-tab-l: "screen" $phone-l + 1px $tab-l;
+$tab-p-tab-l: "screen" $tab-p + 1px $tab-l;
+$tab-p-desk: "screen" $tab-p + 1px $desk;
+$tab-l-desk: "screen" $tab-l + 1px $desk;
+
+// All Mobile
+$mobile-device: "screen" max-width $desk;
+
+// High Resolution Devices
+$mobile-hi-res: "screen" (max-width $desk) $hidpi;
+$desk-hi-res: "screen" (min-width $desk) $hidpi;
+
+//Bonus: Mixin for >IE9 *only* with no media queries
+// @mixin fallback {
+//   @if $breakpoint-no-queries == true {
+//     .lt-ie9 & {
+//       @content;
+//     }
+//   }
+// }
+//

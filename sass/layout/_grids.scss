@@ -2,22 +2,32 @@
 #buddypress {
   @import "buddy";
 }
-
+#masthead {
+  position: relative;
+  background: $color__background-header;
+}
+.site-logo-wrapper {
+  @include page;
+  @include padding-leader(2);
+  .site-logo {
+    @include span (3 of 8);
+  }
+}
 #page {
 	//NB this is the whole page, not the page (body) class
-	@include container($susy);
-	background: $color__background-screen;
+	   @include container($susy);
+	// background: $color__background-screen;
 };
 footer#colophon {
 	background-color: $color__background-footer;
 	@include page;
 	@include rhythm-padding(3,2);
 	min-height: 8rem;
-  color: $color__text-alt;
+  .site-info { @include span(3 of 16 last);}
 }
 // image
 .site-logo-wrapper {
-	@include span(4 of 14);
+	// @include span(4 of 14);
   // background-color: $color__a-r;
 	// .site-logo {
 	// 	@include span(1 of 4);
@@ -26,16 +36,23 @@ footer#colophon {
 		@include span(3 of 4 last);	
 	}
 }
+#content .band {
+  position: relative;
+  left: 0;
+  right: 0;
+  color: $color__text-alt;
+  background-color: $color__background-band;
+}
 .page .entry-header {
-  background-color: $color__green2;
+  display: none;
+  background-color: $color__background-band;
 }
 
 // span.excerpt p {color: $color__text-screen;}
 body.home {
 	//Enter details for things only to be found on the home page 
 	#masthead {
-    // min-height: 350px; 
-    @include rhythm-padding(0,1.5);
+    // @include rhythm-padding(0,1.5);
     background-color:$color__background-header; 
   } 
 	.site-branding {
@@ -50,7 +67,7 @@ body.home {
     @include page();
     @include rhythm(0, 1, 2, 0);
 		&:nth-child(2n) { 
-      background-color: $color__background-article-alt; 
+      // background-color: $color__background-article-alt; 
 		}
 		// &:last-child {
 		// 	margin-bottom: 0;
@@ -60,10 +77,6 @@ body.home {
 }
 #primary {
   
-}
-#masthead {
-  position: relative;
-  background: $color__background-header;
 }
 
 
@@ -84,19 +97,9 @@ body.home {
 		background-color: $color__background-header;
 		//min-height: 100vh;
 	}
-	.excerpt >p {@include page-squeeze;}
-	.entry-header {
-		width: span(full);
-	}
 }
 // Page header defaults
 .site-branding,	.page .entry-header {
 	// @include padding-leader(9);
 	// @include padding-trailer(2);
-}
-.entry-header {
-	@include page;
-}
-.entry-content {
-	@include page;
 }

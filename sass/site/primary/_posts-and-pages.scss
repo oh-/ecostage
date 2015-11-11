@@ -3,7 +3,8 @@
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	// margin: 0 0 1.5em;
+  margin: 0;
 }
 
 .byline,
@@ -22,8 +23,23 @@
 	margin: 1.5em 0 0;
 }
 
+.entry-content {
+  >* { @include page; };
+  .band {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  
+}
+.entry-header {
+	@include page;
+}
+
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+// .excerpt >p {@include page-squeeze;}

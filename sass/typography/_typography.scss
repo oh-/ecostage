@@ -15,3 +15,12 @@ textarea {
 @import "headings";
 
 @import "copy";
+
+#colophon {
+  @include adjust-font-size-to(10px);
+  color: $color__text_alt;
+  a:link { 
+    color: $color__text_alt;
+    @include nolink;
+  }
+}

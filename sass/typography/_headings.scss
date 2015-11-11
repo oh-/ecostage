@@ -1,8 +1,8 @@
-@include web-fonts(("Fira Sans":"500"));
 
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Fira Sans";
+	font-family: $font__heading;
+  font-weight: 300;
 	clear: both;
 }
 h1.site-title {
@@ -17,7 +17,7 @@ h2.site-description {
 	@include pad(1);
 	@include adjust-font-size-to(40px);
   @include rhythm(0, 1,1,0);
-	font-family: "Fira Sans";
+	font-family: $font__heading;
 	color: $color__text_alt;
 	text-align: center;
 	// text-transform: capitalize;

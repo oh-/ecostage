@@ -64,9 +64,12 @@
 	a {
     @include navtabs;
 		background-color: $color__background-menu-item;
+    font-family: $font__heading;
+    font-weight: 500;
 		display: block;
 		text-decoration: none;
 		color: $color__text-menu;
+    @include adjust-font-size-to(14px);
 	}
 
 	.current_page_item > a,
@@ -83,11 +86,12 @@
       padding: auto;
       right: 0;
       left: 0;
-      max-width: 1rem;
+      max-width: 2rem;
       position: absolute;
-      background-color: $color__background-menu-item;
+      background-color: $color__black;
+      color: $color__black;
       @include rhythm-margins(-1.5, 0);
-      border-radius: 1rem;
+      border-radius: 2rem;
       text-align: center;
       display: block;
     }

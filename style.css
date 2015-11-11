@@ -41,7 +41,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import url("//fonts.googleapis.com/css?family=Fira%20Sans%3A500");
+@import url("//fonts.googleapis.com/css?family=Fira%20Sans%3Alight300%2CMedium%20500");
+@import url("//fonts.googleapis.com/css?family=Josefin%20Sans%3ALight300%2CNormal%20400");
 .color-1 {
   background-color: #2e2e2c; }
 
@@ -255,13 +256,15 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
   font-size: 1.125em;
   line-height: 1.33333em;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans";
+  font-weight: 300;
   clear: both; }
 
 h1.site-title {
@@ -531,9 +534,13 @@ a {
     padding-right: 1rem;
     border-radius: 1em;
     background-color: #F96B24;
+    font-family: "Fira Sans";
+    font-weight: 500;
     display: block;
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-size: 0.875em;
+    line-height: 1.71429em; }
   .main-navigation .current-menu-item,
   .main-navigation .current_page_item {
     position: relative; }
@@ -544,12 +551,13 @@ a {
       padding: auto;
       right: 0;
       left: 0;
-      max-width: 1rem;
+      max-width: 2rem;
       position: absolute;
-      background-color: #F96B24;
+      background-color: #3A3A3A;
+      color: #3A3A3A;
       margin-top: -2.25em;
       margin-bottom: 0em;
-      border-radius: 1rem;
+      border-radius: 2rem;
       text-align: center;
       display: block; }
 

@@ -39,6 +39,9 @@ header#masthead {
 		
 	}
 }
+.hilight, .hl {
+  color: $color__text-hl;
+}
 #secondary .widget-title {
   @include adjust-font-size-to(30px);
 }

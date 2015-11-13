@@ -308,6 +308,9 @@ header#masthead .site-title, header#masthead .site-description, header#masthead 
   header#masthead .site-title a, header#masthead .site-description a, header#masthead .site-title a a {
     text-decoration: none; }
 
+.hilight, .hl {
+  color: #F96B24; }
+
 #secondary .widget-title {
   font-size: 1.875em;
   line-height: 1.6em; }

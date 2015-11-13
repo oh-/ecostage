@@ -30,6 +30,10 @@ function _s_customize_register( $wp_customize ) {
 		'title' => __('Header Image', '_s'),
 		'description' => __('Header Image', '_s')
 	));
+	// $wp_customize->add_section('_s_social_section', array(
+	// 	'title' => __('Social Buttons', '_s'),
+	// 	'description' => __('add social buttons in footer', '_s')
+	// ));
         /*
 	 * Call to Action
          */
@@ -77,6 +81,20 @@ function _s_customize_register( $wp_customize ) {
 		'section' => '_s_header',
 		'setting' => '_s_header_image',
 	) ));
+
+  /*
+   * Social Buttons
+   */
+  //
+	// $wp_customize->add_setting('_s_twitter_handle', array(
+	// 	'default' => ''
+	// ));
+	// $wp_customize->add_control( new WP_Customize_Control($wp_customize, '_s_twitter_handle_control', array(
+	// 	'label' => __('Enter your twitter handle', '_s'),
+  //   'section' => '_s_social_section',
+	// 	'setting' => '_s_twitter_handle',
+	// 	'type' => 'textarea'
+	// ) ));
 }
 add_action( 'customize_register', '_s_customize_register' );
 

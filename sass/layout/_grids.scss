@@ -8,17 +8,27 @@
   .site-description-page {
     * {margin: 0;};
     color: $color__green;
-    @include span(15 of 16 last);
+    @include full;
     @extend h3;
-    @include margin-leader(-1.7);
+    @include susy-breakpoint($tab-p){
+      @include span(14 of 16 last);
+      @include margin-leader(-1.7);
+    }
   }
 }
 .site-logo-wrapper {
   @include page;
-  @include padding-leader(2);
+  @include susy-breakpoint(max-width 900px) {
+    @include padding-leader(2);
+  }
   .site-logo {
-    @include span(400px);
-    margin-left: -100px;
+    @include full;
+    @include susy-breakpoint($phone-l){
+      @include span(400px);
+    }
+    @include susy-breakpoint($tab-p){
+      margin-left: span(-100px);
+    }
   }
 }
 #spage {
@@ -111,3 +121,5 @@ body.home {
 	// @include padding-leader(9);
 	// @include padding-trailer(2);
 }
+// The following piece of code is a mixin to reveal what breakpoint has been triggered
+@include size();

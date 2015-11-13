@@ -1,11 +1,13 @@
 .main-navigation {
+    @include page;
+    // @include squish(2 0 of 16);
+    // position: absolute;
     z-index: 99999;
-	> div {
+	>div {
+    @include squish(0 -2 of 16);
+    min-width: 600px;
     float: right;
-    @include pad(20px);
   }
-	position: absolute;
-	right: 0;
 	ul {
 		display: none;
 		list-style: none;
@@ -100,9 +102,22 @@
 
 
 /* Small menu. */
+@include susy-breakpoint(0 $mobile) {
+  .menu-item a {
+    @include rhythm(0, 0.3);
+    border: solid 1px darken($color__orange, 10);
+  }
+  .main-navigation>div {
+    @include full();
+  }
+}
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+  position: static;
+  li {
+    float: none;
+  }
 }
 
 @include susy-breakpoint(min-width $mobile) {

@@ -21,38 +21,101 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+// Developmen mixins
 // testing mixin - sets background-color: $col !important; 
 @mixin testing($col: red) {
 	background-color: $col !important; 
 }
+// Show Size
+@mixin size($colour: red) {
+	// #showsize {
+    #wp-admin-bar-top-secondary {
+		// position: fixed;
+		// @include pad(15px);
+		// top: 0;
+		// @include span(isolate 5 at 6 of 12);
+		// z-index: 9999999;
+		// border-radius: 10px;
+		// &:hover{opacity: 0.8;}
+		&::after {	
+			content: 'minimum';
+      @include susy-breakpoint($phone-p) {
+        content: '$phone-p'; }
+      @include susy-breakpoint($phone-l) {
+        content: '$phone-l'; }
+      @include susy-breakpoint($tab-p) {
+        content: '$tab-p'; }
+      @include susy-breakpoint($tab-l) {
+        content: '$tab-l'; };
+      @include susy-breakpoint($desktop) {
+        content: '$desktop'; }
+      @include susy-breakpoint($desk-full) {
+        content: '$desk-full'; }
+		};
+	};
+}	
+
+
 @mixin page-squeeze($num: 2) {
 	@include pad($num);
 }
+/*
+ * Page layout mixins
+ */
 @mixin page {
-  position: relative;
-	@include span(full);
-  @include susy-breakpoint($max-tab-p) {
-		@include span(14 of 16 nest);
-    @include pad(1 of 16);
+	@include span(full nest);
+  @include susy-breakpoint($phone-p) {
+    // content: '$phone-p'; 
+    // max-width: calc($phone-p - 100px); 
   }
-	//up to tablet landscap
-	@include susy-breakpoint($tablet-portrait) {
-		// Tablet-portrait and up
-		@include span(14 of 16 nest);
-		@include pad(2 of 16);
-	};
-	@include susy-breakpoint($tablet-landscape) {
-		// Tablet-portrait and up
-		@include span(12 of 16 nest);
+  @include susy-breakpoint($phone-l) {
+    // content: '$phone-l'; 
+  }
+  @include susy-breakpoint($tab-p) {
+    // Tablet-portrait and up
+    @include pad(2 of 16);
+  }
+  @include susy-breakpoint($tab-l) {
 		@include pad(3 of 16);
-	};
-	@include susy-breakpoint($desktop) {
-		@include span(16 of 16 nest);
-		@include pad(3 of 16);
-	}
-	// width: span(full);
-	// @include page-squeeze;
+  };
+  @include susy-breakpoint($desktop) {
+    // content: '$desktop'; 
+		@include pad(4 of 16);
+  }
+  @include susy-breakpoint($desk-full) {
+    // content: '$desk-full'; 
+		@include pad(4 of 16);
+    // @include span(720px no-gutter);
+    // @include squish(8 of 16);
+    
+  }
 }
+// @mixin page {
+//   position: relative;
+// 	@include span(full);
+//   @include susy-breakpoint($max-tab-p) {
+// 		// @include span(14 of 16 nest);
+//     // @include pad(1 of 16);
+//   }
+// 	//up to tablet landscap
+// 	@include susy-breakpoint($tablet-portrait) {
+// 		// Tablet-portrait and up
+// 		// @include span(14 of 16 nest);
+// 		// @include pad(2 of 16);
+// 	};
+// 	@include susy-breakpoint($tablet-landscape) {
+//     *{@include testing;};
+// 		// Tablet-portrait and up
+// 		// @include span(12 of 16 nest);
+// 		// @include pad(3 of 16);
+// 	};
+// 	@include susy-breakpoint($desktop) {
+// 		// @include span(16 of 16 nest);
+// 		// @include pad(3 of 16);
+// 	}
+// 	// width: span(full);
+// 	// @include page-squeeze;
+// }
 @mixin navtabs($corner: 1em) {
   @include margin-leader(1);
   @include pad(1rem);

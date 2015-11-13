@@ -64,6 +64,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .color-7 {
   background-color: #fcea22; }
 
+/*
+ * Page layout mixins
+ */
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -272,7 +275,6 @@ h1, h2, h3, #masthead .site-description-page, h4, h5, h6 {
   margin-bottom: 1.05em; }
 .entry-content h3, .entry-content #masthead .site-description-page, #masthead .entry-content .site-description-page, .entry-content h2, .entry-content h1 {
   font-weight: 500;
-  color: #F96B24;
   margin-top: 0.45em;
   margin-bottom: 0.15em; }
 
@@ -504,13 +506,32 @@ a {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  z-index: 99999;
-  position: absolute;
-  right: 0; }
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 99999; }
+  @media (min-width: 639px) {
+    .main-navigation {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    .main-navigation {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    .main-navigation {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    .main-navigation {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
   .main-navigation > div {
-    float: right;
-    padding-left: 20px;
-    padding-right: 20px; }
+    margin-left: 0%;
+    margin-right: -12.53731%;
+    min-width: 600px;
+    float: right; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -571,9 +592,27 @@ a {
       display: block; }
 
 /* Small menu. */
+@media (min-width: 0) and (max-width: 640px) {
+  .menu-item a {
+    margin-top: 0em;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+    margin-bottom: 0em;
+    border: solid 1px #e45006; }
+
+  .main-navigation > div {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; } }
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: block;
+  position: static; }
+  .menu-toggle li,
+  .main-navigation.toggled ul li {
+    float: none; }
 
 @media (min-width: 640px) {
   .menu-toggle {
@@ -631,12 +670,14 @@ a {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em; }
+  margin-right: 1.5em;
+  margin-bottom: 1.5em; }
 
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em; }
+  margin-left: 1.5em;
+  margin-bottom: 1.5em; }
 
 .aligncenter {
   display: block;
@@ -693,54 +734,58 @@ a {
   background: light-grey; }
   #masthead .site-description-page {
     color: #0B5453;
-    width: 93.73134%;
-    float: right;
-    margin-right: 0;
-    margin-top: -2.55em; }
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
     #masthead .site-description-page * {
       margin: 0; }
+    @media (min-width: 639px) {
+      #masthead .site-description-page {
+        width: 87.46269%;
+        float: right;
+        margin-right: 0;
+        margin-top: -2.55em; } }
 
 .site-logo-wrapper {
-  position: relative;
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0;
-  padding-top: 3em; }
-  @media (screen: max-width 639px) {
+  margin-right: 0; }
+  @media (min-width: 639px) {
     .site-logo-wrapper {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
-      padding-left: 6.26866%;
-      padding-right: 6.26866%; } }
-  @media (screen: 640px) {
-    .site-logo-wrapper {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 12.53731%;
       padding-right: 12.53731%; } }
-  @media (screen: 770px) {
+  @media (min-width: 769px) {
     .site-logo-wrapper {
-      width: 74.92537%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 18.80597%;
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     .site-logo-wrapper {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 18.80597%;
-      padding-right: 18.80597%; } }
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    .site-logo-wrapper {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (max-width: 900px) {
+    .site-logo-wrapper {
+      padding-top: 3em; } }
   .site-logo-wrapper .site-logo {
-    width: 400px;
+    clear: both;
+    width: 100%;
     float: left;
-    margin-right: 0.29851%;
-    margin-left: -100px; }
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 479px) {
+      .site-logo-wrapper .site-logo {
+        width: 400px;
+        float: left;
+        margin-right: 0.29851%; } }
+    @media (min-width: 639px) {
+      .site-logo-wrapper .site-logo {
+        margin-left: -100px; } }
 
 #spage {
   max-width: 100%;
@@ -786,7 +831,6 @@ a {
 
 footer#colophon {
   background-color: #3A3A3A;
-  position: relative;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -794,35 +838,22 @@ footer#colophon {
   padding-top: 4.5em;
   padding-bottom: 3em;
   min-height: 8rem; }
-  @media (screen: max-width 639px) {
+  @media (min-width: 639px) {
     footer#colophon {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
-      padding-left: 6.26866%;
-      padding-right: 6.26866%; } }
-  @media (screen: 640px) {
-    footer#colophon {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 12.53731%;
       padding-right: 12.53731%; } }
-  @media (screen: 770px) {
+  @media (min-width: 769px) {
     footer#colophon {
-      width: 74.92537%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 18.80597%;
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     footer#colophon {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 18.80597%;
-      padding-right: 18.80597%; } }
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    footer#colophon {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
   footer#colophon .site-info {
     width: 18.50746%;
     float: right;
@@ -858,7 +889,6 @@ body.home .site-branding {
     line-height: 2em;
     padding: 1.2rem; }
 body.home aside.widget {
-  position: relative;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -867,35 +897,22 @@ body.home aside.widget {
   padding-top: 1.5em;
   padding-bottom: 3em;
   margin-bottom: 0em; }
-  @media (screen: max-width 639px) {
+  @media (min-width: 639px) {
     body.home aside.widget {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
-      padding-left: 6.26866%;
-      padding-right: 6.26866%; } }
-  @media (screen: 640px) {
-    body.home aside.widget {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 12.53731%;
       padding-right: 12.53731%; } }
-  @media (screen: 770px) {
+  @media (min-width: 769px) {
     body.home aside.widget {
-      width: 74.92537%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 18.80597%;
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     body.home aside.widget {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 18.80597%;
-      padding-right: 18.80597%; } }
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    body.home aside.widget {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
 
 body.home #page {
   position: relative; }
@@ -914,6 +931,27 @@ body.home #primary {
   top: 0; }
 body.home .entry-header {
   background-color: light-grey; }
+
+#wp-admin-bar-top-secondary::after {
+  content: 'minimum'; }
+  @media (min-width: 319px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$phone-p'; } }
+  @media (min-width: 479px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$phone-l'; } }
+  @media (min-width: 639px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$tab-p'; } }
+  @media (min-width: 769px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$tab-l'; } }
+  @media (min-width: 1021px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$desktop'; } }
+  @media (min-width: 1079px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$desk-full'; } }
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -938,80 +976,52 @@ body.home .entry-header {
   margin: 1.5em 0 0; }
 
 .entry-content > * {
-  position: relative;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  @media (screen: max-width 639px) {
+  @media (min-width: 639px) {
     .entry-content > * {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
-      padding-left: 6.26866%;
-      padding-right: 6.26866%; } }
-  @media (screen: 640px) {
-    .entry-content > * {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 12.53731%;
       padding-right: 12.53731%; } }
-  @media (screen: 770px) {
+  @media (min-width: 769px) {
     .entry-content > * {
-      width: 74.92537%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 18.80597%;
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     .entry-content > * {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 18.80597%;
-      padding-right: 18.80597%; } }
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    .entry-content > * {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
 .entry-content .band {
   position: relative;
   left: 0;
   right: 0; }
 
 .entry-header {
-  position: relative;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  @media (screen: max-width 639px) {
+  @media (min-width: 639px) {
     .entry-header {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
-      padding-left: 6.26866%;
-      padding-right: 6.26866%; } }
-  @media (screen: 640px) {
-    .entry-header {
-      width: 87.46269%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 12.53731%;
       padding-right: 12.53731%; } }
-  @media (screen: 770px) {
+  @media (min-width: 769px) {
     .entry-header {
-      width: 74.92537%;
-      float: left;
-      margin-right: 0.29851%;
       padding-left: 18.80597%;
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     .entry-header {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 18.80597%;
-      padding-right: 18.80597%; } }
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    .entry-header {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
 
 .page-links {
   clear: both;

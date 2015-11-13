@@ -24,7 +24,9 @@
 }
 
 .entry-content {
-  >* { @include page; };
+  >* { 
+  @include page;
+  };
   .band {
     position: relative;
     left: 0;

@@ -41,8 +41,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url("//fonts.googleapis.com/css?family=Droid%20Sans");
 @import url("//fonts.googleapis.com/css?family=Fira%20Sans%3Alight300%2CMedium%20500");
-@import url("//fonts.googleapis.com/css?family=Josefin%20Sans%3ALight300%2CNormal%20400");
 .color-1 {
   background-color: #2e2e2c; }
 
@@ -250,7 +250,7 @@ th {
 # Typography
 --------------------------------------------------------------*/
 html {
-  font-size: 112.5%;
+  font-size: 106.25%;
   line-height: 1.5em; }
 
 body,
@@ -258,11 +258,11 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: "Josefin Sans", sans-serif;
+  color: black;
+  font-family: "Droid Sans", sans-serif;
   font-weight: 300;
-  font-size: 1.125em;
-  line-height: 1.33333em;
+  font-size: 1.0625em;
+  line-height: 1.41176em;
   line-height: 1.5; }
 
 h1, h2, h3, #masthead .site-description-page, h4, h5, h6 {
@@ -495,11 +495,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #0B5453;
+  font-style: normal;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #0B5453; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    text-decoration: underline; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {

@@ -29,7 +29,6 @@ $color-list: #2e2e2c #186263 #149c8e #9ed2bd #d3eadd #e0542e #fcea22;
 
 $color__background-body: white;
 $color__background-band: $color__black;
-// $color__background-article-alt: $color__green4;
 $color__background-screen: white;
 $color__background-header: light-grey;
 $color__background-footer: $color__black;
@@ -45,14 +44,14 @@ $color__background-menu-select: $color__background-header;
 
 
 $color__text-screen: black;
+$color__text-main: black;
 $color__text-alt: white;
 $color__text-hl: $color__orange;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__link: $color__green;
+$color__link-visited: $color__green;
+$color__link-hover: $color__orange;
 $color__text-menu: white;
 
 $color__border-button: #ccc #ccc #bbb;

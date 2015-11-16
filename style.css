@@ -1,124 +1,1131 @@
 /*
-Error: Undefined variable: "$font__size-".
-        on line 10 of app/ecoscore/sass/typography/_headings.scss, in `adjust-font-size-to'
-        from line 10 of app/ecoscore/sass/typography/_headings.scss
-        from line 16 of app/ecoscore/sass/typography/_typography.scss
-        from line 56 of app/ecoscore/sass/style.scss
+Theme Name: ecoscore
+Theme URI: http://underscores.me/
+Author: Automattic
+Author URI: http://automattic.com/
+Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: _s
+Tags:
 
-5: Author URI: http://automattic.com/
-6: Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-7: Version: 1.0.0
-8: License: GNU General Public License v2 or later
-9: License URI: http://www.gnu.org/licenses/gpl-2.0.html
-10: Text Domain: _s
-11: Tags:
-12: 
-13: This theme, like WordPress, is licensed under the GPL.
-14: Use it to make something cool, have fun, and share what you've learned with others.
-15: 
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 
-Backtrace:
-app/ecoscore/sass/typography/_headings.scss:10:in `adjust-font-size-to'
-app/ecoscore/sass/typography/_headings.scss:10
-app/ecoscore/sass/typography/_typography.scss:16
-app/ecoscore/sass/style.scss:56
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/variable.rb:49:in `_perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/interpolation.rb:97:in `_perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:355:in `block (2 levels) in visit_mixin'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:355:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:355:in `block in visit_mixin'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `block in with_mixin'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `with_mixin'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:270:in `block (3 levels) in visit_for'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:270:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:270:in `block (2 levels) in visit_for'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:266:in `each'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:266:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:266:in `block in visit_for'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:265:in `visit_for'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin.rb:82:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:364:in `watch_or_update'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
+_s is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$font__size-\".\A         on line 10 of app/ecoscore/sass/typography/_headings.scss, in `adjust-font-size-to'\A         from line 10 of app/ecoscore/sass/typography/_headings.scss\A         from line 16 of app/ecoscore/sass/typography/_typography.scss\A         from line 56 of app/ecoscore/sass/style.scss\A \A 5: Author URI: http://automattic.com/\A 6: Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.\A 7: Version: 1.0.0\A 8: License: GNU General Public License v2 or later\A 9: License URI: http://www.gnu.org/licenses/gpl-2.0.html\A 10: Text Domain: _s\A 11: Tags:\A 12: \A 13: This theme, like WordPress, is licensed under the GPL.\A 14: Use it to make something cool, have fun, and share what you've learned with others.\A 15: "; }
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import url("//fonts.googleapis.com/css?family=Yantramanav%3Alight300%2Cnormal%20400");
+@import url("//fonts.googleapis.com/css?family=Droid%20Sans");
+@import url("//fonts.googleapis.com/css?family=Fira%20Sans%3Alight300%2CMedium%20500");
+.color-1 {
+  background-color: #2e2e2c; }
+
+.color-2 {
+  background-color: #186263; }
+
+.color-3 {
+  background-color: #149c8e; }
+
+.color-4 {
+  background-color: #9ed2bd; }
+
+.color-5 {
+  background-color: #d3eadd; }
+
+.color-6 {
+  background-color: #e0542e; }
+
+.color-7 {
+  background-color: #fcea22; }
+
+.band {
+  font-weight: 300; }
+
+/*
+ * Page layout mixins
+ */
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+html {
+  font-size: 100%;
+  line-height: 1.5em; }
+
+body,
+button,
+input,
+select,
+textarea {
+  color: black;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.5; }
+
+h1, h2, h3, #masthead .site-description-page, h4, h5, h6 {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  clear: both; }
+
+h1 {
+  font-size: 1.5em;
+  line-height: 2em; }
+
+h2 {
+  font-size: 1.375em;
+  line-height: 2.18182em; }
+
+h3, #masthead .site-description-page {
+  font-size: 1.25em;
+  line-height: 1.2em; }
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.33333em; }
+
+h5 {
+  font-size: 1em;
+  line-height: 1.5em; }
+
+.entry-content p {
+  margin-top: 0.45em;
+  margin-bottom: 1.05em; }
+.entry-content h3, .entry-content #masthead .site-description-page, #masthead .entry-content .site-description-page, .entry-content h2, .entry-content h1 {
+  margin-top: 0.45em;
+  margin-bottom: 0.15em; }
+
+h1.site-title {
+  font-size: 2.8125em;
+  line-height: 1.6em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
+
+h2.site-description {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
+
+.entry-header .entry-title, .excerpt, .site-call {
+  padding-left: 6.26866%;
+  padding-right: 6.26866%;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 0em;
+  font-family: "Fira Sans";
+  color: white;
+  text-align: center; }
+
+header#masthead .site-title, header#masthead .site-description, header#masthead .site-title a, header#masthead .site-description a {
+  color: white; }
+  header#masthead .site-title a, header#masthead .site-description a, header#masthead .site-title a a {
+    text-decoration: none; }
+
+.hilight, .hl {
+  color: #F96B24; }
+
+#secondary .widget-title {
+  font-size: 1.875em;
+  line-height: 1.6em; }
+
+p {
+  margin-bottom: 1.5em; }
+
+.excerpt > p {
+  margin-top: 0; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 0.9375em;
+  line-height: 1.6em; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+big {
+  font-size: 125%; }
+
+#colophon {
+  font-size: 0.625em;
+  line-height: 2.4em;
+  color: white; }
+  #colophon a:link {
+    color: white;
+    text-decoration: none;
+    background-color: clear !important; }
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+body {
+  background: white;
+  /* Fallback for when there is no custom background color defined. */ }
+
+blockquote, q {
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+ul, ol {
+  margin: 0 0 1.5em 3em; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 1.5em; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0px solid;
+  border-color: #ccc #ccc #bbb;
+  background: #E0542E;
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.25em;
+  margin-top: 0.3em;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  margin-bottom: 0.3em;
+  border-2px-width: 0.0625em;
+  border-2px-style: solid;
+  padding-2px: 1.4375em; }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    background: #FCEA22;
+    border-color: #ccc #bbb #aaa;
+    color: black; }
+  button:active, button:focus,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    border-color: #aaa #bbb #bbb;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
+    color: #111; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px; }
+
+textarea {
+  padding-left: 3px;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: #0B5453;
+  font-style: normal;
+  text-decoration: none; }
+  a:visited {
+    color: #0B5453; }
+  a:hover, a:focus, a:active {
+    text-decoration: underline; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 99999; }
+  @media (min-width: 639px) {
+    .main-navigation {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    .main-navigation {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    .main-navigation {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    .main-navigation {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  .main-navigation > div {
+    margin-left: 0%;
+    margin-right: -12.53731%;
+    min-width: 600px;
+    float: right; }
+  .main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    background-color: none; }
+    .main-navigation ul ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 1.5em;
+      left: -999em;
+      z-index: 99999; }
+      .main-navigation ul ul ul {
+        left: -999em;
+        top: 0; }
+      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+        left: 100%; }
+      .main-navigation ul ul a {
+        width: 200px; }
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul {
+      left: auto; }
+  .main-navigation li {
+    float: left;
+    margin-left: 1rem; }
+  .main-navigation a {
+    margin-top: 1.5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1em;
+    background-color: #F96B24;
+    font-family: "Fira Sans";
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 0.875em;
+    line-height: 1.71429em; }
+  .main-navigation .current-menu-item,
+  .main-navigation .current_page_item {
+    position: relative; }
+    .main-navigation .current-menu-item a:before,
+    .main-navigation .current_page_item a:before {
+      content: ' . ';
+      margin: auto;
+      padding: auto;
+      right: 0;
+      left: 0;
+      max-width: 2rem;
+      position: absolute;
+      background-color: #3A3A3A;
+      color: #3A3A3A;
+      margin-top: -2.25em;
+      margin-bottom: 0em;
+      border-radius: 2rem;
+      text-align: center;
+      display: block; }
+
+/* Small menu. */
+@media (min-width: 0) and (max-width: 640px) {
+  .menu-item a {
+    margin-top: 0em;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+    margin-bottom: 0em;
+    border: solid 1px #e45006; }
+
+  .main-navigation > div {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; } }
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+  position: static; }
+  .menu-toggle li,
+  .main-navigation.toggled ul li {
+    float: none; }
+
+@media (min-width: 640px) {
+  .menu-toggle {
+    display: none; }
+
+  .main-navigation ul {
+    float: right;
+    display: block; } }
+.site-main .posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: black;
+    display: block;
+    font-size: 0.875em;
+    line-height: 1.71429em;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em; }
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table; }
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both; }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none; }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+#buddypress .item-list-tabs {
+  background-color: green !important; }
+
+#page {
+  min-height: 100%;
+  position: absolute; }
+
+#masthead {
+  position: relative;
+  background: light-grey; }
+  #masthead .site-description-page {
+    font-family: "Fira Sans";
+    color: #0B5453;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    #masthead .site-description-page * {
+      margin: 0; }
+    @media (min-width: 639px) {
+      #masthead .site-description-page {
+        padding-left: 10.02985%;
+        padding-right: 0%;
+        margin-top: -2.55em; } }
+
+.site-logo-wrapper {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 639px) {
+    .site-logo-wrapper {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    .site-logo-wrapper {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    .site-logo-wrapper {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    .site-logo-wrapper {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (max-width: 900px) {
+    .site-logo-wrapper {
+      padding-top: 3em; } }
+  .site-logo-wrapper .site-logo {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 479px) {
+      .site-logo-wrapper .site-logo {
+        width: 400px;
+        float: left;
+        margin-right: 0.29851%; } }
+    @media (min-width: 639px) {
+      .site-logo-wrapper .site-logo {
+        margin-left: -100px; } }
+
+#spage {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  #spage:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+footer#colophon {
+  background-color: #3A3A3A;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 4.5em;
+  padding-bottom: 3em;
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  margin-top: -150px; }
+  @media (min-width: 639px) {
+    footer#colophon {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    footer#colophon {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    footer#colophon {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    footer#colophon {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  footer#colophon .site-info {
+    width: 18.50746%;
+    float: right;
+    margin-right: 0; }
+
+.site-logo-wrapper #sitetitle2 {
+  width: 74.6988%;
+  float: right;
+  margin-right: 0; }
+
+#content .band {
+  position: relative;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: #3A3A3A;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em; }
+
+.page .entry-header {
+  background-color: #3A3A3A; }
+
+body.home #masthead {
+  background-color: light-grey; }
+body.home .site-branding {
+  text-align: center; }
+  body.home .site-branding a {
+    background-color: #E0542E;
+    text-decoration: none;
+    background-color: clear !important;
+    border-radius: 2em;
+    font-size: 1.5em;
+    line-height: 2em;
+    padding: 1.2rem; }
+body.home aside.widget {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 3em;
+  margin-bottom: 0em; }
+  @media (min-width: 639px) {
+    body.home aside.widget {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    body.home aside.widget {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    body.home aside.widget {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    body.home aside.widget {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+
+#primary {
+  margin-bottom: 150px; }
+
+body.home #page {
+  position: relative; }
+body.home #masthead {
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background: clear; }
+body.home .entry-header {
+  background-color: light-grey; }
+
+#wp-admin-bar-top-secondary::after {
+  content: 'minimum'; }
+  @media (min-width: 319px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$phone-p'; } }
+  @media (min-width: 479px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$phone-l'; } }
+  @media (min-width: 639px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$tab-p'; } }
+  @media (min-width: 769px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$tab-l'; } }
+  @media (min-width: 1021px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$desktop'; } }
+  @media (min-width: 1079px) {
+    #wp-admin-bar-top-secondary::after {
+      content: '$desk-full'; } }
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block; }
+
+.hentry {
+  margin: 0; }
+
+.byline,
+.updated:not(.published) {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+.entry-content > * {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 639px) {
+    .entry-content > * {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    .entry-content > * {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    .entry-content > * {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    .entry-content > * {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+.entry-content .band {
+  position: relative;
+  left: 0;
+  right: 0; }
+
+.entry-header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 639px) {
+    .entry-header {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    .entry-header {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    .entry-header {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+  @media (min-width: 1079px) {
+    .entry-header {
+      padding-left: 25.07463%;
+      padding-right: 25.07463%; } }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
+
+
+/*# sourceMappingURL=style.css.map */

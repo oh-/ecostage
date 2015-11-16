@@ -6,9 +6,14 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
-@for $i from 1 through 5 {
-  h#{$i} { @include adjust-font-size-to($font__size-#{$i}); }
-}
+// @for $i from 1 through 5 {
+//   h#{$i} { @include adjust-font-size-to($font__size-$i); }
+// }
+h1 { @include adjust-font-size-to($font__size-h1) }
+h2 { @include adjust-font-size-to($font__size-h2) }
+h3 { @include adjust-font-size-to($font__size-h3) }
+h4 { @include adjust-font-size-to($font__size-h4) }
+h5 { @include adjust-font-size-to($font__size-h5) }
 .entry-content {
   p {
     @include rhythm-margins(0.3, 0.7)

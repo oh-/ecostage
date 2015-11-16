@@ -15,7 +15,7 @@
   .site-description-page {
     * {margin: 0};
     // @include adjust-font-size-to(20px);
-    @extend h2;
+    @extend h3;
     font-family: $font__heading;
     color: $color__green;
     @include full;

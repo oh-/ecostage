@@ -22,3 +22,9 @@ a {
 		outline: 0;
 	}
 }
+.band a {
+	color: lighten($color__link, 20);
+	&:visited {
+		color: lighten($color__link-visited, 15);
+	}
+}

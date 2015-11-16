@@ -2,16 +2,26 @@
 #buddypress {
   @import "buddy";
 }
+#page {
+  // height: 100%;
+  min-height: 100%;
+  // margin-bottom: $size__footer-height;
+  position: absolute;
+  // display: block;
+}
 #masthead {
   position: relative;
   background: $color__background-header;
   .site-description-page {
-    * {margin: 0;};
+    * {margin: 0};
+    // @include adjust-font-size-to(20px);
+    @extend h2;
+    font-family: $font__heading;
     color: $color__green;
     @include full;
-    @extend h3;
     @include susy-breakpoint($tab-p){
-      @include span(14 of 16 last);
+      // @include span(14 of 16 last);
+      @include pad(1.6 0 of 16);
       @include margin-leader(-1.7);
     }
   }
@@ -40,7 +50,10 @@ footer#colophon {
 	background-color: $color__background-footer;
 	@include page;
 	@include rhythm-padding(3,2);
-	min-height: 8rem;
+  position: absolute;
+  bottom: 0;
+  height: $size__footer-height;
+	margin-top: -$size__footer-height;
   .site-info { @include span(3 of 16 last);}
 }
 // image
@@ -94,6 +107,7 @@ body.home {
 		}
 }
 #primary {
+  margin-bottom: $size__footer-height;
   
 }
 
@@ -109,8 +123,8 @@ body.home {
 		z-index: 3;
 		background: clear;
 	}
-	#content {position: relative; top: 0;}
-	#primary {position: static; top: 0; }
+	// #content {position: relative; top: 0;}
+	// #primary {position: static; top: 0; }
 	.entry-header {
 		background-color: $color__background-header;
 		//min-height: 100vh;

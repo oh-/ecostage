@@ -2,15 +2,19 @@
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font__heading;
-  font-weight: 300;
+  font-weight: 400;
 	clear: both;
+}
+
+@for $i from 1 through 5 {
+  h#{$i} { @include adjust-font-size-to($font__size-#{$i}); }
 }
 .entry-content {
   p {
     @include rhythm-margins(0.3, 0.7)
   }
   h3, h2, h1 {
-    font-weight: 500;
+    // font-weight: 500;
     // color: $color__orange;
     @include rhythm-margins(0.3, 0.1)
   }

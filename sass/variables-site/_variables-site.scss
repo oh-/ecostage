@@ -18,13 +18,13 @@ $susy: (
   global-box-sizing: border-box,
   last-flow: to,
   debug: (
-    image: show,
+    image: hide,
     color: rgba(red, .25),
     output: overlay,
     toggle: bottom right,
   ),
   use-custom: (
-    background-image: true,
+    background-image: false,
     background-options: false,
     box-sizing: true,
     clearfix: false,

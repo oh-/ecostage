@@ -271,63 +271,83 @@ textarea {
   color: black;
   font-family: "Yantramanav", sans-serif;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   line-height: 1.5; }
 
-h1, h2, h3, #masthead .site-description-page, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans";
   font-weight: 400;
   clear: both; }
 
 h1 {
-  font-size: 1.5em;
-  line-height: 2em; }
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 36px;
+  line-height: 2.25rem; }
 
 h2 {
-  font-size: 1.375em;
-  line-height: 2.18182em; }
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem; }
 
-h3, #masthead .site-description-page {
-  font-size: 1.25em;
-  line-height: 1.2em; }
+h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
 
 h4 {
-  font-size: 1.125em;
-  line-height: 1.33333em; }
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
 
 h5 {
-  font-size: 1em;
-  line-height: 1.5em; }
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
 
 .entry-content p {
-  margin-top: 0.45em;
-  margin-bottom: 1.05em; }
-.entry-content h3, .entry-content #masthead .site-description-page, #masthead .entry-content .site-description-page, .entry-content h2, .entry-content h1 {
-  margin-top: 0.45em;
-  margin-bottom: 0.15em; }
+  margin-top: 7px;
+  margin-top: 0.45rem;
+  margin-bottom: 17px;
+  margin-bottom: 1.05rem; }
+.entry-content h3, .entry-content h2, .entry-content h1 {
+  margin-top: 7px;
+  margin-top: 0.45rem;
+  margin-bottom: 2px;
+  margin-bottom: 0.15rem; }
 
 h1.site-title {
-  font-size: 2.8125em;
-  line-height: 1.6em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
-
-h2.site-description {
-  font-size: 1.125em;
-  line-height: 1.33333em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
+  font-size: 45px;
+  font-size: 2.8125rem;
+  line-height: 72px;
+  line-height: 4.5rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem; }
 
 .entry-header .entry-title, .excerpt, .site-call {
   padding-left: 6.26866%;
   padding-right: 6.26866%;
-  font-size: 2.5em;
-  line-height: 1.2em;
-  margin-top: 0em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  margin-bottom: 0em;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 48px;
+  line-height: 3rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
   font-family: "Fira Sans";
   color: white;
   text-align: center; }
@@ -337,15 +357,21 @@ header#masthead .site-title, header#masthead .site-description, header#masthead 
   header#masthead .site-title a, header#masthead .site-description a, header#masthead .site-title a a {
     text-decoration: none; }
 
-.hilight, .hl {
+.collapseomatic, .hilight, .hl {
   color: #F96B24; }
 
 #secondary .widget-title {
-  font-size: 1.875em;
-  line-height: 1.6em; }
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 48px;
+  line-height: 3rem; }
 
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
 
 .excerpt > p {
   margin-top: 0; }
@@ -362,8 +388,10 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 0.9375em;
-  line-height: 1.6em;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -372,8 +400,10 @@ pre {
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 0.9375em;
-  line-height: 1.6em; }
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
 
 abbr, acronym {
   border-bottom: 1px dotted #666;
@@ -387,8 +417,10 @@ big {
   font-size: 125%; }
 
 #colophon {
-  font-size: 0.625em;
-  line-height: 2.4em;
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   color: white; }
   #colophon a:link {
     color: white;
@@ -442,6 +474,10 @@ dt {
 dd {
   margin: 0 1.5em 1.5em; }
 
+.pledge-points > li {
+  margin-top: 29px;
+  margin-top: 1.8rem; }
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -463,15 +499,23 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   background: #E0542E;
   color: white;
-  font-size: 1.2em;
-  line-height: 1.25em;
-  margin-top: 0.3em;
-  padding-top: 0.15em;
-  padding-bottom: 0.15em;
-  margin-bottom: 0.3em;
-  border-2px-width: 0.0625em;
+  font-size: 19px;
+  font-size: 1.2rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin-top: 5px;
+  margin-top: 0.3rem;
+  padding-top: 2px;
+  padding-top: 0.15rem;
+  padding-bottom: 2px;
+  padding-bottom: 0.15rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
+  border-2px-width: 1px;
+  border-2px-width: 0.0625rem;
   border-2px-style: solid;
-  padding-2px: 1.4375em; }
+  padding-2px: 23px;
+  padding-2px: 1.4375rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -541,6 +585,12 @@ a {
   .band a:visited {
     color: #149896; }
 
+.collapseomatic {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -560,15 +610,13 @@ a {
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     .main-navigation {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   @media (min-width: 1079px) {
     .main-navigation {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   .main-navigation > div {
-    margin-left: 0%;
-    margin-right: -12.53731%;
     min-width: 600px;
     float: right; }
   .main-navigation ul {
@@ -598,8 +646,11 @@ a {
     float: left;
     margin-left: 1rem; }
   .main-navigation a {
-    margin-top: 1.5em;
+    margin-top: 24px;
+    margin-top: 1.5rem;
+    padding-left: 16px;
     padding-left: 1rem;
+    padding-right: 16px;
     padding-right: 1rem;
     border-radius: 1em;
     background-color: #F96B24;
@@ -608,8 +659,10 @@ a {
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 0.875em;
-    line-height: 1.71429em; }
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
   .main-navigation .current-menu-item,
   .main-navigation .current_page_item {
     position: relative; }
@@ -620,12 +673,15 @@ a {
       padding: auto;
       right: 0;
       left: 0;
-      max-width: 2rem;
+      max-width: 25px;
+      line-height: 25px;
       position: absolute;
       background-color: #3A3A3A;
       color: #3A3A3A;
-      margin-top: -2.25em;
-      margin-bottom: 0em;
+      margin-top: -36px;
+      margin-top: -2.25rem;
+      margin-bottom: 0px;
+      margin-bottom: 0rem;
       border-radius: 2rem;
       text-align: center;
       display: block; }
@@ -633,10 +689,14 @@ a {
 /* Small menu. */
 @media (min-width: 0) and (max-width: 640px) {
   .menu-item a {
-    margin-top: 0em;
-    padding-top: 0.45em;
-    padding-bottom: 0.45em;
-    margin-bottom: 0em;
+    margin-top: 0px;
+    margin-top: 0rem;
+    padding-top: 7px;
+    padding-top: 0.45rem;
+    padding-bottom: 7px;
+    padding-bottom: 0.45rem;
+    margin-bottom: 0px;
+    margin-bottom: 0rem;
     border: solid 1px #e45006; }
 
   .main-navigation > div {
@@ -691,8 +751,10 @@ a {
     clip: auto !important;
     color: black;
     display: block;
-    font-size: 0.875em;
-    line-height: 1.71429em;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 24px;
+    line-height: 1.5rem;
     font-weight: bold;
     height: auto;
     left: 5px;
@@ -776,6 +838,11 @@ a {
 #masthead {
   position: relative;
   background: light-grey; }
+  #masthead .site-description-page, #masthead .site-description-page > p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 29px;
+    line-height: 1.8rem; }
   #masthead .site-description-page {
     font-family: "Fira Sans";
     color: #0B5453;
@@ -788,11 +855,15 @@ a {
       margin: 0; }
     @media (min-width: 639px) {
       #masthead .site-description-page {
-        padding-left: 10.02985%;
+        padding-left: 70px;
+        padding-left: 4.375rem;
         padding-right: 0%;
-        margin-top: -2.55em; } }
+        margin-top: -41px;
+        margin-top: -2.55rem; } }
 
 .site-logo-wrapper {
+  margin-top: -14px;
+  margin-top: -0.9rem;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -807,15 +878,16 @@ a {
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     .site-logo-wrapper {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   @media (min-width: 1079px) {
     .site-logo-wrapper {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   @media (max-width: 900px) {
     .site-logo-wrapper {
-      padding-top: 3em; } }
+      padding-top: 48px;
+      padding-top: 3rem; } }
   .site-logo-wrapper .site-logo {
     clear: both;
     width: 100%;
@@ -825,6 +897,7 @@ a {
     @media (min-width: 479px) {
       .site-logo-wrapper .site-logo {
         width: 400px;
+        width: 25rem;
         float: left;
         margin-right: 0.29851%; } }
     @media (min-width: 639px) {
@@ -846,8 +919,10 @@ footer#colophon {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 4.5em;
-  padding-bottom: 3em;
+  padding-top: 72px;
+  padding-top: 4.5rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
   position: absolute;
   bottom: 0;
   height: 150px;
@@ -862,12 +937,17 @@ footer#colophon {
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     footer#colophon {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   @media (min-width: 1079px) {
     footer#colophon {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
+  footer#colophon .social-buttons img {
+    margin-left: 10px;
+    margin-left: 0.625rem;
+    margin-right: 5px;
+    margin-right: 0.3125rem; }
   footer#colophon .site-info {
     width: 18.50746%;
     float: right;
@@ -884,8 +964,10 @@ footer#colophon {
   right: 0;
   color: white;
   background-color: #3A3A3A;
-  padding-top: 0.9em;
-  padding-bottom: 0.9em; }
+  padding-top: 14px;
+  padding-top: 0.9rem;
+  padding-bottom: 14px;
+  padding-bottom: 0.9rem; }
 
 .page .entry-header {
   background-color: #3A3A3A; }
@@ -899,18 +981,24 @@ body.home .site-branding {
     text-decoration: none;
     background-color: clear !important;
     border-radius: 2em;
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 48px;
+    line-height: 3rem;
     padding: 1.2rem; }
 body.home aside.widget {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0em;
-  padding-top: 1.5em;
-  padding-bottom: 3em;
-  margin-bottom: 0em; }
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem; }
   @media (min-width: 639px) {
     body.home aside.widget {
       padding-left: 12.53731%;
@@ -921,12 +1009,12 @@ body.home aside.widget {
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     body.home aside.widget {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   @media (min-width: 1079px) {
     body.home aside.widget {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
 
 #primary {
   margin-bottom: 150px; }
@@ -1001,12 +1089,12 @@ body.home .entry-header {
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     .entry-content > * {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   @media (min-width: 1079px) {
     .entry-content > * {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
 .entry-content .band {
   position: relative;
   left: 0;
@@ -1027,12 +1115,12 @@ body.home .entry-header {
       padding-right: 18.80597%; } }
   @media (min-width: 1021px) {
     .entry-header {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   @media (min-width: 1079px) {
     .entry-header {
-      padding-left: 25.07463%;
-      padding-right: 25.07463%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
 
 .page-links {
   clear: both;

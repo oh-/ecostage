@@ -12,21 +12,21 @@
 #masthead {
   position: relative;
   background: $color__background-header;
+  .site-description-page,  .site-description-page>p { @include adjust-font-size-to(20px, 1.2, 16px); }
   .site-description-page {
     * {margin: 0};
-    // @include adjust-font-size-to(20px);
-    @extend h3;
     font-family: $font__heading;
     color: $color__green;
     @include full;
     @include susy-breakpoint($tab-p){
       // @include span(14 of 16 last);
-      @include pad(1.6 0 of 16);
+      @include pad(70px 0 of 16);
       @include margin-leader(-1.7);
     }
   }
 }
 .site-logo-wrapper {
+  @include margin-leader(-0.6);
   @include page;
   @include susy-breakpoint(max-width 900px) {
     @include padding-leader(2);
@@ -54,6 +54,9 @@ footer#colophon {
   bottom: 0;
   height: $size__footer-height;
 	margin-top: -$size__footer-height;
+  .social-buttons img {
+   @include squish(10px 5px);
+  }
   .site-info { @include span(3 of 16 last);}
 }
 // image

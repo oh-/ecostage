@@ -4,7 +4,7 @@
     // position: absolute;
     z-index: 99999;
 	>div {
-    @include squish(0 -2 of 16);
+    // @include squish(0 -2 of 16);
     min-width: 600px;
     float: right;
   }
@@ -65,6 +65,7 @@
 	}
 	a {
     @include navtabs;
+    // &:hover { border: 2px solid darken($color__background-menu-item, 20);}
 		background-color: $color__background-menu-item;
     font-family: $font__heading;
     font-weight: 500;
@@ -81,14 +82,21 @@
 	.current-menu-item,
 	.current_page_item {
 		//current menu item
+    a {
+      // background-color: $color__black;
+      // color: $color__orange;
+      // border: 2px solid darken($color__background-menu-item, 25);
+    }
     position: relative;
     a:before {
+      $nav-semi: 25px;
       content: ' . ';
       margin: auto;
       padding: auto;
       right: 0;
       left: 0;
-      max-width: 2rem;
+      max-width: $nav-semi;
+      line-height: $nav-semi;
       position: absolute;
       background-color: $color__black;
       color: $color__black;

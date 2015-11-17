@@ -80,11 +80,11 @@
   };
   @include susy-breakpoint($desktop) {
     // content: '$desktop'; 
-		@include pad(4 of 16);
+		@include pad(3.5 of 16);
   }
   @include susy-breakpoint($desk-full) {
     // content: '$desk-full'; 
-		@include pad(4 of 16);
+		@include pad(3.5 of 16);
     // @include span(720px no-gutter);
     // @include squish(8 of 16);
     

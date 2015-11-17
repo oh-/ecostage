@@ -28,3 +28,7 @@ a {
 		color: lighten($color__link-visited, 15);
 	}
 }
+.collapseomatic {
+  // @include leader(1,16px, padding);
+  @include adjust-font-size-to($font__size-p);
+}

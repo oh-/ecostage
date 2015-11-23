@@ -1,7 +1,8 @@
 .main-navigation {
     @include page;
     // @include squish(2 0 of 16);
-    // position: absolute;
+    position: absolute;
+    top: 0;
     z-index: 99999;
 	>div {
     // @include squish(0 -2 of 16);
@@ -72,7 +73,6 @@
 		display: block;
 		text-decoration: none;
 		color: $color__text-menu;
-    @include adjust-font-size-to(14px);
 	}
 
 	.current_page_item > a,

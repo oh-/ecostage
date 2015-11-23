@@ -26,7 +26,7 @@
   }
 }
 .site-logo-wrapper {
-  @include margin-leader(-0.6);
+  // @include margin-leader(-0.6);
   @include page;
   @include susy-breakpoint(max-width 900px) {
     @include padding-leader(2);
@@ -138,5 +138,39 @@ body.home {
 	// @include padding-leader(9);
 	// @include padding-trailer(2);
 }
+
+// Contact form 7 form
+.ecocheckbox {
+  input[type=checkbox] {
+    // visibility: hidden;
+  }
+  label {
+    &:before {
+      content: '';
+      @include span(200px);
+      height: 200px;
+      background-image: url("img/ecocheckbox.svg");
+    }
+  }
+}
+.pledge-points {
+  // border: 1px solid red;
+  .hl {
+    @include leader(-1);
+  }
+  position: relative;
+  &>li { @include span(3 of 4); }
+  .wpcf7-form-control-wrap {
+    @include leader(1.2);
+    position: absolute;
+    @include span(isolate 1 of 4 at 3 last);
+    display: inline-block;
+    // width: span(4 of 16);
+    @include testing;
+  }
+
+}
+
+
 // The following piece of code is a mixin to reveal what breakpoint has been triggered
 @include size();

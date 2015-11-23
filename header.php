@@ -22,10 +22,6 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', '_s' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
 		<div class="site-logo-wrapper">
 			<div class="site-logo">
 				<img src="<?php echo get_stylesheet_directory_uri()?>/img/logo.png" />
@@ -33,6 +29,10 @@
 			<div id="sitetitle2"><h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 								<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- #sitetitle2 -->
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', '_s' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav><!-- #site-navigation -->
 		</div><!-- .site-logo-wrapper -->
 <?php if (is_home()) { ?>
 		<div class="site-branding">

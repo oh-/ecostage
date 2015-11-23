@@ -28,6 +28,10 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+.wpcf7-form>* {
+  @include page();
+}
+
 @import "lists";
 
 img {

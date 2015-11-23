@@ -26,6 +26,31 @@
 @mixin testing($col: red) {
 	background-color: $col !important; 
 }
+
+/// Makes an element's :before pseudoelement a FontAwesome icon.
+/// @param {string} $content Optional content value to use.
+@mixin icon($content: false) {
+
+	text-decoration: none;
+
+	&:before {
+
+		@if $content {
+			content: $content;
+		}
+
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+
+	}
+
+}
+
+
 // Show Size
 @mixin size($colour: red) {
 	// #showsize {
@@ -118,6 +143,7 @@
 // }
 @mixin navtabs($corner: 1em) {
   @include margin-leader(1);
+  @include adjust-font-size-to(14px);
   @include pad(1rem);
   border-radius: $corner;
 }

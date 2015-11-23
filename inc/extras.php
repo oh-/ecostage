@@ -69,3 +69,10 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	}
 	add_action( 'wp_head', '_s_render_title' );
 endif;
+
+add_filter( 'wpcf7_form_elements', 'mycustom_wpcf7_form_elements' );
+
+function mycustom_wpcf7_form_elements( $form ) {
+	$form = do_shortcode( $form );
+	return $form;
+}

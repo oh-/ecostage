@@ -455,6 +455,17 @@ hr {
   height: 1px;
   margin-bottom: 1.5em; }
 
+.band {
+  position: relative;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: white;
+  padding-top: 14px;
+  padding-top: 0.9rem;
+  padding-bottom: 14px;
+  padding-bottom: 0.9rem; }
+
 .wpcf7-form > * {
   width: 100%;
   float: left;
@@ -481,9 +492,9 @@ hr {
 
 .ecocheckbox input[type=checkbox] {
   visibility: hidden; }
-.ecocheckbox input[type=checkbox] + span {
+.ecocheckbox input[type=checkbox] + .wpcf7-list-item-label {
   visibility: hidden; }
-  .ecocheckbox input[type=checkbox] + span:before {
+  .ecocheckbox input[type=checkbox] + .wpcf7-list-item-label:before {
     font-size: 150px;
     font-size: 9.375rem;
     line-height: 168px;
@@ -501,7 +512,7 @@ hr {
     margin-right: 0.29851%;
     height: 200px;
     background-image: url("img/ecocheckbox.svg"); }
-.ecocheckbox input[type=checkbox]:checked + span:before {
+.ecocheckbox input[type=checkbox]:checked + .wpcf7-list-item-label:before {
   font-family: 'FontAwesome';
   visibility: visible;
   color: #F96B24;

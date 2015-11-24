@@ -27,6 +27,10 @@ hr {
 	height: 1px;
 	margin-bottom: 1.5em;
 }
+// Page Bands
+.band {
+  @include page-band();
+}
 
 .wpcf7-form>* {
   @include page();
@@ -40,7 +44,7 @@ hr {
   input[type=checkbox] {
     visibility: hidden;
   }
-  input[type=checkbox] + span {
+  input[type=checkbox] + .wpcf7-list-item-label {
     visibility: hidden;
     &:before {
       @include adjust-font-size-to(150px);
@@ -54,7 +58,7 @@ hr {
       background-image: url("img/ecocheckbox.svg");
     }
   } 
-  input[type=checkbox]:checked + span {
+  input[type=checkbox]:checked + .wpcf7-list-item-label {
     &:before {
       font-family: 'FontAwesome';
       visibility: visible;

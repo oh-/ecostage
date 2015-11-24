@@ -80,7 +80,14 @@
 	};
 }	
 
-
+@mixin page-band($color:  $color__text-alt) {
+    position: relative;
+    left: 0;
+    right: 0;
+    color: $color__text-alt;
+    background-color: $color;
+    @include rhythm-padding(0.6);
+}
 @mixin page-squeeze($num: 2) {
 	@include pad($num);
 }

@@ -30,6 +30,43 @@ hr {
 
 .wpcf7-form>* {
   @include page();
+  li {
+    display: inline-block;
+  }
+}
+
+// Contact form 7 form
+.ecocheckbox {
+  input[type=checkbox] {
+    visibility: hidden;
+  }
+  input[type=checkbox] + span {
+    visibility: hidden;
+    &:before {
+      @include adjust-font-size-to(150px);
+      @include pad(3rem 0);
+      visibility: visible;
+      color: #ccc;
+      font-style: italic;
+      content: '';
+      @include span(200px);
+      height: 200px;
+      background-image: url("img/ecocheckbox.svg");
+    }
+  } 
+  input[type=checkbox]:checked + span {
+    &:before {
+      font-family: 'FontAwesome';
+      visibility: visible;
+      color: $color__text-hl;
+      font-style: normal;
+      content: '\f00c';
+    }
+  } 
+  // input+.wpcf7-list-item-label {
+  //   &:before {
+  //   }
+  // }
 }
 
 @import "lists";

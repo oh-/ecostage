@@ -139,20 +139,6 @@ body.home {
 	// @include padding-trailer(2);
 }
 
-// Contact form 7 form
-.ecocheckbox {
-  input[type=checkbox] {
-    // visibility: hidden;
-  }
-  label {
-    &:before {
-      content: '';
-      @include span(200px);
-      height: 200px;
-      background-image: url("img/ecocheckbox.svg");
-    }
-  }
-}
 .pledge-points {
   // border: 1px solid red;
   .hl {

@@ -476,6 +476,37 @@ hr {
     .wpcf7-form > * {
       padding-left: 21.9403%;
       padding-right: 21.9403%; } }
+  .wpcf7-form > * li {
+    display: inline-block; }
+
+.ecocheckbox input[type=checkbox] {
+  visibility: hidden; }
+.ecocheckbox input[type=checkbox] + span {
+  visibility: hidden; }
+  .ecocheckbox input[type=checkbox] + span:before {
+    font-size: 150px;
+    font-size: 9.375rem;
+    line-height: 168px;
+    line-height: 10.5rem;
+    padding-left: 48px;
+    padding-left: 3rem;
+    padding-right: 0%;
+    visibility: visible;
+    color: #ccc;
+    font-style: italic;
+    content: '';
+    width: 200px;
+    width: 12.5rem;
+    float: left;
+    margin-right: 0.29851%;
+    height: 200px;
+    background-image: url("img/ecocheckbox.svg"); }
+.ecocheckbox input[type=checkbox]:checked + span:before {
+  font-family: 'FontAwesome';
+  visibility: visible;
+  color: #F96B24;
+  font-style: normal;
+  content: '\f00c'; }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }
@@ -1053,15 +1084,6 @@ body.home #masthead {
   background: clear; }
 body.home .entry-header {
   background-color: light-grey; }
-
-.ecocheckbox label:before {
-  content: '';
-  width: 200px;
-  width: 12.5rem;
-  float: left;
-  margin-right: 0.29851%;
-  height: 200px;
-  background-image: url("img/ecocheckbox.svg"); }
 
 .pledge-points {
   position: relative; }

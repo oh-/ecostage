@@ -2,6 +2,10 @@ p {
 	margin-bottom: 1.5em;
   @include adjust-font-size-to($font__size-p);
 }
+.entry-content p {
+	@include rhythm-margins(0.3, 0.7)
+}
+
 .excerpt > p {
 	margin-top: 0;
 }

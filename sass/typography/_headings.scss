@@ -17,9 +17,6 @@ h3 { @include adjust-font-size-to($font__size-h3) }
 h4 { @include adjust-font-size-to($font__size-h4) }
 h5 { @include adjust-font-size-to($font__size-h5) }
 .entry-content {
-  p {
-    @include rhythm-margins(0.3, 0.7)
-  }
   h3, h2, h1 {
     // font-weight: 500;
     // color: $color__orange;

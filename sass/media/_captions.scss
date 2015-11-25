@@ -1,4 +1,5 @@
 .wp-caption {
+  box-sizing: content-box; // fix to stop captioned images dissapearing
 	margin-bottom: 1.5em;
 	max-width: 100%;
 
@@ -12,5 +13,7 @@
 }
 
 .wp-caption-text {
-	text-align: center;
+	text-align: left;
+  font-weight:  300;
+  @include adjust-font-size-to(12px);
 }

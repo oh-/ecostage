@@ -1263,6 +1263,7 @@ object {
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
+  box-sizing: content-box;
   margin-bottom: 1.5em;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
@@ -1273,7 +1274,12 @@ object {
     margin: 0.8075em 0; }
 
 .wp-caption-text {
-  text-align: center; }
+  text-align: left;
+  font-weight: 300;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
 
 /*--------------------------------------------------------------
 ## Galleries

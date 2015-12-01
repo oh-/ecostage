@@ -1,1 +1,44 @@
-.item-list-tabs { background-color: green !important;}
+$buddy-avatar: 170px;
+#buddy-members {
+  @include page();
+}
+.bbmember {
+  @include span(full nested);
+  @include clearfix;
+}
+#members-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: $font__heading;
+  &>li {
+    @include gallery(1 of 5);
+    position: relative;
+    overflow: hidden;
+    &:hover { 
+      .item-title a { visibility: visible; }
+      img.avatar { opacity: 0.3; }
+    }
+  }
+  .item-avatar{
+    position: relative;
+    top: 0;
+    img {border-radius: 50%;}
+  }
+  .item {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    a {
+      @include adjust-font-size-to(45px);
+      @include rhythm(0, 2);
+      visibility: hidden;
+      text-align: center;
+      display: block;
+      @include nolink();
+    }
+  }
+}

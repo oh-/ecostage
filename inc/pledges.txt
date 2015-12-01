@@ -1,75 +1,95 @@
-v class="band" style="margin-bottom: 20px;">
+<div class="band" style="margin-bottom: 20px;">
 <h2>How does it work?</h2>
-Welcome to the ‘Pledge now’ page.
 <ol>
-  <li>Read the following pledge points and values and decide if you want to take the pledge.</li>
-  <li>Tick each circle and then click the ‘I Pledge’ button at the bottom of that form</li>
-  <li>Register by filling out the short online form provided</li>
-  <li>An email will be sent to you with a copy of the ecostage pledge stamp</li>
-  <li>Your name will be posted up on the ‘People’ page to make your declaration public</li>
+	<li>)Read the following pledge points and values and decide if you want to take the pledge.</li>
+	<li>)Tick each circle and then click the ‘I Pledge’ button at the bottom of that form</li>
+	<li>)Register by filling out the short online form provided</li>
+	<li>)An email will be sent to you with a copy of the ecostage pledge stamp</li>
+	<li>)Use your 'stamp' on all types of documentation to help raise awareness</li>
+	<li>)Your name will be posted up on the ‘People’ page to make your declaration public</li>
 </ol>
-
-</div>
-<!-- /.band -->
+</div> <!-- /.band -->
 <h3>I pledge to:</h3>
-<ul class='pledge-points ecocheckbox'>
-	<li>[checkbox* pledge1 use_label_element "Pledge1"]<h1 class="hl">Reposition practice in a way that considers wider ecological implications and consequences</h1>
-
+<ul>
+<li><h1 class="hl">Reposition practice in a way that considers wider ecological implications and consequences</h1>
 How might we consider ecology and sustainability as part of our planning stages and ‘creative dreaming’? In what ways can thematic, aesthetic and environmental considerations be simultaneously explored from the beginning? Here we value: <strong>Responsibility</strong>
 
 [expand title="Examples of this pledge point and value in action:"]
-<ul class="ecocheckbox">
-	<li>view the limitations in material and sources as a creative challenge</li>
-	<li>work towards energy efficient touring schedules</li>
-	<li>celebrate the ecological wins</li>
-</ul>
-[/expand]
-</li>
-	<li>[checkbox* pledge2 use_label_element "Pledge2"]<h1 class="hl">Consider local opportunities within a globalised context</h1>
+<ul>
+	<li>Kick start your thinking by using the ecostage <a href="http://www.ecostagepledge.com/resources/">resource page</a></li>
+	<li>Invite your team to join the ecostage pledge and other sustainability initiatives</li>
+	<li>Clarify your ecological values and objectives (write them on the wall of the rehearsal room, on scripts and staff contracts)</li>
+	<li>Demonstrate your commitment by using the ecostage stamp on your documentation, social media sites and email signatures to</li>
+	<li>Position sustainability on the agenda at production meetings</li>
+	<li>See supposed ‘limitations’ as creative opportunities</li>
+	<li>Be open by what you find rather than holding on to a pre-determined idea</li>
+	<li>Eliminate the use of toxic materials and substances</li>
+	<li>Consider the social and environmental implications of where things come from and where they might go next</li>
+	<li>Work towards more travel and energy efficient projects and touring schedules</li>
+	<li>Celebrate and share the ecological successes</li>
+	<li>Understand the you are not perfect but continuously ‘learning as you go’</li>
+</ul>[/expand]</li>
+
+<li><h1 class="hl">Consider local opportunities within a globalised context</h1>
 How do we consider locality in the making, celebration and distribution of our work? Can we allow serendipitous and place-based responses to inspire and influence the artistic process rather than holding on to pre-determined ideas? How can we work with local people of different cultures in a way that also connects to the world at large? Here we value: <strong>Harmony</strong>
 
 [expand title="Examples of this pledge point and value in action:"]
 <ul>
-	<li>create opportunities for local artists and communities to engage with international guests through social media platforms and public forums</li>
-	<li>invite audiences to be creators rather than just passive watchers</li>
-</ul>
-[/expand]
-</li>
-	<li>[checkbox* pledge3 use_label_element "Pledge3"]<h1 class="hl">Challenge existing unsustainable practices, perceptions and assumptions</h1>
+	<li>Create work in response to local spaces, climatic conditions and found materials</li>
+	<li>Perform in public spaces, parks and community gardens</li>
+	<li>Get inspired by local thrift shops, car boot sales and scenery storage facilities</li>
+	<li>Substitute generic set elements with localised resources on touring shows</li>
+	<li>Address global issues through local and personal stories</li>
+	<li>Engage with large-scale global actions on a local level</li>
+	<li>Create opportunities for artists and communities to engage with international guests through social media platforms and public forums</li>
+</ul>[/expand]</li>
+	<li>
+<h1 class="hl">Challenge existing unsustainable practices, perceptions and assumptions</h1>
 What might we do to start questioning and challenging unsustainable paradigms and processes? How can we begin to speak up about our ecological concerns? If there are no easy recipes ‘to do sustainability’, how do we learn from each project to find our way through the complexities? Here we value: <strong>Integrity</strong>
 
 [expand title="Examples of this pledge point and value in action:"]
 <ul>
-	<li>state your ecological intentions with cast and crew</li>
-	<li>initiate eco-labs to try new ways of doing things</li>
-	<li>invite voices that are diverse in knowledge, ethnicity, and perspective</li>
-</ul>
-[/expand]</li>
-	<li>[checkbox* pledge4 use_label_element "Pledge4"]<h1 class="hl">Explore opportunities for contribution as well as mitigation</h1>
+	<li>Test ecological strategies and ideas</li>
+	<li>Initiate eco-labs or workshops to try new ways of doing things</li>
+	<li>Encourage conversation and debate</li>
+	<li>Invite voices that are diverse in knowledge, ethnicity, and perspective</li>
+	<li>listen to every voice in the conversation</li>
+	<li>Be open to inspiration from sustainability experts, research scientists, policy makers and environmental organisations outside of the arts</li>
+	<li>Consider including non-artist perspectives to engage with interdisciplinary ideas and connections</li>
+</ul>[/expand]</li>
+
+<li><h1 class="hl">Explore opportunities for contribution as well as mitigation</h1>
 How do we move beyond mitigation, efficiencies or ‘less bad’ consequences to create work that has positive legacies? What are some of the ways that we can give back to the community and broader ecology through our practice? Here we value: <strong>Respect</strong>
-that it extends the boundaries of the self.
 
 [expand title="Examples of this pledge point and value in action:"]
 <ul>
-	<li>inspire audiences so they are empowered to take action</li>
-	<li>create stories where a community or the land or a species is the hero instead of an individual</li>
-	<li>inform audiences of ecological ideas and strategies behind the work through Q&amp;A events and social media</li>
-</ul>
-[/expand]
-</li>
-	<li>[checkbox* pledge5 use_label_element "Pledge5"]
-<h1 class="hl">Work together in advocating change</h1>
+	<li>Initiate eco-labs to try new ways of doing things</li>
+	<li>invite voices that are diverse in knowledge, ethnicity, and perspective</li>
+	<li>Use community platforms to raise awareness of ecological issues through pre- and post- performance workshops and events, Q&amp;A events and social media</li>
+	<li>Donate sets to charities, community groups or schools for further reuse or auction off set and costume items to raise money for charity</li>
+	<li>Offer incentives to audiences who travel on public transport</li>
+	<li>Invite someone to see a show who would otherwise have little chance of seeing it</li>
+	<li>Ask yourself: 'what can I contribute' rather than 'what can I get'?</li>
+</ul>[/expand]</li>
+
+<li><h1 class="hl">Work together in advocating change</h1>
 How do we encourage and support one another with mutual respect, tolerance and shared responsibility for nature’s resources? Can we work towards a less hierarchical model towards a collaborative process that endorses creativity instead of competition?
 
-Here we value: <strong>Fellowship</strong> - actively in relationship with our world.
+Here we value: <strong>Fellowship</strong>.
 
 [expand title="Examples of this pledge point and value in action:"]
 <ul>
-	<li>join like-minded local and global networks (like this one and others mentioned on this site)</li>
-	<li>mentor and support the next generation of ecologically-aspiring performance makers</li>
-	<li>discussion, debate and collaborate with people across fields and disciplines</li>
+	<li>openly share your ecological values, ideas, stories, aspirations, concerns and challenges</li>
+	<li>engage with other eco-minded practitioners (see ecostage ‘peoples’ page) (put in a link here)</li>
+	<li>share values and ideas via social media platforms, local and global networks to advocate change</li>
+	<li>join like-minded local and global networks (like this one and others mentioned on the site)</li>
+	<li>mentor and support the next generation of ecologically-aspiring theatre makers</li>
+	<li>choose and support eco-products and businesses</li>
+	<li>share and promote the work of your eco-peers</li>
+	<li>discuss, debate and collaborate with people across fields and disciplines</li>
+	<li>share your dreams and aspirations with others</li>
+	<li>listen to every voice in the conversation, including those that are quieter than others</li>
+
+</ul>[/expand]</li>
 </ul>
-[/expand]
-</li>
-</ul>
-[submit "Send"]
+(SUBMIT BUTTON)

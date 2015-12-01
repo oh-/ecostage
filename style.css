@@ -435,6 +435,10 @@ big {
 html {
   box-sizing: border-box; }
 
+.clearfix {
+  content: "";
+  display: table; }
+
 *,
 *:before,
 *:after {
@@ -488,8 +492,9 @@ hr {
     .wpcf7-form > * {
       padding-left: 21.9403%;
       padding-right: 21.9403%; } }
-  .wpcf7-form > * li {
-    display: inline-block; }
+
+.eco-form-list > li {
+  list-style: none; }
 
 .ecocheckbox input[type=checkbox] {
   visibility: hidden; }
@@ -896,13 +901,109 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-#buddypress .item-list-tabs {
-  background-color: green !important; }
+#buddy-members {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 639px) {
+    #buddy-members {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    #buddy-members {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    #buddy-members {
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
+  @media (min-width: 1079px) {
+    #buddy-members {
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
+
+.bbmember {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  content: "";
+  display: table; }
+
+#members-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Fira Sans"; }
+  #members-list > li {
+    width: 19.23077%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    #members-list > li:nth-child(5n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    #members-list > li:nth-child(5n + 2) {
+      margin-left: 20.19231%;
+      margin-right: -100%;
+      clear: none; }
+    #members-list > li:nth-child(5n + 3) {
+      margin-left: 40.38462%;
+      margin-right: -100%;
+      clear: none; }
+    #members-list > li:nth-child(5n + 4) {
+      margin-left: 60.57692%;
+      margin-right: -100%;
+      clear: none; }
+    #members-list > li:nth-child(5n + 5) {
+      margin-left: 80.76923%;
+      margin-right: -100%;
+      clear: none; }
+    #members-list > li:hover .item-title a {
+      visibility: visible; }
+    #members-list > li:hover img.avatar {
+      opacity: 0.3; }
+  #members-list .item-avatar {
+    position: relative;
+    top: 0; }
+    #members-list .item-avatar img {
+      border-radius: 50%; }
+  #members-list .item {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+    #members-list .item a {
+      font-size: 45px;
+      font-size: 2.8125rem;
+      line-height: 72px;
+      line-height: 4.5rem;
+      margin-top: 0px;
+      margin-top: 0rem;
+      padding-top: 48px;
+      padding-top: 3rem;
+      padding-bottom: 48px;
+      padding-bottom: 3rem;
+      margin-bottom: 0px;
+      margin-bottom: 0rem;
+      visibility: hidden;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      background-color: clear !important; }
 
 #page {
   min-height: 100%;
   min-width: 100%;
+  max-width: 100%;
   position: absolute; }
+  #page * {
+    max-width: 100%; }
 
 #masthead {
   position: relative;
@@ -1039,7 +1140,17 @@ footer#colophon {
 .page .entry-header {
   background-color: #3A3A3A; }
 
+body.home #page {
+  position: relative; }
 body.home #masthead {
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: light-grey;
+  background: clear; }
+body.home .entry-header {
   background-color: light-grey; }
 body.home .site-branding {
   text-align: center; }
@@ -1086,37 +1197,34 @@ body.home aside.widget {
 #primary {
   margin-bottom: 150px; }
 
-body.home #page {
-  position: relative; }
-body.home #masthead {
-  left: 0;
-  position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-  background: clear; }
-body.home .entry-header {
-  background-color: light-grey; }
+.wpcf7-list-item-label {
+  background-color: red !important;
+  width: 19.23077%;
+  float: left;
+  margin-right: 0.96154%; }
 
-.pledge-points {
-  position: relative; }
-  .pledge-points .hl {
-    margin-top: -24px;
-    margin-top: -1.5rem; }
-  .pledge-points > li {
-    width: 74.6988%;
-    float: left;
-    margin-right: 1.20482%; }
-  .pledge-points .wpcf7-form-control-wrap {
-    margin-top: 29px;
-    margin-top: 1.8rem;
-    position: absolute;
-    width: 24.09639%;
-    float: left;
-    margin-left: 50.60241%;
-    margin-right: -100%;
-    display: inline-block;
-    background-color: red !important; }
+#ecostage-pledge-form .eco-form-list {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  #ecostage-pledge-form .eco-form-list:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  #ecostage-pledge-form .eco-form-list > li {
+    border-top: 1px solid lightgrey;
+    content: "";
+    display: table; }
+    #ecostage-pledge-form .eco-form-list > li:first-child {
+      border-top: none; }
+    #ecostage-pledge-form .eco-form-list > li > .inner-pledgepoint-content {
+      width: 79.80769%;
+      float: left;
+      margin-right: 0.96154%; }
+  #ecostage-pledge-form .eco-form-list .wpcf7-form-control-wrap {
+    width: 19.23077%;
+    float: right;
+    margin-right: 0; }
 
 #wp-admin-bar-top-secondary::after {
   content: 'minimum'; }

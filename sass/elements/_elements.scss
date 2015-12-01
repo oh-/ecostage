@@ -1,6 +1,9 @@
 html {
 	box-sizing: border-box;
 }
+.clearfix {
+  @include clearfix();
+}
 
 *,
 *:before,
@@ -35,11 +38,16 @@ hr {
 .wpcf7-form>* {
   @include page();
   li {
-    display: inline-block;
+    // display: inline-block;
   }
 }
 
 // Contact form 7 form
+.eco-form-list{
+  &>li {
+    list-style: none;
+  }
+}
 .ecocheckbox {
   input[type=checkbox] {
     visibility: hidden;

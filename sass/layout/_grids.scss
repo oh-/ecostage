@@ -51,9 +51,11 @@
 #footer-text-right {
   float: right;
 }
+footer.site-footer {
+  @include container($susy);
+}
 footer#colophon-home {
 	background-color: white;
-	@include container($susy);
 	@include rhythm-padding(3,2);
   // position: absolute;
   // bottom: 0;
@@ -81,7 +83,7 @@ footer#colophon {
 }
 #sidebar-footer {
   @include rhythm-padding(1);
-  @include page();
+  // @include page();
 }
 // image
 .site-logo-wrapper {

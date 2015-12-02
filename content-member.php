@@ -11,16 +11,23 @@ $avatarsize = array( 'width'  => '170', 'height'  => '170');
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', '_s' ),
+				'after'  => '</div>',
+			) );
+		?>
   <div id="pag-top" class="pagination">
     <div class="pag-count" id="member-dir-count-top">
-      <?php bp_members_pagination_count(); ?>
+      <?php // bp_members_pagination_count(); ?>
    </div>
    <div class="pagination-links" id="member-dir-pag-top">
-      <?php bp_members_pagination_links(); ?>
+      <?php // bp_members_pagination_links(); ?>
    </div>
   </div>
   <?php do_action( 'bp_before_directory_members_list' ); ?>
-<div class='bbmember'>
+<div id='bbmember'>
   <ul id="members-list" class="item-list" role="main">
   <?php while ( bp_members() ) : bp_the_member(); ?>
     <li>

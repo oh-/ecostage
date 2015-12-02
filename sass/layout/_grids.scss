@@ -12,6 +12,10 @@
 }
 .error404 #content {
 }
+.entry-content .members-access-error {
+  @include pad(0);
+  // @include squish(0);
+}
 #masthead {
   position: relative;
   background: $color__background-header;

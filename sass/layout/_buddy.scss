@@ -1,8 +1,9 @@
-$buddy-avatar: 170px;
+// $buddy-avatar: 170px;
 #buddy-members {
   @include page();
 }
-.bbmember {
+#bbmember {
+  @include rhythm(1.5);
   @include span(full nested);
   @include clearfix;
 }
@@ -41,4 +42,11 @@ $buddy-avatar: 170px;
       @include nolink();
     }
   }
+}
+#register-page {
+  border: 7px solid $color__text-hl;
+  border-radius: 1rem;
+  background-color: $color__background-hl;
+  @include pad(1 of 16);
+  @include rhythm-padding(2);
 }

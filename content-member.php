@@ -6,6 +6,12 @@
  * @package _s
  */
 $avatarsize = array( 'width'  => '170', 'height'  => '170');
+
+// $member['name'] = bp_member_profile_data( 'field=Name' );
+// $member['twitter'] = xprofile_get_field_data( 'Twitter handle', bp_get_member_user_id() );
+  // bp_member_profile_data( 'field=Twitter handle' );
+// $url = (empty($member['twitter'])) ? "http://twitter.com/". $member['twitter'] : bp_member_permalink() ;
+
 ?>
 <?php if ( bp_has_members( bp_ajax_querystring( 'members' ) ) ) : ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -32,11 +38,11 @@ $avatarsize = array( 'width'  => '170', 'height'  => '170');
   <?php while ( bp_members() ) : bp_the_member(); ?>
     <li>
       <div class="item-avatar">
-         <a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar($avatarsize); ?></a>
+         <a href="#<?php // bp_member_permalink(); ?>"><?php bp_member_avatar($avatarsize); ?></a>
       </div>
       <div class="item">
         <div class="item-title">
-           <a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
+           <a href="#<?php // $url ?>"><?php bp_member_name(); ?></a>
        </div>
        <?php do_action( 'bp_directory_members_item' ); ?>
       <?php

@@ -32,4 +32,4 @@ get_header('page'); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php is_front_page() ? get_footer('home') : get_footer(); ?>

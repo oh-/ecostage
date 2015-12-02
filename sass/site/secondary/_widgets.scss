@@ -11,3 +11,11 @@
 .widget_search .search-submit {
 	display: none;
 }
+.widget_image_text_widget {
+  .widget-content {
+    @include gallery(1 of 3);
+    @include susy-breakpoint($tab-p) {
+      @include gallery(1 of 5);
+    }
+  }
+}

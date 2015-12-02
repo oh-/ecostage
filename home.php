@@ -43,4 +43,5 @@ $sticky = get_option('sticky_posts');
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_sidebar('frontpage'); ?>
-<?php get_footer(); ?>
+<?php echo is_front_page() ? 'frontpage': "not frontpage"; ?>
+<?php is_front_page() ? get_footer('home') : get_footer(); ?>

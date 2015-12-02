@@ -18,10 +18,9 @@ textarea {
 
 @import "copy";
 
-#colophon {
+.site-footer {
   @include adjust-font-size-to(10px);
-  color: $color__text_alt;
-  a:link { 
+  &.band a:link { 
     color: $color__text_alt;
     @include nolink;
   }

@@ -48,13 +48,26 @@
     }
   }
 }
-#spage {
-	//NB this is the whole page, not the page (body) class
-	   @include container($susy);
-	// background: $color__background-screen;
-};
+#footer-text-right {
+  float: right;
+}
+footer#colophon-home {
+	background-color: white;
+	@include container($susy);
+	@include rhythm-padding(3,2);
+  // position: absolute;
+  // bottom: 0;
+  // height: $size__footer-height;
+	// margin-top: -$size__footer-height;
+  .social-buttons {
+    @include page;
+    img { @include squish(10px 5px); }
+  }
+  .site-info { @include span(3 of 16 last);}
+}
 footer#colophon {
 	background-color: $color__background-footer;
+  &.band { background-color: $color__background-band; }
 	@include page;
 	@include rhythm-padding(3,2);
   position: absolute;
@@ -66,24 +79,25 @@ footer#colophon {
   }
   .site-info { @include span(3 of 16 last);}
 }
+#sidebar-footer {
+  @include rhythm-padding(1);
+  @include page();
+}
 // image
 .site-logo-wrapper {
-	// @include span(4 of 14);
-  // background-color: $color__a-r;
-	// .site-logo {
-	// 	@include span(1 of 4);
-	// }
 	#sitetitle2 {
 		@include span(3 of 4 last);	
 	}
 }
-#content .band {
+.band {
   position: relative;
   left: 0;
   right: 0;
   color: $color__text-alt;
   background-color: $color__background-band;
   @include rhythm-padding(0.6);
+  color: $color__text_alt;
+
 }
 .page .entry-header {
   // display: none;
@@ -114,20 +128,12 @@ body.home {
       padding: 1.2rem;
 		}
 	}
-	aside.widget {
-    @include page();
-    @include rhythm(0, 1, 2, 0);
-		&:nth-child(2n) { 
-      // background-color: $color__background-article-alt; 
-		}
-		// &:last-child {
-		// 	margin-bottom: 0;
-		// 	background-color: mix($color__background-article-alt, $color__background-header);
-		// 	}
-		}
 }
 #primary {
   margin-bottom: $size__footer-height;
+  .home-page & {
+    margin-bottom: 0;
+  }
   
 }
 

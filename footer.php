@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer band" role="contentinfo">
 <div class='social-buttons'>
 <a href="<?php echo esc_url('https://www.facebook.com/groups/417324151803310/', 'eco'); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/img/f_button.png" width="45px" height="45px" alt="facebook" /></a>
 <a href="<?php echo esc_url('https://twitter.com/ecostagepledge', 'eco' ); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/img/t_button.png" width="45px" height="45px" alt="twitter" /></a>

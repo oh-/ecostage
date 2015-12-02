@@ -418,13 +418,12 @@ mark, ins {
 big {
   font-size: 125%; }
 
-#colophon {
+.site-footer {
   font-size: 10px;
   font-size: 0.625rem;
   line-height: 24px;
-  line-height: 1.5rem;
-  color: white; }
-  #colophon a:link {
+  line-height: 1.5rem; }
+  .site-footer.band a:link {
     color: white;
     text-decoration: none;
     background-color: clear !important; }
@@ -898,6 +897,48 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget_image_text_widget .widget-content {
+  width: 32.25806%;
+  float: left; }
+  .widget_image_text_widget .widget-content:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0; }
+  .widget_image_text_widget .widget-content:nth-child(3n + 2) {
+    margin-left: 33.87097%;
+    margin-right: -100%;
+    clear: none; }
+  .widget_image_text_widget .widget-content:nth-child(3n + 3) {
+    margin-left: 67.74194%;
+    margin-right: -100%;
+    clear: none; }
+  @media (min-width: 639px) {
+    .widget_image_text_widget .widget-content {
+      width: 19.23077%;
+      float: left; }
+      .widget_image_text_widget .widget-content:nth-child(5n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .widget_image_text_widget .widget-content:nth-child(5n + 2) {
+        margin-left: 20.19231%;
+        margin-right: -100%;
+        clear: none; }
+      .widget_image_text_widget .widget-content:nth-child(5n + 3) {
+        margin-left: 40.38462%;
+        margin-right: -100%;
+        clear: none; }
+      .widget_image_text_widget .widget-content:nth-child(5n + 4) {
+        margin-left: 60.57692%;
+        margin-right: -100%;
+        clear: none; }
+      .widget_image_text_widget .widget-content:nth-child(5n + 5) {
+        margin-left: 80.76923%;
+        margin-right: -100%;
+        clear: none; } }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1095,17 +1136,55 @@ a {
       .site-logo-wrapper .site-logo {
         margin-left: -100px; } }
 
-#spage {
+#footer-text-right {
+  float: right; }
+
+footer#colophon-home {
+  background-color: white;
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
-  #spage:after {
+  margin-right: auto;
+  padding-top: 72px;
+  padding-top: 4.5rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem; }
+  footer#colophon-home:after {
     content: " ";
     display: block;
     clear: both; }
+  footer#colophon-home .social-buttons {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 639px) {
+      footer#colophon-home .social-buttons {
+        padding-left: 12.53731%;
+        padding-right: 12.53731%; } }
+    @media (min-width: 769px) {
+      footer#colophon-home .social-buttons {
+        padding-left: 18.80597%;
+        padding-right: 18.80597%; } }
+    @media (min-width: 1021px) {
+      footer#colophon-home .social-buttons {
+        padding-left: 21.9403%;
+        padding-right: 21.9403%; } }
+    @media (min-width: 1079px) {
+      footer#colophon-home .social-buttons {
+        padding-left: 21.9403%;
+        padding-right: 21.9403%; } }
+    footer#colophon-home .social-buttons img {
+      margin-left: 10px;
+      margin-left: 0.625rem;
+      margin-right: 5px;
+      margin-right: 0.3125rem; }
+  footer#colophon-home .site-info {
+    width: 18.50746%;
+    float: right;
+    margin-right: 0; }
 
 footer#colophon {
-  background-color: #3A3A3A;
+  background-color: white;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -1118,6 +1197,8 @@ footer#colophon {
   bottom: 0;
   height: 150px;
   margin-top: -150px; }
+  footer#colophon.band {
+    background-color: #3A3A3A; }
   @media (min-width: 639px) {
     footer#colophon {
       padding-left: 12.53731%;
@@ -1144,12 +1225,38 @@ footer#colophon {
     float: right;
     margin-right: 0; }
 
+#sidebar-footer {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 639px) {
+    #sidebar-footer {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 769px) {
+    #sidebar-footer {
+      padding-left: 18.80597%;
+      padding-right: 18.80597%; } }
+  @media (min-width: 1021px) {
+    #sidebar-footer {
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
+  @media (min-width: 1079px) {
+    #sidebar-footer {
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
+
 .site-logo-wrapper #sitetitle2 {
   width: 74.6988%;
   float: right;
   margin-right: 0; }
 
-#content .band {
+.band {
   position: relative;
   left: 0;
   right: 0;
@@ -1158,7 +1265,8 @@ footer#colophon {
   padding-top: 14px;
   padding-top: 0.9rem;
   padding-bottom: 14px;
-  padding-bottom: 0.9rem; }
+  padding-bottom: 0.9rem;
+  color: white; }
 
 .page .entry-header {
   background-color: #3A3A3A; }
@@ -1187,38 +1295,11 @@ body.home .site-branding {
     line-height: 48px;
     line-height: 3rem;
     padding: 1.2rem; }
-body.home aside.widget {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0px;
-  margin-top: 0rem;
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  padding-bottom: 48px;
-  padding-bottom: 3rem;
-  margin-bottom: 0px;
-  margin-bottom: 0rem; }
-  @media (min-width: 639px) {
-    body.home aside.widget {
-      padding-left: 12.53731%;
-      padding-right: 12.53731%; } }
-  @media (min-width: 769px) {
-    body.home aside.widget {
-      padding-left: 18.80597%;
-      padding-right: 18.80597%; } }
-  @media (min-width: 1021px) {
-    body.home aside.widget {
-      padding-left: 21.9403%;
-      padding-right: 21.9403%; } }
-  @media (min-width: 1079px) {
-    body.home aside.widget {
-      padding-left: 21.9403%;
-      padding-right: 21.9403%; } }
 
 #primary {
   margin-bottom: 150px; }
+  .home-page #primary {
+    margin-bottom: 0; }
 
 .wpcf7-list-item-label {
   background-color: red !important;

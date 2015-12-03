@@ -27,3 +27,29 @@ dd {
 .pledge-points>li {
   @include leader(1.2);
 }
+
+#ecostage-pledge-form {
+  ol {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  ol > li {
+    counter-increment: customlistcounter;
+  }
+
+  ol > li:before {
+    content: counter(customlistcounter) " ) ";
+    // float: left;
+    // width: 3em;
+  }
+
+  ol:first-child {
+    counter-reset: customlistcounter;
+  }
+}
+// ol li:before {
+//   content: counter(level1) " "; /*Instead of ". " */
+//   counter-increment: level1;
+// }

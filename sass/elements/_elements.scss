@@ -48,6 +48,7 @@ hr {
     list-style: none;
   }
 }
+$eco-cb-size: 40px;
 .ecocheckbox {
   input[type=checkbox] {
     visibility: hidden;
@@ -55,19 +56,22 @@ hr {
   input[type=checkbox] + .wpcf7-list-item-label {
     visibility: hidden;
     &:before {
-      @include adjust-font-size-to(150px);
-      @include pad(3rem 0);
       visibility: visible;
       color: #ccc;
       font-style: italic;
       content: '';
-      @include span(200px);
-      height: 200px;
+      @include span($eco-cb-size);
+      height: $eco-cb-size;
       background-image: url("img/ecocheckbox.svg");
+      background-size: $eco-cb-size;
+      background-repeat: no-repeat;
     }
   } 
   input[type=checkbox]:checked + .wpcf7-list-item-label {
     &:before {
+      @include adjust-font-size-to($eco-cb-size,1.3);
+      @include pad($eco-cb-size *0.3);
+      background-image: url("img/ecocheckbox1.svg");
       font-family: 'FontAwesome';
       visibility: visible;
       color: $color__text-hl;

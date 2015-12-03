@@ -13,10 +13,16 @@
 }
 #sidebar-footer {
   @include page;
+  @include susy-breakpoint(max-width $tab-p) {
+    @include pad(1 of 8);
+    box-sizing: border-box;
+  }
 }
 .widget_image_text_widget { 
-  @include gallery(1 of 4);
+  @include susy-breakpoint(max-width $tab-p) {
+    @include gallery(1 of 3 0.4);
+  }
   @include susy-breakpoint(min-width $tab-p) {
-    @include gallery(1 of 8);
+    @include gallery(1 of 5 0.4);
   }
 }

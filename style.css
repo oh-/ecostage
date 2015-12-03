@@ -918,64 +918,54 @@ a {
     #sidebar-footer {
       padding-left: 21.9403%;
       padding-right: 21.9403%; } }
+  @media (max-width: 639px) {
+    #sidebar-footer {
+      padding-left: 12.57485%;
+      padding-right: 12.57485%;
+      box-sizing: border-box; } }
 
-.widget_image_text_widget {
-  width: 24.09639%;
-  float: left; }
-  .widget_image_text_widget:nth-child(4n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
-    clear: both;
-    margin-left: 0; }
-  .widget_image_text_widget:nth-child(4n + 2) {
-    margin-left: 25.3012%;
-    margin-right: -100%;
-    clear: none; }
-  .widget_image_text_widget:nth-child(4n + 3) {
-    margin-left: 50.60241%;
-    margin-right: -100%;
-    clear: none; }
-  .widget_image_text_widget:nth-child(4n + 4) {
-    margin-left: 75.90361%;
-    margin-right: -100%;
-    clear: none; }
-  @media (min-width: 639px) {
-    .widget_image_text_widget {
-      width: 11.97605%;
-      float: left; }
-      .widget_image_text_widget:nth-child(8n + 1) {
-        margin-left: 0;
-        margin-right: -100%;
-        clear: both;
-        margin-left: 0; }
-      .widget_image_text_widget:nth-child(8n + 2) {
-        margin-left: 12.57485%;
-        margin-right: -100%;
-        clear: none; }
-      .widget_image_text_widget:nth-child(8n + 3) {
-        margin-left: 25.1497%;
-        margin-right: -100%;
-        clear: none; }
-      .widget_image_text_widget:nth-child(8n + 4) {
-        margin-left: 37.72455%;
-        margin-right: -100%;
-        clear: none; }
-      .widget_image_text_widget:nth-child(8n + 5) {
-        margin-left: 50.2994%;
-        margin-right: -100%;
-        clear: none; }
-      .widget_image_text_widget:nth-child(8n + 6) {
-        margin-left: 62.87425%;
-        margin-right: -100%;
-        clear: none; }
-      .widget_image_text_widget:nth-child(8n + 7) {
-        margin-left: 75.4491%;
-        margin-right: -100%;
-        clear: none; }
-      .widget_image_text_widget:nth-child(8n + 8) {
-        margin-left: 88.02395%;
-        margin-right: -100%;
-        clear: none; } }
+@media (max-width: 639px) {
+  .widget_image_text_widget {
+    width: 26.31579%;
+    float: left; }
+    .widget_image_text_widget:nth-child(3n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .widget_image_text_widget:nth-child(3n + 2) {
+      margin-left: 36.84211%;
+      margin-right: -100%;
+      clear: none; }
+    .widget_image_text_widget:nth-child(3n + 3) {
+      margin-left: 73.68421%;
+      margin-right: -100%;
+      clear: none; } }
+@media (min-width: 639px) {
+  .widget_image_text_widget {
+    width: 15.15152%;
+    float: left; }
+    .widget_image_text_widget:nth-child(5n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .widget_image_text_widget:nth-child(5n + 2) {
+      margin-left: 21.21212%;
+      margin-right: -100%;
+      clear: none; }
+    .widget_image_text_widget:nth-child(5n + 3) {
+      margin-left: 42.42424%;
+      margin-right: -100%;
+      clear: none; }
+    .widget_image_text_widget:nth-child(5n + 4) {
+      margin-left: 63.63636%;
+      margin-right: -100%;
+      clear: none; }
+    .widget_image_text_widget:nth-child(5n + 5) {
+      margin-left: 84.84848%;
+      margin-right: -100%;
+      clear: none; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -1174,6 +1164,16 @@ a {
       .site-logo-wrapper .site-logo {
         margin-left: -100px; } }
 
+#artcop-logo {
+  float: left;
+  clear: both;
+  padding-top: 24px;
+  padding-top: 1.5rem; }
+  #artcop-logo a {
+    text-decoration: none;
+    background-color: clear !important;
+    color: white; }
+
 #footer-text-right {
   float: right; }
 
@@ -1185,6 +1185,40 @@ footer.site-footer {
     content: " ";
     display: block;
     clear: both; }
+  footer.site-footer #social-buttons {
+    padding-top: 7px;
+    padding-top: 0.45rem;
+    float: left; }
+    footer.site-footer #social-buttons img {
+      margin-left: 10px;
+      margin-left: 0.625rem;
+      margin-right: 5px;
+      margin-right: 0.3125rem; }
+  footer.site-footer .site-info {
+    width: 18.50746%;
+    float: right;
+    margin-right: 0; }
+  footer.site-footer #footer-var {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 639px) {
+      footer.site-footer #footer-var {
+        padding-left: 12.53731%;
+        padding-right: 12.53731%; } }
+    @media (min-width: 769px) {
+      footer.site-footer #footer-var {
+        padding-left: 18.80597%;
+        padding-right: 18.80597%; } }
+    @media (min-width: 1021px) {
+      footer.site-footer #footer-var {
+        padding-left: 21.9403%;
+        padding-right: 21.9403%; } }
+    @media (min-width: 1079px) {
+      footer.site-footer #footer-var {
+        padding-left: 21.9403%;
+        padding-right: 21.9403%; } }
 
 footer#colophon-home {
   background-color: white;
@@ -1192,36 +1226,6 @@ footer#colophon-home {
   padding-top: 4.5rem;
   padding-bottom: 48px;
   padding-bottom: 3rem; }
-  footer#colophon-home .social-buttons {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-    @media (min-width: 639px) {
-      footer#colophon-home .social-buttons {
-        padding-left: 12.53731%;
-        padding-right: 12.53731%; } }
-    @media (min-width: 769px) {
-      footer#colophon-home .social-buttons {
-        padding-left: 18.80597%;
-        padding-right: 18.80597%; } }
-    @media (min-width: 1021px) {
-      footer#colophon-home .social-buttons {
-        padding-left: 21.9403%;
-        padding-right: 21.9403%; } }
-    @media (min-width: 1079px) {
-      footer#colophon-home .social-buttons {
-        padding-left: 21.9403%;
-        padding-right: 21.9403%; } }
-    footer#colophon-home .social-buttons img {
-      margin-left: 10px;
-      margin-left: 0.625rem;
-      margin-right: 5px;
-      margin-right: 0.3125rem; }
-  footer#colophon-home .site-info {
-    width: 18.50746%;
-    float: right;
-    margin-right: 0; }
 
 footer#colophon {
   background-color: white;
@@ -1255,15 +1259,6 @@ footer#colophon {
     footer#colophon {
       padding-left: 21.9403%;
       padding-right: 21.9403%; } }
-  footer#colophon .social-buttons img {
-    margin-left: 10px;
-    margin-left: 0.625rem;
-    margin-right: 5px;
-    margin-right: 0.3125rem; }
-  footer#colophon .site-info {
-    width: 18.50746%;
-    float: right;
-    margin-right: 0; }
 
 #sidebar-footer {
   padding-top: 24px;

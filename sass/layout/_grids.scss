@@ -48,24 +48,31 @@
     }
   }
 }
+#artcop-logo {
+  float: left;
+  clear: both;
+  @include padding-leader(1);
+  a { 
+    @include nolink();
+    color: white;
+  }
+}
 #footer-text-right {
   float: right;
 }
 footer.site-footer {
   @include container($susy);
+  #social-buttons {
+    @include padding-leader(0.3);
+    float: left;
+    img { @include squish(10px 5px); }
+  }
+  .site-info { @include span(3 of 16 last);}
+  #footer-var { @include page; }
 }
 footer#colophon-home {
 	background-color: white;
 	@include rhythm-padding(3,2);
-  // position: absolute;
-  // bottom: 0;
-  // height: $size__footer-height;
-	// margin-top: -$size__footer-height;
-  .social-buttons {
-    @include page;
-    img { @include squish(10px 5px); }
-  }
-  .site-info { @include span(3 of 16 last);}
 }
 footer#colophon {
 	background-color: $color__background-footer;
@@ -76,10 +83,6 @@ footer#colophon {
   bottom: 0;
   height: $size__footer-height;
 	margin-top: -$size__footer-height;
-  .social-buttons img {
-   @include squish(10px 5px);
-  }
-  .site-info { @include span(3 of 16 last);}
 }
 #sidebar-footer {
   @include rhythm-padding(1);

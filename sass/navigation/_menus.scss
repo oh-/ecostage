@@ -101,7 +101,7 @@
       background-color: $color__black;
       color: $color__black;
       @include rhythm-margins(-1.5, 0);
-      border-radius: 2rem;
+      @include border-radius(2rem);
       text-align: center;
       display: block;
     }

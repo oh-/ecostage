@@ -34,7 +34,7 @@ input[type="submit"] {
     @include span(isolate 150px of 5 at 3);
     @include margin-leader(1);
     height: 150px;
-    border-radius: 75px;
+    @include border-radius(75px);
     @include adjust-font-size-to($font__size-h2);
     font-family: $font__heading;
   }

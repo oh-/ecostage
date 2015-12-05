@@ -60,7 +60,7 @@
 		// top: 0;
 		// @include span(isolate 5 at 6 of 12);
 		// z-index: 9999999;
-		// border-radius: 10px;
+		// @include border-radius(10px);
 		// &:hover{opacity: 0.8;}
 		&::after {	
 			content: 'minimum';
@@ -152,7 +152,7 @@
   @include margin-leader(1);
   @include adjust-font-size-to(14px);
   @include pad(1rem);
-  border-radius: $corner;
+  @include border-radius($corner);
 }
 @mixin nolink() {
 	text-decoration: none;
@@ -163,7 +163,7 @@
   background-color: $color__a-r;
 	// &:hover {@include contrasted(adjust-lightness($butcol, 20));}
 	@include nolink;
-	border-radius: 2em;
+	@include border-radius(2em);
 
 }
 @mixin transparent($color, $alpha) {

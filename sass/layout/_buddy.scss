@@ -24,7 +24,9 @@
   .item-avatar{
     position: relative;
     top: 0;
-    img {border-radius: 50%;}
+    img {
+      @include border-radius(50%);
+    }
   }
   .item {
       margin: 0;
@@ -45,7 +47,7 @@
 }
 #register-page {
   border: 7px solid $color__text-hl;
-  border-radius: 1rem;
+  @include border-radius(1rem);
   background-color: $color__background-hl;
   @include pad(1 of 16);
   @include rhythm-padding(2);

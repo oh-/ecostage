@@ -1,5 +1,5 @@
 html {
-	box-sizing: border-box;
+	box-sizing: content-box;
 }
 .clearfix {
   @include clearfix();
@@ -29,10 +29,6 @@ hr {
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
-}
-// Page Bands
-.band {
-  @include page-band();
 }
 
 .wpcf7-form>* {

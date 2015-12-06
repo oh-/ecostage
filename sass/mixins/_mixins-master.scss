@@ -80,47 +80,72 @@
 	};
 }	
 
-@mixin page-band($color:  $color__text-alt) {
-    position: relative;
-    left: 0;
-    right: 0;
-    color: $color__text-alt;
-    background-color: $color;
-    @include rhythm-padding(0.6);
-}
-@mixin page-squeeze($num: 2) {
-	@include pad($num);
-}
 /*
  * Page layout mixins
  */
 @mixin page {
-	@include span(full nest);
+  @include span(14 content-box);
   @include susy-breakpoint($phone-p) {
     // content: '$phone-p'; 
-    // max-width: calc($phone-p - 100px); 
   }
   @include susy-breakpoint($phone-l) {
     // content: '$phone-l'; 
+    @include span(13);
   }
   @include susy-breakpoint($tab-p) {
     // Tablet-portrait and up
-    @include pad(2 of 16);
+    // @include pad(2 of 16);
   }
   @include susy-breakpoint($tab-l) {
-		@include pad(3 of 16);
+    // @include pad(3 of 16);
+    @include span(12);
   };
   @include susy-breakpoint($desktop) {
     // content: '$desktop'; 
-		@include pad(3.5 of 16);
+		// @include pad(3.5 of 16);
   }
   @include susy-breakpoint($desk-full) {
     // content: '$desk-full'; 
-		@include pad(3.5 of 16);
-    // @include span(720px no-gutter);
-    // @include squish(8 of 16);
+    @include span(11);
     
   }
+}
+@mixin page-squeeze() {
+  @include page;
+
+  @include pad(1);
+  @include susy-breakpoint($phone-p) {
+    // content: '$phone-p'; 
+  }
+  @include susy-breakpoint($phone-l) {
+    // content: '$phone-l'; 
+    @include pad(1.5);
+  }
+  @include susy-breakpoint($tab-p) {
+    // Tablet-portrait and up
+  }
+  @include susy-breakpoint($tab-l) {
+    @include pad(2);
+  };
+  @include susy-breakpoint($desktop) {
+    // content: '$desktop'; 
+		// @include pad(3.5 of 16);
+  }
+  @include susy-breakpoint($desk-full) {
+    // content: '$desk-full'; 
+    @include pad(2.5);
+    
+  }
+}
+@mixin band-colors($color:  $color__background-band) {
+    color: $color__text-alt;
+    background-color: $color;
+}
+@mixin page-band($color:  $color__background-band) {
+    @include rhythm-padding(0.6);
+    @include band-colors($color);
+    @include page-squeeze();
+
 }
 // @mixin page {
 //   position: relative;

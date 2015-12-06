@@ -1,6 +1,9 @@
 @import "site-vars";
 #page {
-  @include container($susy);
+  @include container(100%);
+    // @include susy-breakpoint($phone-l){
+    //   @include container(80%);
+    // }
   // height: 100%;
   // min-height: 100%;
   // min-width: 100%;
@@ -12,41 +15,57 @@
 }
 .error404 #content {
 }
-.entry-content .members-access-error {
-  @include pad(0);
-  // @include squish(0);
-}
 #masthead {
-  position: relative;
   background: $color__background-header;
   .site-description-page,  .site-description-page>p { @include adjust-font-size-to(20px, 1.2, 16px); }
   .site-description-page {
-    * {margin: 0};
     font-family: $font__heading;
     color: $color__green;
-    @include full;
-    @include susy-breakpoint($tab-p){
-      // @include span(14 of 16 last);
-      @include pad(70px 0 of 16);
-      @include margin-leader(-1.7);
-    }
+    @include span(10.3 of 12 last);
+    @include margin-leader(-2.5);
   }
 }
 .site-logo-wrapper {
-  // @include margin-leader(-0.6);
-  @include page;
-  @include susy-breakpoint(max-width 900px) {
-    @include padding-leader(2);
-  }
+  @include page-squeeze;
+  @include padding-leader(2);
+  position: relative;
   .site-logo {
-    @include full;
     @include susy-breakpoint($phone-l){
-      @include span(400px);
-    }
-    @include susy-breakpoint($tab-p){
-      margin-left: span(-100px);
+      @include span(6 at 1);
     }
   }
+}
+#footer-text-right {
+  float: right;
+}
+footer.site-footer {
+	@include rhythm-padding(3,2);
+	// background-color: $color__background-footer;
+  @include band-colors();
+  #social-buttons {
+    @include span(4);
+    @include padding-leader(0.3);
+    img { @include squish(10px 5px); }
+  }
+  .site-info { @include span(3 last);}
+  // #footer-var { @include page; }
+}
+#footer-var {
+  @include page-squeeze
+}
+footer#colophon-home {
+	// background-color: white;
+}
+#sidebar-footer {
+  @include page-band(white);
+  color: black;
+  @include rhythm-padding(1);
+}
+// image
+.site-logo-wrapper {
+	#sitetitle2 {
+		@include span(3 of 4 last);	
+	}
 }
 #artcop-logo {
   float: left;
@@ -57,46 +76,6 @@
     color: white;
   }
 }
-#footer-text-right {
-  float: right;
-}
-footer.site-footer {
-	@include rhythm-padding(3,2);
-  #social-buttons {
-    @include padding-leader(0.3);
-    float: left;
-    img { @include squish(10px 5px); }
-  }
-  .site-info { @include span(3 of 16 last);}
-  #footer-var { @include page; }
-}
-footer#colophon-home {
-	background-color: white;
-	@include rhythm-padding(3,2);
-}
-footer#colophon {
-	background-color: $color__background-footer;
-  &.band { background-color: $color__background-band; }
-}
-#sidebar-footer {
-  @include rhythm-padding(1);
-}
-// image
-.site-logo-wrapper {
-	#sitetitle2 {
-		@include span(3 of 4 last);	
-	}
-}
-.band {
-  position: absolute;
-  left: 0;
-  right: 0;
-  color: $color__text-alt;
-  background-color: $color__background-band;
-  @include rhythm-padding(0.6);
-  color: $color__text_alt;
-
-}
 .page .entry-header {
   // display: none;
   background-color: $color__background-band;
@@ -104,10 +83,10 @@ footer#colophon {
 
 body.home {
 	//Enter details for things only to be found on the home page 
-	#page {position: relative; }
+	// #page {position: relative; }
 	#masthead {
 		left: 0;
-		position: relative;
+		// position: relative;
 		top: 0;
 		width: 100%;
 		z-index: 3;
@@ -140,9 +119,11 @@ body.home {
   @include span(1 of 5);
 }
 #ecostage-pledge-form {
-  // border: 1px solid red;
+  >* {
+      @include page-squeeze();
+  }
   .eco-form-list { 
-    @include container(5);
+    @include squish(0);
     &>li {
       border-top: 1px solid lightgrey;
       &:first-child {border-top: none;}
@@ -150,6 +131,9 @@ body.home {
       >.inner-pledgepoint-content {
         @include span(4 of 5);
       }
+    }
+    .wpcf7-submit {
+      text-align: center;
     }
     .wpcf7-form-control-wrap {
       // @include leader(1.2);

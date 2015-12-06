@@ -1,7 +1,6 @@
 .main-navigation {
-    @include page;
-    // @include squish(2 0 of 16);
     position: absolute;
+    @include page-squeeze;
     top: 0;
     z-index: 99999;
 	>div {

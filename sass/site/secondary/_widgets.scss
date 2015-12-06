@@ -12,11 +12,7 @@
 	display: none;
 }
 #sidebar-footer {
-  @include page;
-  @include susy-breakpoint(max-width $tab-p) {
-    @include pad(1 of 8);
-    box-sizing: border-box;
-  }
+  @include full;
 }
 .widget_image_text_widget { 
   @include susy-breakpoint(max-width $tab-p) {

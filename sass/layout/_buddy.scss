@@ -52,3 +52,7 @@
   @include pad(1 of 16);
   @include rhythm-padding(2);
 }
+.entry-content .members-access-error {
+  @include pad(0);
+  // @include squish(0);
+}

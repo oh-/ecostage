@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Automattic
 Author URI: http://automattic.com/
 Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 1.0.0
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: _s
@@ -1050,8 +1050,8 @@ a {
       z-index: 998;
       background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%), linear-gradient(to bottom, #000 1px, transparent 1px);
       background-size: 6.26866%, 100% 24px;
-      background-origin: content-box, border-box;
-      background-clip: content-box, border-box;
+      background-origin: content-box;
+      background-clip: content-box;
       background-position: left top; }
 
 #masthead {
@@ -1456,10 +1456,6 @@ body.home .site-branding {
   padding-bottom: 48px;
   padding-bottom: 3rem; }
 
-.entry-content .members-access-error {
-  padding-left: 0%;
-  padding-right: 0%; }
-
 #wp-admin-bar-top-secondary::after {
   content: 'minimum'; }
   @media (min-width: 319px) {
@@ -1581,6 +1577,14 @@ body.home .site-branding {
     .entry-content .band {
       padding-left: 21.9403%;
       padding-right: 21.9403%; } }
+.entry-content > .wpcf7 {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0%;
+  padding-right: 0%; }
 
 .entry-header {
   -webkit-box-sizing: content-box;

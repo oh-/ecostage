@@ -19,7 +19,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			
 <?php 
-$sticky = get_option('sticky_posts');
+// $sticky = get_option('sticky_posts');
 // check if there are any
 // if (!empty($sticky)) {
 // 	// override the query 
@@ -39,9 +39,9 @@ $sticky = get_option('sticky_posts');
 // 				
 //
 //  endwhile; // end of the loop. 
-// } ?>
+// } 
+?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_sidebar('frontpage'); ?>
-<?php echo is_front_page() ? 'frontpage': "not frontpage"; ?>
-<?php is_front_page() ? get_footer('home') : get_footer(); ?>
+<?php  get_footer(); ?>

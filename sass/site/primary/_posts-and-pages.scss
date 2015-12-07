@@ -30,6 +30,10 @@
   .band {
     @include page-band;
   }
+  &>.wpcf7 {
+    @include full;
+    @include pad(0);
+  }
 }
 .entry-header {
 	@include page;
@@ -40,5 +44,3 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
-
-// .excerpt >p {@include page-squeeze;}

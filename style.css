@@ -478,7 +478,7 @@ hr {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     .wpcf7-form > * {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
 
@@ -723,7 +723,7 @@ a {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     .main-navigation {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
   @media (min-width: 479px) {
@@ -736,8 +736,8 @@ a {
       padding-right: 12.53731%; } }
   @media (min-width: 1079px) {
     .main-navigation {
-      padding-left: 15.67164%;
-      padding-right: 15.67164%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   .main-navigation > div {
     min-width: 600px;
     float: right; }
@@ -1055,6 +1055,7 @@ a {
       background-position: left top; }
 
 #masthead {
+  position: relative;
   background: light-grey; }
   #masthead .site-description-page, #masthead .site-description-page > p {
     font-size: 20px;
@@ -1094,7 +1095,7 @@ a {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     .site-logo-wrapper {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
   @media (min-width: 479px) {
@@ -1107,8 +1108,8 @@ a {
       padding-right: 12.53731%; } }
   @media (min-width: 1079px) {
     .site-logo-wrapper {
-      padding-left: 15.67164%;
-      padding-right: 15.67164%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
   @media (min-width: 479px) {
     .site-logo-wrapper .site-logo {
       width: 37.31343%;
@@ -1162,7 +1163,7 @@ footer.site-footer {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     #footer-var {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
   @media (min-width: 479px) {
@@ -1175,8 +1176,8 @@ footer.site-footer {
       padding-right: 12.53731%; } }
   @media (min-width: 1079px) {
     #footer-var {
-      padding-left: 15.67164%;
-      padding-right: 15.67164%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
 
 #sidebar-footer {
   padding-top: 14px;
@@ -1210,7 +1211,7 @@ footer.site-footer {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     #sidebar-footer {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
   @media (min-width: 479px) {
@@ -1223,8 +1224,8 @@ footer.site-footer {
       padding-right: 12.53731%; } }
   @media (min-width: 1079px) {
     #sidebar-footer {
-      padding-left: 15.67164%;
-      padding-right: 15.67164%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
 
 .site-logo-wrapper #sitetitle2 {
   width: 74.6988%;
@@ -1302,7 +1303,7 @@ body.home .site-branding {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     #ecostage-pledge-form > * {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
   @media (min-width: 479px) {
@@ -1315,8 +1316,8 @@ body.home .site-branding {
       padding-right: 12.53731%; } }
   @media (min-width: 1079px) {
     #ecostage-pledge-form > * {
-      padding-left: 15.67164%;
-      padding-right: 15.67164%; } }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
 #ecostage-pledge-form .eco-form-list {
   margin-left: 0%;
   margin-right: 0%; }
@@ -1356,7 +1357,7 @@ body.home .site-branding {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     #buddy-members {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
 
@@ -1368,13 +1369,7 @@ body.home .site-branding {
   padding-bottom: 0px;
   padding-bottom: 0rem;
   margin-bottom: 36px;
-  margin-bottom: 2.25rem;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  content: "";
-  display: table; }
+  margin-bottom: 2.25rem; }
 
 #members-list {
   margin: 0;
@@ -1508,6 +1503,42 @@ body.home .site-branding {
 .entry-summary {
   margin: 1.5em 0 0; }
 
+.entry-content > p, .entry-content > h1, .entry-content > h2, .entry-content > h3, .entry-content > h4, .entry-content > h5, .entry-content > h6, .entry-content > ul, .entry-content > div {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 87.46269%;
+  float: left;
+  margin-right: 0.29851%;
+  padding-left: 6.26866%;
+  padding-right: 6.26866%; }
+  @media (min-width: 479px) {
+    .entry-content > p, .entry-content > h1, .entry-content > h2, .entry-content > h3, .entry-content > h4, .entry-content > h5, .entry-content > h6, .entry-content > ul, .entry-content > div {
+      width: 81.19403%;
+      float: left;
+      margin-right: 0.29851%; } }
+  @media (min-width: 769px) {
+    .entry-content > p, .entry-content > h1, .entry-content > h2, .entry-content > h3, .entry-content > h4, .entry-content > h5, .entry-content > h6, .entry-content > ul, .entry-content > div {
+      width: 74.92537%;
+      float: left;
+      margin-right: 0.29851%; } }
+  @media (min-width: 1079px) {
+    .entry-content > p, .entry-content > h1, .entry-content > h2, .entry-content > h3, .entry-content > h4, .entry-content > h5, .entry-content > h6, .entry-content > ul, .entry-content > div {
+      width: 56.1194%;
+      float: left;
+      margin-right: 0.29851%; } }
+  @media (min-width: 479px) {
+    .entry-content > p, .entry-content > h1, .entry-content > h2, .entry-content > h3, .entry-content > h4, .entry-content > h5, .entry-content > h6, .entry-content > ul, .entry-content > div {
+      padding-left: 9.40299%;
+      padding-right: 9.40299%; } }
+  @media (min-width: 769px) {
+    .entry-content > p, .entry-content > h1, .entry-content > h2, .entry-content > h3, .entry-content > h4, .entry-content > h5, .entry-content > h6, .entry-content > ul, .entry-content > div {
+      padding-left: 12.53731%;
+      padding-right: 12.53731%; } }
+  @media (min-width: 1079px) {
+    .entry-content > p, .entry-content > h1, .entry-content > h2, .entry-content > h3, .entry-content > h4, .entry-content > h5, .entry-content > h6, .entry-content > ul, .entry-content > div {
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
 .entry-content .band {
   padding-top: 14px;
   padding-top: 0.9rem;
@@ -1535,7 +1566,7 @@ body.home .site-branding {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     .entry-content .band {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
   @media (min-width: 479px) {
@@ -1548,12 +1579,8 @@ body.home .site-branding {
       padding-right: 12.53731%; } }
   @media (min-width: 1079px) {
     .entry-content .band {
-      padding-left: 15.67164%;
-      padding-right: 15.67164%; } }
-
-.home-page .entry-content .band {
-  margin-bottom: 120px;
-  margin-bottom: 7.5rem; }
+      padding-left: 21.9403%;
+      padding-right: 21.9403%; } }
 
 .entry-header {
   -webkit-box-sizing: content-box;
@@ -1574,7 +1601,7 @@ body.home .site-branding {
       margin-right: 0.29851%; } }
   @media (min-width: 1079px) {
     .entry-header {
-      width: 68.65672%;
+      width: 56.1194%;
       float: left;
       margin-right: 0.29851%; } }
 

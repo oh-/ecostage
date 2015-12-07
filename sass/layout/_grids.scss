@@ -16,6 +16,7 @@
 .error404 #content {
 }
 #masthead {
+  position: relative;
   background: $color__background-header;
   .site-description-page,  .site-description-page>p { @include adjust-font-size-to(20px, 1.2, 16px); }
   .site-description-page {
@@ -48,10 +49,9 @@ footer.site-footer {
     img { @include squish(10px 5px); }
   }
   .site-info { @include span(3 last);}
-  // #footer-var { @include page; }
 }
 #footer-var {
-  @include page-squeeze
+  @include page-squeeze;
 }
 footer#colophon-home {
 	// background-color: white;
@@ -120,7 +120,7 @@ body.home {
 }
 #ecostage-pledge-form {
   >* {
-      @include page-squeeze();
+      @include page-squeeze;
   }
   .eco-form-list { 
     @include squish(0);

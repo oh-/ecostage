@@ -106,7 +106,7 @@
   }
   @include susy-breakpoint($desk-full) {
     // content: '$desk-full'; 
-    @include span(11);
+    @include span(9);
     
   }
 }
@@ -133,7 +133,7 @@
   }
   @include susy-breakpoint($desk-full) {
     // content: '$desk-full'; 
-    @include pad(2.5);
+    @include pad(3.5);
     
   }
 }

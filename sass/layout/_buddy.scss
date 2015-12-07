@@ -4,8 +4,7 @@
 }
 #bbmember {
   @include rhythm(1.5);
-  @include span(full nested);
-  @include clearfix;
+  // @include clearfix;
 }
 #members-list {
   margin: 0;

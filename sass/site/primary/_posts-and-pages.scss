@@ -24,13 +24,12 @@
 }
 
 .entry-content {
+  &>p, &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>ul, &>div {
+    @include page-squeeze();
+  }
   .band {
     @include page-band;
   }
-}
-.home-page .entry-content .band {
-  // the band on the front page
-  @include margin-trailer(5);
 }
 .entry-header {
 	@include page;

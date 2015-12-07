@@ -34,13 +34,14 @@ $color__background-hl: lighten($color__orange, 60);
 $color__background-header: light-grey;
 $color__background-footer: $color__black;
 $color__background-hr: #ccc;
-$color__background-button: $color__a-r; //#e6e6e6;
+$color__background-button: $color__orange; // $color__a-r;
 $color__background-button-hover: $color__a-y; //#e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__background-menu: none;
+$color__background-menu-mobile: $color__black;
 $color__background-menu-item: $color__orange;
-$color__background-menu-hover: $color__8th-red;
+$color__background-menu-hover: $color__orange;
 $color__background-menu-select: $color__background-header;
 
 

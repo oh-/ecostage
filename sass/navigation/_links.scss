@@ -22,6 +22,12 @@ a {
 		outline: 0;
 	}
 }
+.site-footer {
+  &.band a { 
+    color: $color__text_alt !important;
+    @include nolink;
+  }
+}
 .band a {
 	color: lighten($color__link, 20);
 	&:visited {

@@ -19,9 +19,5 @@ textarea {
 @import "copy";
 
 .site-footer {
-  @include adjust-font-size-to(10px);
-  &.band a:link { 
-    color: $color__text_alt;
-    @include nolink;
-  }
+  @include adjust-font-size-to(12px);
 }

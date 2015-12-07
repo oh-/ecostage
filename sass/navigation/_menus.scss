@@ -4,8 +4,7 @@
     top: 0;
     z-index: 99999;
 	>div {
-    // @include squish(0 -2 of 16);
-    min-width: 600px;
+    // min-width: 600px;
     float: right;
   }
 	ul {
@@ -97,8 +96,8 @@
       max-width: $nav-semi;
       line-height: $nav-semi;
       position: absolute;
-      background-color: $color__black;
-      color: $color__black;
+      background-color: $color__orange;
+      color: $color__orange;
       @include rhythm-margins(-1.5, 0);
       @include border-radius(2rem);
       text-align: center;
@@ -120,11 +119,19 @@
 }
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
-  position: static;
-  li {
+	display: inline-block;
+  // position: relative;
+  >li {
     float: none;
   }
+  .menu-item a {
+
+  }
+	.current_page_item {
+    a:before {
+      display: none;
+    }
+	}
 }
 
 @include susy-breakpoint(min-width $mobile) {

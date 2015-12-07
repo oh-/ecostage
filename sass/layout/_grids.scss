@@ -19,21 +19,44 @@
   position: relative;
   background: $color__background-header;
   .site-description-page,  .site-description-page>p { @include adjust-font-size-to(20px, 1.2, 16px); }
-  .site-description-page {
-    font-family: $font__heading;
-    color: $color__green;
-    @include span(10.3 of 12 last);
-    @include margin-leader(-2.5);
-  }
 }
 .site-logo-wrapper {
   @include page-squeeze;
   @include padding-leader(2);
   position: relative;
   .site-logo {
+    margin-left: span(-1.5);
     @include susy-breakpoint($phone-l){
-      @include span(6 at 1);
+      @include span(300px first);
     }
+  }
+  .site-description-page {
+    font-family: $font__heading;
+    color: $color__green;
+    // @include span(full);
+    p {margin: 0;}
+    $spacer: 70px;
+    @include susy-breakpoint((max-width) ($tab-p)){
+      @include full();
+    }
+    @include susy-breakpoint(($tab-p) ($tab-l)){
+      left: span(3.2);
+      position: absolute;
+      top: 150px;
+      right: 0;
+    }
+    @include susy-breakpoint($tab-l){
+      left: span(3.2);
+      position: absolute;
+      top: 150px;
+      right: 0;
+    }
+    @include susy-breakpoint($desk-full) {
+      left: span(4.3);
+    };
+    // @include span(10.3 of 12 last);
+    // @include pad(115px, 0);
+    // @include margin-leader(-2.7);
   }
 }
 #footer-text-right {
@@ -41,17 +64,36 @@
 }
 footer.site-footer {
 	@include rhythm-padding(3,2);
-	// background-color: $color__background-footer;
+  .home-page & {
+    @include rhythm-padding(0,2);
+  }
   @include band-colors();
   #social-buttons {
-    @include span(4);
     @include padding-leader(0.3);
-    img { @include squish(10px 5px); }
+    @include full();
+    @include susy-breakpoint($tab-p) {
+      @include span(4);
+    };
+  }
+  .sl {
+    display: inline-block;
+    line-height: 45px;
+    width: 45px;
+    font-size: 25px;
+    vertical-align: top;
+    font-family: $font__heading;
+    color: $color__text-alt;
+    font-weight: 500;
+    text-align: center;
+    @include border-radius(50%);
+    background-color: $color__background-button;
+    margin: 0 1rem 1rem 0;
   }
   .site-info { @include span(3 last);}
 }
 #footer-var {
   @include page-squeeze;
+  .home-page & { @include rhythm-padding(2); }
 }
 footer#colophon-home {
 	// background-color: white;

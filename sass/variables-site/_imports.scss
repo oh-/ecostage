@@ -1,15 +1,25 @@
-//@import "../../../../bower_components/breakpoint/breakpoint/breakpoint";
-// @import "../../../../bower_components/susy/sass/susy";
-//
-// @import "../../../../bower_components/sass-web-fonts/web-fonts";
-// @import "breakpoint";
-//
-// @import "compass/css3/border-radius";
-// @import "compass/typography/vertical_rhythm";
-@import "compass/css3";
+/**
+ * Bower imports - will cause an error - them in the base.build tool I have created at
+ * https://github.com/masdeso-uk/base.git
+ */
 
+@import "compass/css3";
 @import 'susy';
 @import 'web-fonts';
 @import 'vertical-rhythms';
 
+// @import "breakpoint";
+// @import "compass/css3/border-radius";
+// @import "compass/typography/vertical_rhythm";
+
+/*
+ * if you are not using the base.build tool I have created - you can still build with
+ * sass using relative directory structure like the following
+ */
+
 // @import "../../../libs/secondary-fixed-navigation/scss/style.scss";
+// @import "../../../../bower_components/breakpoint/breakpoint/breakpoint";
+// @import "../../../../bower_components/susy/sass/susy";
+//
+// @import "../../../../bower_components/sass-web-fonts/web-fonts";
+

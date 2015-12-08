@@ -40,19 +40,21 @@
       @include full();
     }
     @include susy-breakpoint(($tab-p) ($tab-l)){
-      left: span(3.2);
-      position: absolute;
-      top: 150px;
-      right: 0;
+      float: left;
+      position: relative;
+      @include margin-leader(-2);
+      left: 65px;
+      width: span(12 of 13);
     }
     @include susy-breakpoint($tab-l){
-      left: span(3.2);
-      position: absolute;
-      top: 150px;
-      right: 0;
+      float: left;
+      position: relative;
+      @include margin-leader(-2);
+      left: 65px;
+      width: span(12 of 13);
     }
     @include susy-breakpoint($desk-full) {
-      left: span(4.3);
+      left: 65px;
     };
     // @include span(10.3 of 12 last);
     // @include pad(115px, 0);

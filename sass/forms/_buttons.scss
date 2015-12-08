@@ -32,7 +32,12 @@ input[type="submit"] {
   text-align: center;
 }
 button.menu-toggle {
-  @include navtabs();
+  @include navtabs;
+  .main-navigation.toggled & {
+    @include border-radius($menubr $menubr 0 0);
+    margin-bottom: 0;
+  }
+  // @include border-radius(0.5rem 0.5rem 0 0);
 }
 #ecostage-pledge-form {
   .wpcf7-submit {

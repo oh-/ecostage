@@ -175,7 +175,7 @@
 // }
 @mixin navtabs($corner: 1em) {
   @include margin-leader(1);
-  @include adjust-font-size-to(14px);
+  @include adjust-font-size-to($font__size-menu);
   @include pad(1rem);
   @include border-radius($corner);
 }

@@ -18,7 +18,7 @@ $susy: (
   global-box-sizing: content-box,
   last-flow: to,
   debug: (
-    image: hidden,
+    image: hide,
     color: rgba(red, .25),
     output: overlay,
     toggle: bottom right,
@@ -108,3 +108,7 @@ $desk-hi-res: "screen" (min-width $desk) $hidpi;
 //   }
 // }
 //
+
+// Sizes
+$menubr: 0.5rem;
+

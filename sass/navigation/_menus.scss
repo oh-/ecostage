@@ -123,16 +123,42 @@
   .main-navigation>div {
     @include full();
   }
+  .main-navigation.toggled ul {
+    background-color: $color__background-menu-mobile;
+    @include pad(0);
+    @include rhythm-padding(0.3);
+  }
+  .menu-toggle {
+    background-color: $color__background-menu-item;
+    .main-navigation.toggled & { 
+      background-color: $color__background-menu-mobile;
+      color: $color__text-alt;
+    }
+  }
   .menu-toggle,
   .main-navigation.toggled ul {
-    @include pad(0 1);
+    @include border-radius($menubr 0 $menubr $menubr);
     display: inline-block;
     float: right;
-    @include testing();
+    // background-color: $color__background-menu-mobile;
     >li {
+      @include squish(1rem);
+      a {
+        display: block;
+        @include border-radius(0);
+        @include rhythm-padding(0.3);
+      }
       float: none;
     }
     .current_page_item {
+      &:before {
+        @include adjust-font-size-to($font__size-menu);
+        @include rhythm-margins(0.25);
+        content: ">";
+        font: $font__heading;
+        color: $color__text-alt;
+        position: absolute;
+      }
       a:before {
         display: none;
       }

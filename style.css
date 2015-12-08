@@ -623,6 +623,13 @@ button.menu-toggle {
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
   border-radius: 1em; }
+  .main-navigation.toggled button.menu-toggle {
+    -webkit-border-radius: 0.5rem 0.5rem 0 0;
+    -moz-border-radius: 0.5rem 0.5rem 0 0;
+    -ms-border-radius: 0.5rem 0.5rem 0 0;
+    -o-border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-bottom: 0; }
 
 #ecostage-pledge-form .wpcf7-submit {
   -webkit-box-sizing: border-box;
@@ -858,16 +865,63 @@ a {
     margin-left: 0;
     margin-right: 0; }
 
+  .main-navigation.toggled ul {
+    background-color: black;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 7px;
+    padding-top: 0.45rem;
+    padding-bottom: 7px;
+    padding-bottom: 0.45rem; }
+
+  .menu-toggle {
+    background-color: #F96B24; }
+    .main-navigation.toggled .menu-toggle {
+      background-color: black;
+      color: white; }
+
   .menu-toggle,
   .main-navigation.toggled ul {
-    padding-left: 0%;
-    padding-right: 6.26866%;
+    -webkit-border-radius: 0.5rem 0 0.5rem 0.5rem;
+    -moz-border-radius: 0.5rem 0 0.5rem 0.5rem;
+    -ms-border-radius: 0.5rem 0 0.5rem 0.5rem;
+    -o-border-radius: 0.5rem 0 0.5rem 0.5rem;
+    border-radius: 0.5rem 0 0.5rem 0.5rem;
     display: inline-block;
-    float: right;
-    background-color: red !important; }
+    float: right; }
     .menu-toggle > li,
     .main-navigation.toggled ul > li {
+      margin-left: 16px;
+      margin-left: 1rem;
+      margin-right: 16px;
+      margin-right: 1rem;
       float: none; }
+      .menu-toggle > li a,
+      .main-navigation.toggled ul > li a {
+        display: block;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        padding-top: 7px;
+        padding-top: 0.45rem;
+        padding-bottom: 7px;
+        padding-bottom: 0.45rem; }
+    .menu-toggle .current_page_item:before,
+    .main-navigation.toggled ul .current_page_item:before {
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 24px;
+      line-height: 1.5rem;
+      margin-top: 6px;
+      margin-top: 0.375rem;
+      margin-bottom: 6px;
+      margin-bottom: 0.375rem;
+      content: ">";
+      font: "Fira Sans", Impact, Charcoal, sans-serif;
+      color: white;
+      position: absolute; }
     .menu-toggle .current_page_item a:before,
     .main-navigation.toggled ul .current_page_item a:before {
       display: none; } }
@@ -1048,39 +1102,6 @@ a {
     content: " ";
     display: block;
     clear: both; }
-  head {
-    display: block;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 999;
-    color: #333;
-    background: rgba(255, 255, 255, 0.25); }
-  head:before {
-    content: "|||";
-    display: block;
-    padding: 5px 10px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: bold; }
-  head:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: red; }
-  head:hover ~ #page, head:hover ~ body #page {
-    position: relative; }
-    head:hover ~ #page:before, head:hover ~ body #page:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      content: " ";
-      z-index: 998;
-      background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%), linear-gradient(to bottom, #000 1px, transparent 1px);
-      background-size: 6.26866%, 100% 24px;
-      background-origin: content-box;
-      background-clip: content-box;
-      background-position: left top; }
 
 #masthead {
   position: relative;

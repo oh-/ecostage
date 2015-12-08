@@ -31,6 +31,9 @@ input[type="submit"] {
 .eco-form-list + p {
   text-align: center;
 }
+button.menu-toggle {
+  @include navtabs();
+}
 #ecostage-pledge-form {
   .wpcf7-submit {
     @include span(150px border-box);

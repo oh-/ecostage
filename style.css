@@ -1105,12 +1105,7 @@ a {
 #page {
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%), linear-gradient(to bottom, #000 1px, transparent 1px);
-  background-size: 6.26866%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top; }
+  margin-right: auto; }
   #page:after {
     content: " ";
     display: block;

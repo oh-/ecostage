@@ -17,7 +17,7 @@
       <a href="<?php echo esc_url('https://twitter.com/ecostagepledge', 'eco' ); ?>" class="sl">t</a>
     </div>
     <div id="footer-text-right">
-      <p>Join us in building a community of ecologically minded theatre makers</p>
+      <p>Join us in building a community of ecologically minded performance makers</p>
     </div>
   </div>
 <?php is_front_page() ? get_sidebar('footer'): '' ; ?>

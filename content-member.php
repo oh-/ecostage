@@ -47,7 +47,7 @@ $websiteuri = bp_get_member_profile_data('field=Website' );
 $toremove = array("http://www.", "http://");
 $toreplacewith   = array("", "");
 $website = str_replace($toremove, $toreplacewith, $websiteuri);
-$occupation = bp_get_member_profile_data('field=Occupation' );
+$occupation = bp_get_member_profile_data('field=Short description' );
        ?>
     <li>
 <?php if ($websiteuri) { $userlink = '<a href="%1$s">'; printf($userlink, $websiteuri); }; ?>
@@ -62,7 +62,7 @@ $occupation = bp_get_member_profile_data('field=Occupation' );
        <div class="member-extra">
        <?php do_action( 'bp_directory_members_item' ); ?>
 <span class="member-name"><?php echo $firstname .' ' .$lastname; ?></span>
-  <span class="member-occupation"><<?php echo $occupation ?></span>
+  <span class="member-occupation"><?php echo $occupation ?></span>
       <?php
        /***
         * If you want to show specific profile fields here you can,

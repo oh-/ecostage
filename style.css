@@ -1601,6 +1601,8 @@ body.home .site-branding {
 
 .member-extra {
   text-align: center; }
+  .member-extra span {
+    display: block; }
 
 #wp-admin-bar-top-secondary::after {
   content: 'minimum'; }

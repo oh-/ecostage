@@ -21,3 +21,7 @@ textarea {
 .site-footer {
   @include adjust-font-size-to(12px);
 }
+
+p.description b {
+  @extend .hl;
+}

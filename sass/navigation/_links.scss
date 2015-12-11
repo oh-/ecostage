@@ -29,9 +29,9 @@ a {
   }
 }
 .band a {
-	color: lighten($color__link, 20);
+	color: $color__link-band;
 	&:visited {
-		color: lighten($color__link-visited, 15);
+		color: $color__link-band-visited;
 	}
 }
 .collapseomatic {

@@ -140,7 +140,7 @@
 @mixin band-colors($color:  $color__background-band) {
     color: $color__text-alt;
     background-color: $color;
-    >p a, >a {color: $color__orange;}
+    // >p a, >a {color: $color__orange;} // moved to _links.scss
 }
 @mixin page-band($color:  $color__background-band) {
     @include rhythm-padding(0.6);

@@ -361,7 +361,7 @@ header#masthead .site-title, header#masthead .site-description, header#masthead 
   header#masthead .site-title a, header#masthead .site-description a, header#masthead .site-title a a {
     text-decoration: none; }
 
-.collapseomatic, .hilight, .hl {
+.collapseomatic, .hilight, .hl, p.description b {
   color: #F96B24; }
 
 #secondary .widget-title {
@@ -719,9 +719,9 @@ a {
   background-color: clear !important; }
 
 .band a {
-  color: #17aeac; }
+  color: #F96B24; }
   .band a:visited {
-    color: #149896; }
+    color: #F96B24; }
 
 .collapseomatic {
   font-size: 18px;
@@ -1110,39 +1110,6 @@ a {
     content: " ";
     display: block;
     clear: both; }
-  head {
-    display: block;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 999;
-    color: #333;
-    background: rgba(255, 255, 255, 0.25); }
-  head:before {
-    content: "|||";
-    display: block;
-    padding: 5px 10px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: bold; }
-  head:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: red; }
-  head:hover ~ #page, head:hover ~ body #page {
-    position: relative; }
-    head:hover ~ #page:before, head:hover ~ body #page:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      content: " ";
-      z-index: 998;
-      background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%), linear-gradient(to bottom, #000 1px, transparent 1px);
-      background-size: 6.26866%, 100% 24px;
-      background-origin: content-box, border-box;
-      background-clip: content-box, border-box;
-      background-position: left top; }
 
 #masthead {
   position: relative;
@@ -1247,8 +1214,6 @@ footer.site-footer {
     padding-top: 0rem;
     padding-bottom: 48px;
     padding-bottom: 3rem; }
-  footer.site-footer > p a, footer.site-footer > a {
-    color: #F96B24; }
   footer.site-footer #social-buttons {
     padding-top: 7px;
     padding-top: 0.45rem;
@@ -1259,9 +1224,10 @@ footer.site-footer {
     margin-right: 0; }
     @media (min-width: 639px) {
       footer.site-footer #social-buttons {
-        width: 17.60766%;
+        width: 110px;
+        width: 6.875rem;
         float: left;
-        margin-right: 0.47847%; } }
+        margin-right: 0.29851%; } }
   footer.site-footer .sl {
     display: inline-block;
     line-height: 45px;
@@ -1278,7 +1244,7 @@ footer.site-footer {
     -o-border-radius: 50%;
     border-radius: 50%;
     background-color: #F96B24;
-    margin: 0 1rem 1rem 0; }
+    margin: 0 5px 5px 0; }
   footer.site-footer .site-info {
     width: 18.50746%;
     float: right;
@@ -1346,8 +1312,6 @@ footer.site-footer {
   padding-top: 1.5rem;
   padding-bottom: 24px;
   padding-bottom: 1.5rem; }
-  #sidebar-footer > p a, #sidebar-footer > a {
-    color: #F96B24; }
   @media (min-width: 479px) {
     #sidebar-footer {
       width: 81.19403%;
@@ -1518,8 +1482,8 @@ body.home .site-branding {
     width: 48.78049%;
     float: left;
     position: relative;
-    overflow-x: hidden;
-    overflow-y: visible;
+    padding-bottom: 36px;
+    padding-bottom: 2.25rem;
     word-wrap: break-word; }
     #members-list > li:nth-child(2n + 1) {
       margin-left: 0;
@@ -1571,8 +1535,8 @@ body.home .site-branding {
     #members-list > li:hover .item-title {
       visibility: visible; }
     #members-list > li:hover img.avatar {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-      opacity: 0.3; }
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
+      opacity: 0.15; }
     #members-list > li:hover .nohl img.avatar {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
       opacity: 1; }
@@ -1588,23 +1552,25 @@ body.home .site-branding {
       border-radius: 50%; }
   #members-list .item-title {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 30%;
+    left: 10px;
+    right: 10px;
     visibility: hidden;
-    padding-top: 60px;
-    padding-top: 3.75rem;
-    padding-bottom: 60px;
-    padding-bottom: 3.75rem;
-    color: #F96B24; }
+    color: #F96B24;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
+    @media (min-width: 479px) {
+      #members-list .item-title {
+        font-size: 25px;
+        font-size: 1.5625rem;
+        line-height: 48px;
+        line-height: 3rem; } }
   #members-list .item {
     margin: 0;
     padding: 0; }
     #members-list .item a {
-      font-size: 45px;
-      font-size: 2.8125rem;
-      line-height: 72px;
-      line-height: 4.5rem;
       margin-top: 0px;
       margin-top: 0rem;
       padding-top: 48px;
@@ -1729,8 +1695,6 @@ body.home .site-branding {
   margin-right: 0.29851%;
   padding-left: 6.26866%;
   padding-right: 6.26866%; }
-  .entry-content .band > p a, .entry-content .band > a {
-    color: #F96B24; }
   @media (min-width: 479px) {
     .entry-content .band {
       width: 81.19403%;

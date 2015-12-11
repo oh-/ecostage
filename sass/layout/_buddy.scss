@@ -13,16 +13,15 @@
   font-family: $font__heading;
   &>li {
     @include gallery(1 of 2);
-    // @include susy-breakpoint($tab-p) { @include gallery(1 of 3); };
     @include susy-breakpoint($tab-l) { @include gallery(1 of 3); };
     @include susy-breakpoint($desk) { @include gallery(1 of 4); };
     position: relative;
-    overflow-x: hidden;
-    overflow-y: visible;
+    // overflow: visible;
+    @include padding-trailer(1.5);
     word-wrap: break-word;
     &:hover { 
       .item-title { visibility: visible; }
-      img.avatar { @include opacity(0.3); }
+      img.avatar { @include opacity(0.15); }
       .nohl img.avatar { @include opacity(1); }
     }
   }
@@ -34,18 +33,20 @@
   }
   .item-title {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 30%;
+    left: 10px;
+    right: 10px;
     visibility: hidden;
-    @include rhythm-padding(2.5);
+    // @include rhythm-padding(2.5);
     color: $color__orange;
+    @include adjust-font-size-to(18px);
+    @include susy-breakpoint($phone-l) { @include adjust-font-size-to(25px); };
+    // @include susy-breakpoint($tab-p) { @include adjust-font-size-to(px); };
   }
   .item {
       margin: 0;
       padding: 0;
     a {
-      @include adjust-font-size-to(45px);
       @include rhythm(0, 2);
       visibility: hidden;
       @include nolink();

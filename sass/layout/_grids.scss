@@ -74,7 +74,7 @@ footer.site-footer {
     @include padding-leader(0.3);
     @include full();
     @include susy-breakpoint($tab-p) {
-      @include span(1.8 of 10);
+      @include span(110px);
     };
   }
   .sl {
@@ -89,7 +89,7 @@ footer.site-footer {
     text-align: center;
     @include border-radius(50%);
     background-color: $color__background-button;
-    margin: 0 1rem 1rem 0;
+    margin: 0 5px 5px 0;
   }
   .site-info { @include span(3 last);}
 }

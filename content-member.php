@@ -6,7 +6,6 @@
  * @package _s
  */
 $avatarsize = array( 'width'  => '170', 'height'  => '170');
-
 // $member['name'] = bp_member_profile_data( 'field=Name' );
 // $member['twitter'] = xprofile_get_field_data( 'Twitter handle', bp_get_member_user_id() );
   // bp_member_profile_data( 'field=Twitter handle' );
@@ -36,15 +35,34 @@ $avatarsize = array( 'width'  => '170', 'height'  => '170');
 <div id='bbmember'>
   <ul id="members-list" class="item-list" role="main">
   <?php while ( bp_members() ) : bp_the_member(); ?>
+       <?php
+// $userdata = array ( 'field'     => 'Twitter handle',);
+// echo bp_profile_field_data($userdata);
+// $current_user = wp_get_current_user();
+// $current_user_id = $current_user->ID;
+$firstname = bp_get_member_profile_data('field=First Name' );
+$lastname = bp_get_member_profile_data('field=Last Name' );
+$websiteuri = bp_get_member_profile_data('field=Website' );
+// Provides: You should eat pizza, beer, and ice cream every day
+$toremove = array("http://www.", "http://");
+$toreplacewith   = array("", "");
+$website = str_replace($toremove, $toreplacewith, $websiteuri);
+$occupation = bp_get_member_profile_data('field=Occupation' );
+       ?>
     <li>
-      <div class="item-avatar">
-         <a href="#<?php // bp_member_permalink(); ?>"><?php bp_member_avatar($avatarsize); ?></a>
-      </div>
-      <div class="item">
+<?php if ($websiteuri) { $userlink = '<a href="%1$s">'; printf($userlink, $websiteuri); }; ?>
+<div class="item-avatar <?php if (!$websiteuri) { echo 'nohl'; }; ?> ">
+        <?php bp_member_avatar($avatarsize); ?>
         <div class="item-title">
-           <a href="#<?php // $url ?>"><?php bp_member_name(); ?></a>
+         <?php echo $website; ?>
        </div>
+      </div>
+<?php if($websiteuri){ echo '</a>'; };?>
+      <div class="item">
+       <div class="member-extra">
        <?php do_action( 'bp_directory_members_item' ); ?>
+<span class="member-name"><?php echo $firstname .' ' .$lastname; ?></span>
+  <span class="member-occupation"><<?php echo $occupation ?></span>
       <?php
        /***
         * If you want to show specific profile fields here you can,
@@ -54,8 +72,19 @@ $avatarsize = array( 'width'  => '170', 'height'  => '170');
         * bp_member_profile_data( 'field=the field name' );
        */
        ?>
+</div>
+
        </div>
    </li>
+<?php 
+// unset($current_user);
+// unset($current_user_id);
+// unset($firstname);
+// unset($lastname);
+// unset($website);
+// unset($occupation);
+// unset($current_user, $current_user_id, $firstname, $lastname, $website, $occupation);
+ ?>
  <?php endwhile; ?>
  </ul>
 </div>

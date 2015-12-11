@@ -62,7 +62,7 @@
   }
 }
 #footer-text-right {
-  float: right;
+  float: left;
 }
 footer.site-footer {
 	@include rhythm-padding(3,2);
@@ -74,7 +74,7 @@ footer.site-footer {
     @include padding-leader(0.3);
     @include full();
     @include susy-breakpoint($tab-p) {
-      @include span(4);
+      @include span(1.8 of 10);
     };
   }
   .sl {
@@ -111,15 +111,6 @@ footer#colophon-home {
 		@include span(3 of 4 last);	
 	}
 }
-#artcop-logo {
-  float: left;
-  clear: both;
-  @include padding-leader(1);
-  a { 
-    @include nolink();
-    color: white;
-  }
-}
 .page .entry-header {
   // display: none;
   background-color: $color__background-band;
@@ -152,9 +143,7 @@ body.home {
 }
 #primary {
   margin-bottom: $size__footer-height;
-  .home-page & {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
   
 }
 

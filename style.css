@@ -1110,6 +1110,39 @@ a {
     content: " ";
     display: block;
     clear: both; }
+  head {
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+    color: #333;
+    background: rgba(255, 255, 255, 0.25); }
+  head:before {
+    content: "|||";
+    display: block;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold; }
+  head:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: red; }
+  head:hover ~ #page, head:hover ~ body #page {
+    position: relative; }
+    head:hover ~ #page:before, head:hover ~ body #page:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: " ";
+      z-index: 998;
+      background-image: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 77, 77, 0.25) 95.2381%, transparent 95.2381%), linear-gradient(to bottom, #000 1px, transparent 1px);
+      background-size: 6.26866%, 100% 24px;
+      background-origin: content-box, border-box;
+      background-clip: content-box, border-box;
+      background-position: left top; }
 
 #masthead {
   position: relative;
@@ -1200,7 +1233,7 @@ a {
         left: 65px; } }
 
 #footer-text-right {
-  float: right; }
+  float: left; }
 
 footer.site-footer {
   padding-top: 72px;
@@ -1214,6 +1247,8 @@ footer.site-footer {
     padding-top: 0rem;
     padding-bottom: 48px;
     padding-bottom: 3rem; }
+  footer.site-footer > p a, footer.site-footer > a {
+    color: #F96B24; }
   footer.site-footer #social-buttons {
     padding-top: 7px;
     padding-top: 0.45rem;
@@ -1224,9 +1259,9 @@ footer.site-footer {
     margin-right: 0; }
     @media (min-width: 639px) {
       footer.site-footer #social-buttons {
-        width: 24.77612%;
+        width: 17.60766%;
         float: left;
-        margin-right: 0.29851%; } }
+        margin-right: 0.47847%; } }
   footer.site-footer .sl {
     display: inline-block;
     line-height: 45px;
@@ -1311,6 +1346,8 @@ footer.site-footer {
   padding-top: 1.5rem;
   padding-bottom: 24px;
   padding-bottom: 1.5rem; }
+  #sidebar-footer > p a, #sidebar-footer > a {
+    color: #F96B24; }
   @media (min-width: 479px) {
     #sidebar-footer {
       width: 81.19403%;
@@ -1344,16 +1381,6 @@ footer.site-footer {
   float: right;
   margin-right: 0; }
 
-#artcop-logo {
-  float: left;
-  clear: both;
-  padding-top: 24px;
-  padding-top: 1.5rem; }
-  #artcop-logo a {
-    text-decoration: none;
-    background-color: clear !important;
-    color: white; }
-
 .page .entry-header {
   background-color: #3A3A3A; }
 
@@ -1384,9 +1411,8 @@ body.home .site-branding {
     padding: 1.2rem; }
 
 #primary {
-  margin-bottom: 150px; }
-  .home-page #primary {
-    margin-bottom: 0; }
+  margin-bottom: 150px;
+  margin-bottom: 0; }
 
 .wpcf7-list-item-label {
   background-color: red !important;
@@ -1489,36 +1515,69 @@ body.home .site-branding {
   list-style: none;
   font-family: "Fira Sans", Impact, Charcoal, sans-serif; }
   #members-list > li {
-    width: 19.23077%;
+    width: 48.78049%;
     float: left;
     position: relative;
-    overflow: hidden; }
-    #members-list > li:nth-child(5n + 1) {
+    overflow-x: hidden;
+    overflow-y: visible;
+    word-wrap: break-word; }
+    #members-list > li:nth-child(2n + 1) {
       margin-left: 0;
       margin-right: -100%;
       clear: both;
       margin-left: 0; }
-    #members-list > li:nth-child(5n + 2) {
-      margin-left: 20.19231%;
+    #members-list > li:nth-child(2n + 2) {
+      margin-left: 51.21951%;
       margin-right: -100%;
       clear: none; }
-    #members-list > li:nth-child(5n + 3) {
-      margin-left: 40.38462%;
-      margin-right: -100%;
-      clear: none; }
-    #members-list > li:nth-child(5n + 4) {
-      margin-left: 60.57692%;
-      margin-right: -100%;
-      clear: none; }
-    #members-list > li:nth-child(5n + 5) {
-      margin-left: 80.76923%;
-      margin-right: -100%;
-      clear: none; }
-    #members-list > li:hover .item-title a {
+    @media (min-width: 769px) {
+      #members-list > li {
+        width: 32.25806%;
+        float: left; }
+        #members-list > li:nth-child(3n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        #members-list > li:nth-child(3n + 2) {
+          margin-left: 33.87097%;
+          margin-right: -100%;
+          clear: none; }
+        #members-list > li:nth-child(3n + 3) {
+          margin-left: 67.74194%;
+          margin-right: -100%;
+          clear: none; } }
+    @media (min-width: 1020px) {
+      #members-list > li {
+        width: 24.09639%;
+        float: left; }
+        #members-list > li:nth-child(4n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        #members-list > li:nth-child(4n + 2) {
+          margin-left: 25.3012%;
+          margin-right: -100%;
+          clear: none; }
+        #members-list > li:nth-child(4n + 3) {
+          margin-left: 50.60241%;
+          margin-right: -100%;
+          clear: none; }
+        #members-list > li:nth-child(4n + 4) {
+          margin-left: 75.90361%;
+          margin-right: -100%;
+          clear: none; } }
+    #members-list > li:hover .item-title {
       visibility: visible; }
     #members-list > li:hover img.avatar {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
       opacity: 0.3; }
+    #members-list > li:hover .nohl img.avatar {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; }
   #members-list .item-avatar {
+    text-align: center;
     position: relative;
     top: 0; }
     #members-list .item-avatar img {
@@ -1527,13 +1586,20 @@ body.home .site-branding {
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
       border-radius: 50%; }
-  #members-list .item {
-    margin: 0;
-    padding: 0;
+  #members-list .item-title {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0; }
+    right: 0;
+    visibility: hidden;
+    padding-top: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
+    color: #F96B24; }
+  #members-list .item {
+    margin: 0;
+    padding: 0; }
     #members-list .item a {
       font-size: 45px;
       font-size: 2.8125rem;
@@ -1548,8 +1614,6 @@ body.home .site-branding {
       margin-bottom: 0px;
       margin-bottom: 0rem;
       visibility: hidden;
-      text-align: center;
-      display: block;
       text-decoration: none;
       background-color: clear !important; }
 
@@ -1567,6 +1631,9 @@ body.home .site-branding {
   padding-top: 3rem;
   padding-bottom: 48px;
   padding-bottom: 3rem; }
+
+.member-extra {
+  text-align: center; }
 
 #wp-admin-bar-top-secondary::after {
   content: 'minimum'; }
@@ -1662,6 +1729,8 @@ body.home .site-branding {
   margin-right: 0.29851%;
   padding-left: 6.26866%;
   padding-right: 6.26866%; }
+  .entry-content .band > p a, .entry-content .band > a {
+    color: #F96B24; }
   @media (min-width: 479px) {
     .entry-content .band {
       width: 81.19403%;

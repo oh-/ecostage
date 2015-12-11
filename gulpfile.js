@@ -4,7 +4,7 @@ var filter       = require('gulp-filter');
 var sass         = require('gulp-ruby-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var reload       = browserSync.reload;
-theme = {
+var theme = {
   url: 'eco.dev',
   dir: 'app/ecoscore',
   bower: 'bower_components/'
@@ -28,9 +28,11 @@ var config = {
 /**
  * Kick off the sass stream with source maps + error handling
  */
+// tempDir = './app/tmp/';
 function sassStream () {
     return sass(theme.dir+'/sass', {
       sourcemap: true,
+      // cacheLocation: tempDir,
       loadPath: config.sassloadpath
     })
         .on('error', function (err) {
@@ -67,6 +69,12 @@ gulp.task('sass', function() {
         .pipe(reload({stream: true}));
 });
 
+/*
+ * cleaning away the dirty files
+ */
+gulp.task('clear', function() {
+  return sass.clearCache();
+})
 /**
  * Default task
  */

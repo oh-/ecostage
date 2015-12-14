@@ -711,7 +711,7 @@ a {
   font-style: normal;
   text-decoration: none; }
   a:visited {
-    color: #fdd0b9; }
+    color: #F96B24; }
   a:hover, a:focus, a:active {
     text-decoration: underline;
     color: #fcbfa0; }
@@ -728,7 +728,7 @@ a {
 .band a {
   color: #17aeac; }
   .band a:visited {
-    color: #44e7e4; }
+    color: #0B5453; }
   .band a:hover, .band a:focus, .band a:active {
     text-decoration: underline;
     color: #1ddbd9; }

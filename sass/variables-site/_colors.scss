@@ -55,7 +55,7 @@ $color__link: $color__orange;
 $color__link-hover: lighten($color__orange, 25);
 $color__link-visited: $color__orange;
 $color__link-band: lighten($color__green, 20);
-$color__link-band-hover: lighten($color__green, 30);
+$color__link-band-hover: $color__green;
 $color__link-band-visited:$color__green;
 $color__text-menu: white;
 

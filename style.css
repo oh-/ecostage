@@ -1499,7 +1499,9 @@ body.home .site-branding {
       float: left;
       margin-right: 0.96154%; }
   #ecostage-pledge-form .eco-form-list .wpcf7-submit {
-    text-align: center; }
+    text-align: center;
+    margin-top: -29px;
+    margin-bottom: -8px; }
   #ecostage-pledge-form .eco-form-list .wpcf7-form-control-wrap {
     width: 19.23077%;
     float: right;

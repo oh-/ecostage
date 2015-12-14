@@ -16,9 +16,11 @@
       <a href="<?php echo esc_url('https://www.facebook.com/groups/417324151803310/', 'eco'); ?>" class="sl">f</a>
       <a href="<?php echo esc_url('https://twitter.com/ecostagepledge', 'eco' ); ?>" class="sl">t</a>
     </div>
+<?php if (is_front_page()): ?>
     <div id="footer-text-right">
       <p>Join us in building a community of ecologically minded performance makers</p>
     </div>
+<?php endif ?>
   </div>
 <?php is_front_page() ? get_sidebar('footer'): '' ; ?>
 <div class="members-login-footer">

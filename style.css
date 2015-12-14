@@ -702,11 +702,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #0B5453;
+  color: #F96B24;
   font-style: normal;
   text-decoration: none; }
   a:visited {
-    color: #0B5453; }
+    color: #F96B24; }
   a:hover, a:focus, a:active {
     text-decoration: underline; }
   a:focus {
@@ -720,9 +720,9 @@ a {
   background-color: clear !important; }
 
 .band a {
-  color: #F96B24; }
+  color: #17aeac; }
   .band a:visited {
-    color: #F96B24; }
+    color: #44e7e4; }
 
 .collapseomatic {
   font-size: 18px;
@@ -1246,6 +1246,68 @@ footer.site-footer {
     border-radius: 50%;
     background-color: #F96B24;
     margin: 0 5px 5px 0; }
+  footer.site-footer .members-login-footer {
+    padding-top: 14px;
+    padding-top: 0.9rem;
+    padding-bottom: 14px;
+    padding-bottom: 0.9rem;
+    color: white;
+    background-color: #3A3A3A;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 87.46269%;
+    float: left;
+    margin-right: 0.29851%;
+    padding-left: 6.26866%;
+    padding-right: 6.26866%;
+    width: 18.50746%;
+    float: left;
+    margin-right: 0.29851%; }
+    @media (min-width: 479px) {
+      footer.site-footer .members-login-footer {
+        width: 81.19403%;
+        float: left;
+        margin-right: 0.29851%; } }
+    @media (min-width: 769px) {
+      footer.site-footer .members-login-footer {
+        width: 74.92537%;
+        float: left;
+        margin-right: 0.29851%; } }
+    @media (min-width: 1079px) {
+      footer.site-footer .members-login-footer {
+        width: 56.1194%;
+        float: left;
+        margin-right: 0.29851%; } }
+    @media (min-width: 479px) {
+      footer.site-footer .members-login-footer {
+        padding-left: 9.40299%;
+        padding-right: 9.40299%; } }
+    @media (min-width: 769px) {
+      footer.site-footer .members-login-footer {
+        padding-left: 12.53731%;
+        padding-right: 12.53731%; } }
+    @media (min-width: 1079px) {
+      footer.site-footer .members-login-footer {
+        padding-left: 21.9403%;
+        padding-right: 21.9403%; } }
+    footer.site-footer .members-login-footer > a {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 24px;
+      line-height: 1.5rem;
+      background-color: #F96B24;
+      text-decoration: none;
+      background-color: clear !important;
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      -ms-border-radius: 2em;
+      -o-border-radius: 2em;
+      border-radius: 2em;
+      padding-left: 16px;
+      padding-left: 1rem;
+      padding-right: 16px;
+      padding-right: 1rem; }
   footer.site-footer .site-info {
     width: 18.50746%;
     float: right;
@@ -1361,7 +1423,7 @@ body.home .entry-header {
 body.home .site-branding {
   text-align: center; }
   body.home .site-branding a {
-    background-color: #E0542E;
+    background-color: #F96B24;
     text-decoration: none;
     background-color: clear !important;
     -webkit-border-radius: 2em;
@@ -1376,11 +1438,9 @@ body.home .site-branding {
     padding: 1.2rem; }
 
 #primary {
-  margin-bottom: 150px;
   margin-bottom: 0; }
 
 .wpcf7-list-item-label {
-  background-color: red !important;
   width: 19.23077%;
   float: left;
   margin-right: 0.96154%; }

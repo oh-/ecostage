@@ -186,7 +186,7 @@
 }
 @mixin button($butcol: $color__background-button) {
 	// @include contrasted($butcol);
-  background-color: $color__a-r;
+  background-color: $butcol;
 	// &:hover {@include contrasted(adjust-lightness($butcol, 20));}
 	@include nolink;
 	@include border-radius(2em);

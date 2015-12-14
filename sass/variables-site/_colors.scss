@@ -51,11 +51,12 @@ $color__text-alt: white;
 $color__text-hl: $color__orange;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: $color__green;
-$color__link-band: $color__orange;
-$color__link-band-visited: $color__orange;
-$color__link-visited: $color__green;
-$color__link-hover: $color__orange;
+$color__link: $color__orange;
+$color__link-visited: $color__orange;
+$color__link-hover: lighten($color__orange, 40);
+$color__link-band: lighten($color__green, 20);
+$color__link-hover: lighten($color__green, 40);
+$color__link-band-visited: lighten($color__green, 40);
 $color__text-menu: white;
 
 $color__border-button: #ccc #ccc #bbb;

@@ -21,6 +21,14 @@
     </div>
   </div>
 <?php is_front_page() ? get_sidebar('footer'): '' ; ?>
+<div class="members-login-footer">
+<?php if ( is_user_logged_in() ) {
+echo '<a href="/profile/">Edit your profile</a> <br />';
+echo '<a href="' . wp_logout_url() . '">logout</a>';
+} else {
+echo '<a href="/profile/">Members Login</a>';
+} ?>
+</div>
 		<div class="site-info">
       Site: <a href="<?php echo esc_url( __( 'http://madeso.uk/', 'eco' ) ); ?>" rel="designer">made<strong>so</strong></a>
 		</div><!-- .site-info -->

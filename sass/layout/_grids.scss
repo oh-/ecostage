@@ -91,14 +91,20 @@ footer.site-footer {
     background-color: $color__background-button;
     margin: 0 5px 5px 0;
   }
+  .members-login-footer { 
+    @include page-band();
+    @include span(3 first);
+    >a {
+      @include adjust-font-size-to(16px);
+      @include button();
+      @include pad(1rem);
+    }
+  }
   .site-info { @include span(3 last);}
 }
 #footer-var {
   @include page-squeeze;
   .home-page & { @include rhythm-padding(2); }
-}
-footer#colophon-home {
-	// background-color: white;
 }
 #sidebar-footer {
   @include page-band(white);
@@ -142,13 +148,12 @@ body.home {
 	}
 }
 #primary {
-  margin-bottom: $size__footer-height;
+  // margin-bottom: $size__footer-height;
   margin-bottom: 0;
   
 }
 
 .wpcf7-list-item-label {
-  @include testing;
   @include span(1 of 5);
 }
 #ecostage-pledge-form {

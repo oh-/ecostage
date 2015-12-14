@@ -652,6 +652,8 @@ button.menu-toggle {
   float: none;
   margin-top: 24px;
   margin-top: 1.5rem;
+  margin-top: -29px;
+  margin-bottom: -8px;
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
   -ms-border-radius: 75px;
@@ -1354,10 +1356,10 @@ footer.site-footer {
       padding-left: 21.9403%;
       padding-right: 21.9403%; } }
   .home-page #footer-var {
-    padding-top: 48px;
-    padding-top: 3rem;
-    padding-bottom: 48px;
-    padding-bottom: 3rem; }
+    padding-top: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 22px;
+    padding-bottom: 1.35rem; }
 
 #sidebar-footer {
   padding-top: 14px;
@@ -1499,9 +1501,7 @@ body.home .site-branding {
       float: left;
       margin-right: 0.96154%; }
   #ecostage-pledge-form .eco-form-list .wpcf7-submit {
-    text-align: center;
-    margin-top: -29px;
-    margin-bottom: -8px; }
+    text-align: center; }
   #ecostage-pledge-form .eco-form-list .wpcf7-form-control-wrap {
     width: 19.23077%;
     float: right;

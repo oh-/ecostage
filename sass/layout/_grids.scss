@@ -104,7 +104,7 @@ footer.site-footer {
 }
 #footer-var {
   @include page-squeeze;
-  .home-page & { @include rhythm-padding(2); }
+  .home-page & { @include rhythm-padding(1, 0.9); }
 }
 #sidebar-footer {
   @include page-band(white);
@@ -172,8 +172,6 @@ body.home {
     }
     .wpcf7-submit {
       text-align: center;
-      margin-top: -29px;
-      margin-bottom: -8px;
     }
     .wpcf7-form-control-wrap {
       // @include leader(1.2);

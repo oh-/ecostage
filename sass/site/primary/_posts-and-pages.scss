@@ -44,3 +44,19 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+
+/*
+ * resources page
+ */
+
+.band.resources {
+  .collapseomatic {
+    @include adjust-font-size-to($font__size-h3);
+    font-family: $font__heading;
+    font-weight:  400;
+    padding-bottom: 0;
+    display: block;
+    @include rhythm-margins(1);
+  }
+}

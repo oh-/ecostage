@@ -362,6 +362,9 @@ header#masthead .site-title, header#masthead .site-description, header#masthead 
   header#masthead .site-title a, header#masthead .site-description a, header#masthead .site-title a a {
     text-decoration: none; }
 
+.band .collapseomatic {
+  color: white; }
+
 .collapseomatic, .hilight, .hl, p.description b {
   color: #F96B24; }
 
@@ -600,7 +603,7 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    background: #FCEA22;
+    background: #139C8F;
     border-color: #ccc #bbb #aaa;
     color: black; }
   button:active, button:focus,
@@ -652,8 +655,8 @@ button.menu-toggle {
   float: none;
   margin-top: 24px;
   margin-top: 1.5rem;
-  margin-top: -29px;
-  margin-bottom: -8px;
+  margin-top: -18;
+  margin-bottom: -4px;
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
   -ms-border-radius: 75px;
@@ -1198,8 +1201,8 @@ a {
       .site-logo-wrapper .site-description-page {
         float: left;
         position: relative;
-        margin-top: -48px;
-        margin-top: -3rem;
+        margin-top: -38px;
+        margin-top: -2.4rem;
         left: 65px;
         width: 92.27941%; } }
     @media (min-width: 1079px) {
@@ -1207,20 +1210,17 @@ a {
         left: 65px; } }
 
 #footer-text-right {
-  float: left; }
+  width: 82.12766%;
+  float: right;
+  margin-right: 0; }
 
 footer.site-footer {
-  padding-top: 72px;
-  padding-top: 4.5rem;
+  padding-top: 0px;
+  padding-top: 0rem;
   padding-bottom: 48px;
   padding-bottom: 3rem;
   color: white;
   background-color: #3A3A3A; }
-  .home-page footer.site-footer {
-    padding-top: 0px;
-    padding-top: 0rem;
-    padding-bottom: 48px;
-    padding-bottom: 3rem; }
   footer.site-footer #social-buttons {
     padding-top: 7px;
     padding-top: 0.45rem;
@@ -1267,6 +1267,10 @@ footer.site-footer {
     margin-right: 0.29851%;
     padding-left: 6.26866%;
     padding-right: 6.26866%;
+    padding-top: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
     width: 18.50746%;
     float: left;
     margin-right: 0.29851%; }
@@ -1327,7 +1331,11 @@ footer.site-footer {
   float: left;
   margin-right: 0.29851%;
   padding-left: 6.26866%;
-  padding-right: 6.26866%; }
+  padding-right: 6.26866%;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 22px;
+  padding-bottom: 1.35rem; }
   @media (min-width: 479px) {
     #footer-var {
       width: 81.19403%;
@@ -1355,11 +1363,6 @@ footer.site-footer {
     #footer-var {
       padding-left: 21.9403%;
       padding-right: 21.9403%; } }
-  .home-page #footer-var {
-    padding-top: 24px;
-    padding-top: 1.5rem;
-    padding-bottom: 22px;
-    padding-bottom: 1.35rem; }
 
 #sidebar-footer {
   padding-top: 14px;
@@ -1376,11 +1379,11 @@ footer.site-footer {
   margin-right: 0.29851%;
   padding-left: 6.26866%;
   padding-right: 6.26866%;
-  color: black;
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  padding-bottom: 24px;
-  padding-bottom: 1.5rem; }
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  color: black; }
   @media (min-width: 479px) {
     #sidebar-footer {
       width: 81.19403%;

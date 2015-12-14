@@ -49,7 +49,7 @@
     @include susy-breakpoint($tab-l){
       float: left;
       position: relative;
-      @include margin-leader(-2);
+      @include margin-leader(-1.6);
       left: 65px;
       width: span(12 of 13);
     }
@@ -62,13 +62,10 @@
   }
 }
 #footer-text-right {
-  float: left;
+  @include span(7.4 of 9 last);
 }
 footer.site-footer {
-	@include rhythm-padding(3,2);
-  .home-page & {
-    @include rhythm-padding(0,2);
-  }
+  @include rhythm-padding(0,2);
   @include band-colors();
   #social-buttons {
     @include padding-leader(0.3);
@@ -93,6 +90,7 @@ footer.site-footer {
   }
   .members-login-footer { 
     @include page-band();
+    @include rhythm-padding(1);
     @include span(3 first);
     >a {
       @include adjust-font-size-to(16px);
@@ -104,12 +102,12 @@ footer.site-footer {
 }
 #footer-var {
   @include page-squeeze;
-  .home-page & { @include rhythm-padding(1, 0.9); }
+  @include rhythm-padding(1, 0.9);
 }
 #sidebar-footer {
   @include page-band(white);
+  @include rhythm-padding(0);
   color: black;
-  @include rhythm-padding(1);
 }
 // image
 .site-logo-wrapper {

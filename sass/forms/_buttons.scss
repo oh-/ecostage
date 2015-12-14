@@ -46,7 +46,7 @@ button.menu-toggle {
     float: none;
     @include margin-leader(1);
     // @include rhythm-margins(-29px, -8px);
-    margin-top: -18;
+    margin-top: -18px;
     margin-bottom: -4px;
     @include border-radius(75px);
     @include adjust-font-size-to($font__size-h2);

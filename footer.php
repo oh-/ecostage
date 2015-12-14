@@ -26,7 +26,7 @@
 <div class="members-login-footer">
 <?php if ( is_user_logged_in() ) {
 echo '<a href="/profile/">Edit your profile</a> <br />';
-echo '<a href="' . wp_logout_url() . '">logout</a>';
+echo '<a href="' . wp_logout_url('/') . '">logout</a>';
 } else {
 echo '<a href="/profile/">Members Login</a>';
 } ?>
